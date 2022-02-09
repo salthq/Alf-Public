@@ -1,0 +1,22 @@
+dateModified: 1644393180
+email:
+  fromEmail: paul@advantagelearn.com
+  fromName: 'Salt Public'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1ee655fc-8a9b-4899-b282-ac3480a05a46: 'Salt Public' # Salt Public
+    67f41e09-e046-48b2-8922-8f5c03bbb14c: 'Salt Public' # Salt Public
+    7829ab32-990e-4eb3-a6c9-5519032a584a: Common # Common
+system:
+  edition: solo
+  live: true
+  name: 'Salt Public'
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

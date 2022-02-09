@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+  <head>
+  
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+    
+    {# SEO #}
+    {# {% hook "seo" %} #}
+    
+    {# Tailwind and custom CSS styles #}
+    <link rel="stylesheet" href="/css/styles.css">
+
+    {# Alpine.JS script #}
+    <script src="https://unpkg.com/alpinejs@3.2.1/dist/cdn.min.js"></script>
+    
+    {# Custom JS script #}
+    {# <script src="/js/custom.js" defer></script> #}
+
+    {# Google Fonts (Work Sans) #}
+    {# <link rel="preconnect" href="https://fonts.googleapis.com"> #}
+    {# <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> #}
+    {# <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet"> #}
+
+    {# Favicon #}
+    {# <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"> #}
+
+  </head>
+
+  <body>
+    
+    {# Header #}
+    {# {% block header %} #}
+      {# {% include "/globals/menu.twig" %} #}
+    {# {% endblock %} #}
+
+    {# Content #}
+    {% block content %}
+      {# This content is replaced by the content block in the template
+      that extends this file. #}
+    {% endblock %}
+
+    {# Footer #}
+    {# {% block footer %} #}
+      {# {% include "/globals/footer.twig" %} #}
+    {# {% endblock %} #}
+    
+  </body>
+</html>
