@@ -6,5 +6,7 @@
 .DS_Store
 .env.sh
 
+.vscode
+
 # Assets
 web/css/
