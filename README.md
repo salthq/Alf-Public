@@ -4,7 +4,7 @@
 
 - Clone this repo
 ```bash
-git clone https://github.com/pango-studio/salt-public.git desired-dir-name
+git clone https://github.com/pango-studio/craft-boilerplate.git desired-dir-name
 ```
 
 - Move into the newly created project folder
