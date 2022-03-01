@@ -1,4 +1,4 @@
-dateModified: 1646121595
+dateModified: 1646124944
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Salt Public'
@@ -6,7 +6,7 @@ email:
 meta:
   __names__:
     1ee655fc-8a9b-4899-b282-ac3480a05a46: 'Craft Boilerplate' # Craft Boilerplate
-    67f41e09-e046-48b2-8922-8f5c03bbb14c: 'Craft Boilerplate' # Craft Boilerplate
+    67f41e09-e046-48b2-8922-8f5c03bbb14c: 'Alf Public' # Alf Public
     7829ab32-990e-4eb3-a6c9-5519032a584a: Common # Common
 system:
   edition: solo
