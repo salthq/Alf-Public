@@ -1,4 +1,4 @@
-# Salt Public Site
+# Craft Base Site
 
 ## Local setup
 
