@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
 language: en-US
-name: 'Salt Public'
+name: 'Craft Boilerplate'
 primary: true
-siteGroup: 1ee655fc-8a9b-4899-b282-ac3480a05a46 # Salt Public
+siteGroup: 1ee655fc-8a9b-4899-b282-ac3480a05a46 # Craft Boilerplate
 sortOrder: 1
