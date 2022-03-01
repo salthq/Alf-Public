@@ -13,6 +13,16 @@ git clone https://github.com/pango-studio/salt-public.git desired-dir-name
 cd desired-dir-name
 ```
 
+>👀 Important! This is the base repo that shouldn't be used as your new project so next do the following:
+
+- Create a new repository for your project
+
+- Change the remote URL to that of your new project
+
+```bash
+git remote set-url origin new.git.url/here
+```
+
 - Create the valet link (optional)
 
 ```bash
