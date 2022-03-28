@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "postcss ./src/styles.css -o ./web/css/styles.css",
+    "dev": "postcss ./src/styles.css -o ./web/css/styles.css --watch --verbose",
     "prod": "NODE_ENV=production postcss ./src/styles.css -o ./web/css/styles.css"
   },
   "devDependencies": {
@@ -10,7 +10,8 @@
     "@tailwindcss/typography": "^0.4.1",
     "alpinejs": "^3.2.1",
     "autoprefixer": "^10.3.1",
+    "cssnano": "^5.1.5",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^3.0"
   }
 }

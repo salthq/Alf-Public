@@ -1,11 +1,14 @@
 module.exports = {
-    purge: [
+    content: [
         './templates/**/*.html',
         './templates/**/*.twig',
     ],
-    theme: {},
+    theme: {
+        colors: {
+            'alf-blue': '#eaf9ff',
+          }
+    },
     variants: {},
     plugins: [
-        require('@tailwindcss/forms'),
     ],
 }
