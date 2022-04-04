@@ -8,6 +8,7 @@ module.exports = {
             'alf-blue': '#eaf9ff',
             'alf-nav-blue': '#0fade8',
             'alf-white': '#ffffff',
+            'alf-black': '#000000',
           }
     },
     variants: {},

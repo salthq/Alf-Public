@@ -6,27 +6,60 @@
 {% set lockAndKey = "/images/lockAndKey.png" %}
  
 
-<div class="bg-white">
-  <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-    <div class="bg-alf-blue rounded-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4 justify-items-center">
-      <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-        <div class="lg:self-center">
-          <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-            Hero title lorem ipsum dolor sit amet, consectetur adipis
-          </h2>
-          <p class="mt-4 text-lg leading-6 text-indigo-200">Providing under-resourced learners and educators in Africa with access to high-quality digital education in S.T.E.M.</p>
-          <a href="#" class="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-indigo-600 hover:bg-indigo-50">Go to advantagelearn.com</a>
-        </div>
-      </div>
-      
-      {% set heroImage = "/images/HeroImage.png" %}
-      <div class=" self-center">
-        <img class="transform lg:w-2/3 rounded-md object-cover object-center" src="{{heroImage}}" alt="Hero Image">
-      </div>
-    </div>
-  </div>
-</div>
+  {# Outer container #}
+      <div class="my-10 mx-10">
 
+        {# Inner container #}
+        <div class="max-w-7xl rounded-2xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-20 bg-alf-blue">
+
+          <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:pl-8">
+              
+              {# Hero Title #}
+              <h1 class="block  font-light text-4xl sm:text-5xl">
+                Hero title lorem ipsum dolor sit amet, consectetur adipis
+              </h1>
+
+              {# Hero Subtitle #}
+              <p class="hidden mt-8 sm:py-6 text-left sm:text-center sm:text-xl lg:text-left sm:mt-5 lg:block lg:pb-0 lg:text-lg">
+                Providing under-resourced learners and educators in Africa with access to high-quality digital education in S.T.E.M.
+              </p>
+              
+              {# Button #}
+              <a href="" class="hidden mt-8 px-6 py-3 text-base font-bold rounded-md bg-alf-nav-blue text-alf-white shadow hover:underline w-full md:w-fit md:px-16 lg:block">
+                Go to advantagelearn.com
+              </a>
+              
+            </div>
+
+            {# Hero Image  #}
+            {% set heroImage = "/images/HeroImage.png" %}
+            <div class="mt-16 sm:mt-26 flex justify-center relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-center">
+              <img src="{{heroImage}}" alt="Hero Image">            
+            </div>
+            {# End | Hero Image #}
+
+            {# Subtitle and Button for mobile and tablet #}   
+            <div class="flex flex-col items-center lg:hidden">
+              {# Subtitle #}
+              <p class="py-4 max-w-2xl text-left sm:text-center lg:text-left sm:mt-5 sm:text-xl mt-8 lg:pb-0 lg:text-lg xl:text-xl">
+                Providing under-resourced learners and educators in Africa with access to high-quality digital education in S.T.E.M.
+              </p>
+              
+              {# Button #}
+              <a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 text-base font-bold rounded-md bg-alf-nav-blue text-alf-white text-center shadow hover:underline ">
+                 Go to advantagelearn.com
+              </a>
+
+            </div>
+            {# End | Subtitle and Button for mobile and tablet #} 
+
+          </div>
+
+        </div>
+        {# End | Inner container #}
+      </div>
+      {# End | Outer container #}
 
 
 
