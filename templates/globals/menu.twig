@@ -1,0 +1,95 @@
+ {% set logo = "/images/FoundationLogo.png" %}
+
+  <div x-cloak>
+
+  {# Menu containers #}
+  <div class="relative bg-white" x-data="{ menuMobile: false }">
+    <div class="relative mx-auto px-6 sm:px-10 xl:px-12 shadow z-10">
+      <div class="max-w-7xl mx-auto flex justify-between items-center py-4 md:space-x-10 lg:space-x-0">
+
+        {# Logo #}
+        <div class="flex justify-start flex-shrink-0 mr-4">
+          <a href="/">
+            <span class="sr-only">ALF Logo</span>
+            <img class="h-8 w-auto" src="{{logo}}" alt="ALF logo">
+          </a>
+        </div>
+
+        {# Mobile open menu button #}
+        <div class="-mr-2 -my-2 lg:hidden" x-on:click="menuMobile = true">
+          <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center" aria-expanded="false">
+            <span class="sr-only">Open menu</span>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        {# Nav items #}
+        <nav class="hidden lg:flex lg:space-x-10 xl:space-x-14  font-medium text-sm">
+
+            {# Who we are nav item #}
+            <a 
+                href="/" class="py-2.5 px-2 hover:bg-alf-blue rounded-md" 
+                :class="{ 'font-bold' : activeMenuItem === 'who-we-are' }"
+            >
+                Who we are
+            </a>
+
+            {# What we do nav item #}
+            <a 
+                href="/" class="py-2.5 px-2 hover:bg-alf-blue rounded-md" 
+                :class="{ 'font-bold' : activeMenuItem === 'what-we-do' }"
+            >
+                What we do
+            </a>
+
+            {# Our Partners nav item #}
+            <a 
+                href="/" class="py-2.5 px-2 hover:bg-alf-blue rounded-md" 
+                :class="{ 'font-bold' : activeMenuItem === 'our-partners' }"
+            >
+                Our Partners
+            </a>
+
+            {# Success stories nav item #}
+            <a 
+                href="/" class="py-2.5 px-2 hover:bg-alf-blue rounded-md" 
+                :class="{ 'font-bold' : activeMenuItem === 'success-stories' }"
+            >
+                Success stories
+            </a>
+   
+        </nav>
+        
+        {# Connect and Partnership Buttons #}
+        <div class="hidden lg:flex items-center text-sm justify-end md:flex-1 lg:flex-none">
+                   
+            <a 
+              href="#" 
+              class="font-bold ml-8 whitespace-nowrap inline-flex items-center justify-center px-3 xl:px-4 py-2.5 rounded-md shadow-sm border-solid border-2 border-alf-nav-blue hover:bg-alf-blue"
+              
+            >
+              Connect with us
+            </a>
+            
+            <a 
+              href="#" 
+              class="font-bold ml-8 whitespace-nowrap inline-flex items-center justify-center px-3 xl:px-4 py-3 rounded-md shadow-sm bg-alf-nav-blue hover:bg-alf-blue"
+              
+            >
+              Request a partnership
+            </a>
+          
+        </div>
+        {# End | Connect and Partnership Buttons  #}
+
+      </div>
+    </div>
+
+    {# Mobile menu #}
+    {% include "/globals/menu-mobile.twig" %}
+
+  </div>
+  {# End | Menu containers #}
+</div>

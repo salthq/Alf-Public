@@ -1,0 +1,127 @@
+
+ {% set logo = "/images/FoundationLogo.png" %}
+
+{# Containers #}
+<div
+  x-cloak
+  class="absolute z-10 top-0 inset-x-0 p-4 transition transform origin-top-right" 
+  x-show="menuMobile"
+  x-transition:enter="transition duration-200 ease-out"
+  x-transition:enter-start="opacity-0 scale-95"
+  x-transition:enter-end="opacity-100 scale-100"
+  x-transition:leave="transition duration-100 ease-in"
+  x-transition:leave-start="opacity-100 scale-100"
+  x-transition:leave-end="opacity-0 scale-95"
+>
+  <div class="rounded-lg shadow-lg bg-alf-white divide-y-2 divide-gray-50">
+    <div class="pl-8 pr-6 py-6">
+
+      {# Logo and close button top band #}
+      <div class="flex items-center justify-between">
+        
+        {# Logo #}
+        <a href="/">
+          <div>
+            <img class="h-8 w-auto" src="{{logo}}" alt="ALF logo">
+          </div>
+        </a>
+
+        {# Close button #}
+        <div class="" x-on:click="menuMobile = false">
+          <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center hover:text-slt-blue">
+            <span class="sr-only">Close menu</span>
+            <!-- Heroicon name: outline/x -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+      {# Nav items container #}
+      <div class="mt-6">
+
+        {# Nav items #}
+        <nav class="grid gap-y-6" x-data="{ mobileMenu : null }">
+
+         
+
+          {# Who we are #}
+          <a 
+            href="/" 
+            class="-m-3 p-3 flex items-center rounded-md pb-4 hover:text-slt-blue"
+            :class="{'text-slt-blue' : activeMenuItem === 'about-us' }"
+          >
+            
+            <span class="text-lg font-medium">
+              Who we are
+            </span>
+          </a>
+
+          {# What we do #}
+          <a 
+            href="/" 
+            class="-m-3 p-3 flex items-center rounded-md pb-4 hover:text-slt-blue"
+            :class="{'text-slt-blue' : activeMenuItem === 'our-partners' }"
+          >
+            
+            <span class="text-lg font-medium">
+              What we do
+            </span>
+          </a>
+
+          {# Our partners #}
+          <a 
+            href="/" 
+            class="-m-3 p-3 flex items-center rounded-md pb-4 hover:text-slt-blue"
+            :class="{'text-slt-blue' : activeMenuItem === 'insights' }"
+          >
+            
+            <span class="text-lg font-medium">
+              Our partners
+            </span>
+          </a>
+
+          {# Success stories #}
+          <a 
+            href="/" 
+            class="-m-3 p-3 flex items-center rounded-md pb-4 hover:text-slt-blue"
+            :class="{'text-slt-blue' : activeMenuItem === 'the-campus' }"
+          >
+            
+            <span class="text-lg font-medium">
+              Success stories
+            </span>
+          </a>
+
+          
+         
+        </nav>
+      </div>
+    </div>
+    
+    {# Button section #}
+    <div class="py-6 px-5 space-y-6">
+      
+      <div class="flex space-y-4 flex-col items-center">
+
+        {# Connect with us button #}
+        <a href="/" class="inline-flex justify-center w-full sm:max-w-lg px-4 py-3 rounded-md shadow-sm font-bold text-lg bg-alf-blue"
+        >
+            Connect with us
+        </a>
+
+         {# Request a partnership button #}
+        <a href="/" class="inline-flex justify-center w-full sm:max-w-lg px-4 py-3 rounded-md shadow-sm font-bold text-lg bg-alf-blue"
+        >
+            Request a partnership
+        </a>
+    
+      </div>
+    </div>
+    {# End | Button section #}
+    
+  </div>
+</div>
+{# End | Containers #}
