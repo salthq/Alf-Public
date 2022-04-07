@@ -35,7 +35,7 @@
 					</div>
 
 					{# Hero Image  #}
-					{% set heroImage = "/images/HeroImage.png" %}
+					{% set heroImage = "/images/HeroImage.svg" %}
 					<div class="mt-16 sm:mt-26 flex justify-center relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-center">
 						<img src="{{heroImage}}" alt="Hero Image">
 					</div>
@@ -91,7 +91,7 @@
 								class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
 
 								{# Bring in the image associated with the respective field, accessible via the image variable #}
-								{% set lockAndKey = "/images/lockAndKey.png" %}
+								{% set lockAndKey = "/images/lockAndKey.svg" %}
 
 								<img class="object-cover object-left" src="{{lockAndKey}}">
 
@@ -150,13 +150,13 @@
 			<div
 			class="bg-alf-nav-blue rounded-b-4xl lg:rounded-b-5xl  translate-y-20"> {# Inner container #}
 
-			{% set whatWeDoStyling = "/images/whatwedo_styling.png" %}
-			<div class="flex flex-col justify-center items-center -translate-y-20">
+			{% set whatWeDoStyling = "/images/what_we_do_Styling.svg" %}
+			<div class="flex flex-col justify-center items-center -translate-y-10 sm:-translate-y-20">
 				<img src="{{whatWeDoStyling}}">
 			</div>
 
 			<div
-				class="max-w-7xl mx-auto px-6 pb-12 pt-16 sm:pt-20 sm:px-8 md:px-12 lg:px-16 lg:pt-28">
+				class="max-w-7xl mx-auto px-6 pb-12 pt-4 sm:pt-8 sm:px-8 md:px-12 lg:px-16 lg:pt-4">
 
 				{# Title #}
 				<h2 class="font-rubik text-3xl text-center sm:text-3xl lg:text-3xl">WHAT WE DO</h2>
@@ -165,10 +165,15 @@
 				<div class="flex flex-col items-center">
 
 					<p class="mt-8 font-rubik text-alf-white text-xl max-w-3xl text-center">Our strength lies in teaching and learning in the STEM (Science,Technology,
-																																				Engineering and Mathematics) fields at a high school level. We recognize our strengths
-																																				and play to them by:</p>
+																																										Engineering and Mathematics) fields at a high school level. We recognize our strengths
+																																										and play to them by:</p>
 
 
+				</div>
+
+				{% set smallStudent = "/images/smallstudent.svg" %}
+				<div class=" md:invisible md:h-0 flex flex-col justify-center items-center pt-6 translate-y-6">
+					<img src="{{smallStudent}}">
 				</div>
 
 				{# What We Do Cards #}
@@ -179,53 +184,53 @@
 
 					{# Content grid #}
 					<div
-						class="grid my-4 md:grid-cols-12 items-stretch font-rubik overflow-visible">
+						class="grid my-4 grid-cols-1  md:grid-cols-12 items-stretch font-rubik overflow-visible">
 
 
 						{# Content container #}
 
-						<div class="py-2 justify-self-start px-2 rounded-lg md:col-span-5 flex">
+						<div class="py-2 md:pt-16 justify-self-start px-2 rounded-lg md:col-span-5 flex flex-col md:flex-row">
 
-							<div class="flex-initial bg-alf-blue py-20 px-5 w-full rounded-l-xl">
+							<div class="flex-1 bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl min-w-max">
 								<img src="{{lock}}">
 							</div>
-							<div class="flex-initial pl-6 pr-6 pt-4 rounded-r-xl bg-alf-white">
+							<div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
 								<h2 class="font-semibold pb-4">Future possibilities</h2>
 								<p class="pb-4">Providing under-resourced learners with access to our exam preparation workshops to support them to achieve their best Matric results which open doors to tertiary study, scholarships and funding opportunities.</p>
 							</div>
 
 						</div>
 
-						<div class="py-2 justify-self-start px-2 rounded-lg md:col-span-4 flex">
+						<div class="py-2 md:pt-16 justify-self-start px-2 md:rounded-lg md:col-span-4 flex flex-col md:flex-row">
 
-							<div class="flex-initial bg-alf-blue py-20 px-5 w-full rounded-l-xl">
+							<div class="flex-1 bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl min-w-max">
 								<img src="{{lock}}">
 							</div>
-							<div class="flex-initial pl-6 pr-6 pt-4 rounded-r-xl bg-alf-white">
-						<h2 class="font-semibold pb-4">Future possibilities</h2>
+							<div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
+								<h2 class="font-semibold pb-4">Future possibilities</h2>
 								<p class="pb-4">Granting access to under-resourced learners to benefit from our online courses and online learning resources.</p>
 							</div>
 
 						</div>
 
-						<div class="py-2 justify-self-start px-2 rounded-lg md:col-span-4 flex">
+						<div class="py-2 md:pb-16 justify-self-start px-2 rounded-lg md:col-span-4 flex flex-col md:flex-row">
 
-							<div class="flex-initial bg-alf-blue py-20 px-5 w-full rounded-l-xl">
+							<div class="flex-1 bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl min-w-max">
 								<img src="{{lock}}">
 							</div>
-							<div class="flex-initial pl-6 pr-6 pt-4 rounded-r-xl bg-alf-white">
-						<h2 class="font-semibold pb-4">Future possibilities</h2>
+							<div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
+								<h2 class="font-semibold pb-4">Future possibilities</h2>
 								<p class="pb-4">Granting access to under-resourced learners to benefit from our online courses and online learning resources.</p>
 							</div>
 
 						</div>
 
-						<div class="py-2 justify-self-start px-2 rounded-lg md:col-span-5 flex">
+						<div class="py-2 md:pb-16 justify-self-start px-2 rounded-lg md:col-span-5 flex flex-col md:flex-row">
 
-							<div class="flex-initial bg-alf-blue py-20 px-5 w-full rounded-l-xl">
+							<div class="flex-1 bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl min-w-max">
 								<img src="{{lock}}">
 							</div>
-							<div class="flex-initial pl-6 pr-6 pt-4 rounded-r-xl bg-alf-white">
+							<div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
 								<h2 class="font-semibold pb-4">Future possibilities</h2>
 								<p class="pb-4">Providing under-resourced learners with access to our exam preparation workshops to support them to achieve their best Matric results which open doors to tertiary study, scholarships and funding opportunities.</p>
 							</div>
@@ -233,10 +238,12 @@
 						</div>
 						{# End | Content container #}
 
-						{% set student = "/images/student.png" %}
-					    <div class="py-2 self-center px-2 md:row-span-2 md:col-span-4 md:row-start-1 md:col-start-10 md:-translate-x-16 -z-10">
-								<img src="{{student}}">
+						{# Styling - Student Holding Book (Desktop) #}
+						{% set student = "/images/student.svg" %}
+						<div class="invisible h-0 md:visible md:h-auto py-2 self-center px-2 md:w-72 lg:w-96 md:row-span-2 md:col-span-4 md:row-start-1 md:col-start-10 md:-translate-x-16 -z-10">
+							<img src="{{student}}">
 						</div>
+						{# End | Styling - Student Holding Book (Desktop) #}
 
 					</div>
 					{# End | Content grid #}
@@ -246,6 +253,11 @@
 
 			</div>
 			{# End | Inner container #}
+
+
+			<div class="flex flex-col justify-center items-center translate-y-10 sm:translate-y-20">
+				<img src="{{whatWeDoStyling}}">
+			</div>
 
 		</div>
 		{# End | Outer container #}
