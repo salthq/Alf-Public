@@ -165,8 +165,8 @@
 				<div class="flex flex-col items-center">
 
 					<p class="mt-8 font-rubik text-alf-white text-xl max-w-3xl text-center">Our strength lies in teaching and learning in the STEM (Science,Technology,
-																																										Engineering and Mathematics) fields at a high school level. We recognize our strengths
-																																										and play to them by:</p>
+																																																																																																																		Engineering and Mathematics) fields at a high school level. We recognize our strengths
+																																																																																																																		and play to them by:</p>
 
 
 				</div>
@@ -263,5 +263,72 @@
 		{# End | Outer container #}
 		{# End | What we do Band #}
 
-	</main>
-{% endblock %}
+		{# Services Offered Band#}
+			<div>
+				<div
+				class="max-w-7xl mx-auto mt-64"> {# Title #}
+				<h2 class="font-rubik text-3xl text-center sm:text-3xl lg:text-3xl">Reach & Impact</h2>
+
+				{# Text #}
+				<div class="flex flex-col items-center">
+					<p class="mt-8 font-rubik text-xl max-w-3xl text-center">The foundation has already impacted 70 learners and 18 educators in 2021 alone, our founding year!</p>
+					<p class="mt-8 font-rubik font-semibold text-xl max-w-3xl text-center">Imagine what we could do with your help!</p>
+				</div>
+
+
+				{% set statsLock = "/images/statslock.svg" %}
+				<div class="grid grid-cols-2 md:grid-cols-6 mx-20 my-10">
+					<div class="col-span-2 flex flex-col items-center px-16 ">
+						<div class="flex-1 py-8 px-5 md:w-full w-64 mx-auto my-auto ">
+							<img src="{{statsLock}}">
+						</div>
+						<div class="text-center">
+							<p class="font-rubik font-semibold">5735</p>
+							<p>Active learners</p>
+						</div>
+					</div>
+					<div class="col-span-2 flex flex-col items-center px-16 ">
+						<div class="flex-1 py-8 px-5 md:w-full w-64 mx-auto my-auto ">
+							<img src="{{statsLock}}">
+						</div>
+						<div class="text-center">
+							<p class="font-rubik font-semibold">5735</p>
+							<p>Active learners</p>
+						</div>
+					</div>
+					<div class="col-span-2 flex flex-col items-center px-16 ">
+						<div class="flex-1 py-8 px-5 md:w-full w-64 mx-auto my-auto ">
+							<img src="{{statsLock}}">
+						</div>
+						<div class="text-center">
+							<p class="font-rubik font-semibold">5735</p>
+							<p>Active learners</p>
+						</div>
+					</div>
+					<div class="col-span-2 md:col-start-2 flex flex-col items-center px-16 ">
+						<div class="flex-1 py-8 px-5 md:w-full w-64 mx-auto my-auto ">
+							<img src="{{statsLock}}">
+						</div>
+						<div class="text-center">
+							<p class="font-rubik font-semibold">5735</p>
+							<p>Active learners</p>
+						</div>
+					</div>
+					<div class="col-span-2 md:col-start-4 flex flex-col items-center px-16 ">
+						<div class="flex-1 py-8 px-5 md:w-full w-64 mx-auto my-auto ">
+							<img src="{{statsLock}}">
+						</div>
+						<div class="text-center">
+							<p class="font-rubik font-semibold">5735</p>
+							<p>Active learners</p>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+			{# End | Offered Band#}
+
+		</main>
+	{% endblock %}
