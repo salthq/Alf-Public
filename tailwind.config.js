@@ -9,6 +9,7 @@ module.exports = {
             'alf-nav-blue': '#0fade8',
             'alf-white': '#ffffff',
             'alf-black': '#000000',
+            'alf-green': '#E0FFF6',
         },
 
         fontFamily: {
