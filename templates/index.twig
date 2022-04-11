@@ -4,6 +4,7 @@
 
 	{% set heroStyling = "/images/HeroStyling.png" %}
 	{% set lockAndKey = "/images/lockAndKey.png" %}
+	{% set projectLogo = "/images/orgLogo.png" %}
 
 	<main class="relative ">
 		{# Hero Band #}
@@ -83,6 +84,8 @@
 					</div>
 					{# End | Lock and Key Image #}
 
+					<div class="lg:h-0 lg:invisible bg-alf-blue md:row-start-2 col-start-1 col-span-12 h-14 -translate-y-20 rounded-3xl"></div>
+
 					<div
 						class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
 
@@ -103,8 +106,7 @@
 
 					</div>
 
-					<div class="bg-alf-blue md:row-start-2 col-start-1 col-span-12 h-24 -translate-y-28 rounded-3xl" >
-					</div>
+					<div class="invisible h0 lg:h-24 lg:visible bg-alf-blue md:row-start-2 col-start-1 col-span-12 h-24 -translate-y-28 rounded-3xl"></div>
 
 
 				</div>
@@ -114,9 +116,6 @@
 		</div>
 		{# End | Outer container #}
 		{# End | Who We Are Band #}
-
-
-
 
 
 		{# What we do Band #}
@@ -139,8 +138,8 @@
 				<div class="flex flex-col items-center">
 
 					<p class="mt-8 font-rubik text-alf-white text-2xl max-w-3xl text-center">Our strength lies in teaching and learning in the STEM (Science,Technology,
-																																																																																																																																				Engineering and Mathematics) fields at a high school level. We recognize our strengths
-																																																																																																																																				and play to them by:</p>
+																																																																																																																																																												Engineering and Mathematics) fields at a high school level. We recognize our strengths
+																																																																																																																																																												and play to them by:</p>
 
 
 				</div>
@@ -237,10 +236,10 @@
 		{# End | Outer container #}
 		{# End | What we do Band #}
 
-		{# Services Offered Band #}
+		{# Reach and Impact Band #}
 			<div>
 				<div
-				class="max-w-7xl mx-auto mt-64"> {# Title #}
+				class="max-w-3xl mx-auto mt-64"> {# Title #}
 				<h2 class="font-rubik text-3xl text-center sm:text-3xl lg:text-3xl">Reach & Impact</h2>
 
 				{# Text #}
@@ -249,7 +248,7 @@
 					<p class="mt-8 font-rubik font-semibold text-xl max-w-3xl text-center">Imagine what we could do with your help!</p>
 				</div>
 
-
+				{# Stats #}
 				{% set statsLock = "/images/statslock.svg" %}
 				<div class="grid gap-24 md:gap-0 grid-cols-2 md:grid-cols-6 mx-12 my-5 md:mx-10">
 					<div class="md:col-span-2 flex flex-col items-center">
@@ -299,10 +298,11 @@
 					</div>
 
 				</div>
+				{# End | Stats #}
 
 
 			</div>
-			{# End | Services Offered Band #}
+			{# End | Reach and Impact Band #}
 
 
 			{# Organizations Band #}
@@ -331,13 +331,135 @@
 						{# Image  #}
 						{% set highFive = "/images/Highfive.svg" %}
 						<div class="mt-16 sm:mt-26 flex justify-center relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-center">
-							<img src="{{highFive}}" alt="Hero Image">
+							<img src="{{highFive}}" alt="High Image">
 						</div>
 						{# End | Image #}
 
 
 					</div>
 
+					{# Carousel #}
+					<div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4 -translate-y-8">
+						<div class="w-full relative flex items-center justify-center">
+							<button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
+								<svg class="dark:text-gray-900" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+							<div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+								<div id="slider" class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+									<div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded px-10">
+										<img src="{{projectLogo}}" class="py-8">
+
+										<h1 class="font-rubik text-2xl">Partner Title</h1>
+										<p>Partner description ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline ">
+											Go to Partner Site
+										</a>
+									</div>
+									<div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded px-10">
+										<img src="{{projectLogo}}" class="py-8">
+
+										<h1 class="font-rubik text-2xl">Partner Title</h1>
+										<p>Partner description ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline ">
+											Go to Partner Site
+										</a>
+									</div>
+									<div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded px-10">
+										<img src="{{projectLogo}}" class="py-8">
+
+										<h1 class="font-rubik text-2xl">Partner Title</h1>
+										<p>Partner description ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline ">
+											Go to Partner Site
+										</a>
+									</div>
+									<div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded px-10">
+										<img src="{{projectLogo}}" class="py-8">
+
+										<h1 class="font-rubik text-2xl">Partner Title</h1>
+										<p>Partner description ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline ">
+											Go to Partner Site
+										</a>
+									</div>
+									<div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded px-10">
+										<img src="{{projectLogo}}" class="py-8">
+
+										<h1 class="font-rubik text-2xl">Partner Title</h1>
+										<p>Partner description ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline ">
+											Go to Partner Site
+										</a>
+									</div>
+									<div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded px-10">
+										<img src="{{projectLogo}}" class="py-8">
+
+										<h1 class="font-rubik text-2xl">Partner Title</h1>
+										<p>Partner description ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline ">
+											Go to Partner Site
+										</a>
+									</div>
+									<div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded px-10">
+										<img src="{{projectLogo}}" class="py-8">
+
+										<h1 class="font-rubik text-2xl">Partner Title</h1>
+										<p>Partner description ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline ">
+											Go to Partner Site
+										</a>
+									</div>
+									<div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded px-10">
+										<img src="{{projectLogo}}" class="py-8">
+
+										<h1 class="font-rubik text-2xl">Partner Title</h1>
+										<p>Partner description ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline ">
+											Go to Partner Site
+										</a>
+									</div>
+								
+								</div>
+							</div>
+							<button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
+								<svg class="dark:text-gray-900" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					{# End | Carousel #}
+
+					<script>
+						let defaultTransform = 0;
+						function goNext() {
+						defaultTransform = defaultTransform - 398;
+						var slider = document.getElementById("slider");
+						if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) 
+						defaultTransform = 0;
+
+
+
+						slider.style.transform = "translateX(" + defaultTransform + "px)";
+						}
+						next.addEventListener("click", goNext);
+						function goPrev() {
+						var slider = document.getElementById("slider");
+						if (Math.abs(defaultTransform) === 0) 
+						defaultTransform = 0;
+						else 
+						defaultTransform = defaultTransform + 600;
+						slider.style.transform = "translateX(" + defaultTransform + "px)";
+						}
+						prev.addEventListener("click", goPrev);
+					</script>
+
+
+					<a href="" class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-dark-green text-center shadow hover:underline ">
+						Become a Partner
+					</a>
 				</div>
 				{# End | Inner container #}
 			</div>
