@@ -4,6 +4,9 @@ module.exports = {
         './templates/**/*.twig',
     ],
     theme: {
+        backgroundImage: {
+            'partnershipbg': "url('/images/PartnershipBackground.svg')",
+        },
         colors: {
             'alf-blue': '#eaf9ff',
             'alf-nav-blue': '#0fade8',
