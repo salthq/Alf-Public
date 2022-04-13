@@ -3,6 +3,8 @@
 {% block content %}
 
 	{% set heroStyling = "/images/HeroStyling.png" %}
+	{% set lockAndKey = "/images/lockAndKey.png" %}
+	{% set projectLogo = "/images/orgLogo.png" %}
 	{% set carouselButton = "/images/Button.svg" %}
 
 
@@ -11,13 +13,13 @@
 		{# Hero Band #}
 		{# Outer container #}
 			<div
-			class="my-10 ml-10 lg:mr-10 "> {# Inner container #}
-			<div class="max-w-7xl rounded-l-2xl lg:rounded-r-2xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-20 bg-alf-blue">
+			class="my-10 ml-10 xl:mr-10 "> {# Inner container #}
+			<div class="max-w-7xl rounded-l-3xl xl:rounded-r-3xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-20 bg-alf-blue">
 
-				<div class="lg:grid lg:grid-cols-12 lg:gap-8">
+				<div class="lg:grid lg:grid-cols-10 lg:gap-10">
 
 					<div
-						class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-5 lg:text-left lg:pl-8">
+						class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-5 lg:text-left lg:pl-8 lg:py-24">
 
 						{# Hero Title #}
 						<h1 class="block font-rubik text-4xl">
@@ -119,9 +121,10 @@
 		{# End | Outer container #}
 		{# End | Who We Are Band #}
 
+
 		{# What we do Band #}
 		{# Outer container #}
-			<div class="bg-alf-nav-blue rounded-b-4xl lg:rounded-b-5xl  translate-y-20"> {# Inner container #}
+			<div class="bg-alf-nav-blue translate-y-20"> {# Inner container #}
 
 			{# Top of Band Styling #}
 			{% set whatWeDoStyling = "/images/what_we_do_Styling.svg" %}
@@ -140,8 +143,8 @@
 
 					<p class="mt-8 font-rubik text-alf-white text-2xl max-w-3xl text-center">
 						Our strength lies in teaching and learning in the STEM (Science,Technology,
-																																																Engineering and Mathematics) fields at a high school level. We recognize our strengths
-																																																and play to them by:
+																																																																		Engineering and Mathematics) fields at a high school level. We recognize our strengths
+																																																																		and play to them by:
 					</p>
 
 
@@ -155,7 +158,7 @@
 				{# End | What We Do Styling (Mobile)#}
 
 				{# What We Do Cards #}
-				<div class="max-w-5xl mx-auto">
+				<div class="max-w-7xl mx-auto">
 
 
 					{% set lock = "/images/lock.png" %}
@@ -169,7 +172,7 @@
 
 						<div class="py-2 md:pt-16 justify-self-start px-2 rounded-lg md:col-span-5 flex flex-col md:flex-row">
 
-							<div class="flex-1 bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl min-w-max">
+							<div class="flex-shrink bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl">
 								<img src="{{lock}}">
 							</div>
 							<div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
@@ -181,7 +184,7 @@
 
 						<div class="py-2 md:pt-16 justify-self-start px-2 md:rounded-lg md:col-span-4 flex flex-col md:flex-row">
 
-							<div class="flex-1 bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl min-w-max">
+							<div class="flex-shrink bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl">
 								<img src="{{lock}}">
 							</div>
 							<div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
@@ -193,7 +196,7 @@
 
 						<div class="py-2 md:pb-16 justify-self-start px-2 rounded-lg md:col-span-4 flex flex-col md:flex-row">
 
-							<div class="flex-1 bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl min-w-max">
+							<div class="flex-shrink bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl">
 								<img src="{{lock}}">
 							</div>
 							<div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
@@ -205,7 +208,7 @@
 
 						<div class="py-2 md:pb-16 justify-self-start px-2 rounded-lg md:col-span-5 flex flex-col md:flex-row">
 
-							<div class="flex-1 bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl min-w-max">
+							<div class="flex-shrink bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl">
 								<img src="{{lock}}">
 							</div>
 							<div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
@@ -344,7 +347,6 @@
 				</div>
 
 				{# Carousel #}
-				{% set projectLogo = "/images/orgLogo.png" %}
 				<div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4 -translate-y-8">
 
 					<button aria-label="slide backward" class="absolute z-30 left-0 ml-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
@@ -435,46 +437,80 @@
 		{# End | Organizations Band #}
 
 		{# Success Stories Band #}
-		<h1 class="text-center font-rubik text-2xl font-semibold"> SUCCESS STORIES</h1>
-		<div class="bg-white pt-16 lg:py-24">
-			<div class="pb-16 lg:pb-0 lg:z-10 lg:relative">
-				<div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8 bg-alf-blue rounded-xl">
-					<div class="relative lg:-my-8">
-						<div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
-						<div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
-							<div class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-								<img class="object-cover lg:h-full lg:w-full" src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="">
+			<h1 class="text-center font-rubik text-2xl font-semibold"> SUCCESS STORIES</h1>
+		<div
+			class="my-5 mx-10">
+			{# Inner container #}
+			<div
+				class="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-10">
+
+
+				{# Carousel #}
+				{% set projectLogo = "/images/orgLogo.png" %}
+				<div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4 -translate-y-8">
+
+					<button aria-label="slide backward" class="absolute z-30 left-0 ml-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prevStory">
+						<svg class="dark:text-gray-900" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+
+					<div class="w-full relative flex items-center justify-center">
+
+						<div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+							<div class="bg-white pt-16 lg:py-24">
+								<div class="pb-16 lg:pb-0 lg:z-10 lg:relative">
+									<div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8 bg-alf-blue rounded-xl">
+										<div class="relative lg:-my-8">
+											<div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+											<div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+												<div class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+													<img class="object-cover lg:h-full lg:w-full" src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+											<div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+												<blockquote>
+													<div>
+														<svg class="h-12 w-12 text-white opacity-25" fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+															<path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
+														</svg>
+														<p class="mt-6 text-2xl font-medium text-white">Lorem ipsum dolow sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.</p>
+													</div>
+													<footer class="mt-6">
+														<p class="text-base font-medium text-white">Judith Black</p>
+														<p class="text-base font-medium text-indigo-100">CEO at PureInsights</p>
+													</footer>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
-						<div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
-							<blockquote>
-								<div>
-									<svg class="h-12 w-12 text-white opacity-25" fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
-										<path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
-									</svg>
-									<p class="mt-6 text-2xl font-medium text-white">Lorem ipsum dolow sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.</p>
-								</div>
-								<footer class="mt-6">
-									<p class="text-base font-medium text-white">Judith Black</p>
-									<p class="text-base font-medium text-indigo-100">CEO at PureInsights</p>
-								</footer>
-							</blockquote>
-						</div>
-					</div>
+
+					<button aria-label="slide forward" class="absolute z-30 right-0 mr-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="nextStory">
+						<svg class="dark:text-gray-900" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+
 				</div>
+				{# End | Carousel #}
+
+
 			</div>
+			{# End | Inner container #}
 		</div>
 		{# End | Success Stories Band #}
 
 		{# Blue Background #}
 		<div
-			class="bg-alf-blue -mx-6 sm:-mx-8 md:-mx-12 lg:-mx-16 px-6 mt-16 sm:px-8 md:px-12 lg:px-16">
-
-
+			class="bg-alf-blue">
 			{# Partnership Card #}
-			<div class="bg-alf-blue -mx-6 sm:-mx-8 md:-mx-12 lg:-mx-16 px-6 mt-16 sm:px-8 md:px-12 lg:px-16">
+			<div class="px-6 mt-16 sm:px-8 md:px-12 lg:px-16">
 				<div
 					class="mx-auto max-w-5xl text-left pt-4 pb-16 sm:pt-12 sm:pb-24">
 
@@ -520,29 +556,29 @@
 	<script>
 		let defaultTransform = 0;
 
-		function goNext() {
-		defaultTransform = defaultTransform - 398;
-		var slider = document.getElementById("slider");
-		if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) 
-		defaultTransform = 0;
+function goNext() {
+defaultTransform = defaultTransform - 398;
+var slider = document.getElementById("slider");
+if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) 
+defaultTransform = 0;
 
 
 
-		slider.style.transform = "translateX(" + defaultTransform + "px)";
-		}
+slider.style.transform = "translateX(" + defaultTransform + "px)";
+}
 
-		next.addEventListener("click", goNext);
+next.addEventListener("click", goNext);
 
-		function goPrev() {
-		var slider = document.getElementById("slider");
-		if (Math.abs(defaultTransform) === 0) 
-		defaultTransform = 0;
-		else 
-		defaultTransform = defaultTransform + 398;
-		slider.style.transform = "translateX(" + defaultTransform + "px)";
-		}
+function goPrev() {
+var slider = document.getElementById("slider");
+if (Math.abs(defaultTransform) === 0) 
+defaultTransform = 0;
+ else 
+defaultTransform = defaultTransform + 398;
+ slider.style.transform = "translateX(" + defaultTransform + "px)";
+}
 
-		prev.addEventListener("click", goPrev);
+prev.addEventListener("click", goPrev);
 	</script>
 
 {% endblock %}
