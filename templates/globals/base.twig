@@ -44,9 +44,9 @@
     {% endblock %}
 
     {# Footer #}
-    {# {% block footer %} #}
-      {# {% include "/globals/footer.twig" %} #}
-    {# {% endblock %} #}
+    {% block footer %}
+      {% include "/globals/footer.twig" %}
+    {% endblock %}
     
   </body>
 </html>
