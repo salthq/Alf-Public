@@ -14,6 +14,7 @@ module.exports = {
             'alf-black': '#000000',
             'alf-green': '#E0FFF6',
             'alf-dark-green': '#2ED8A7',
+            'alf-dark-blue': '#036EC2',
         },
 
         fontFamily: {
