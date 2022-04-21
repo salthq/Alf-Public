@@ -1,0 +1,205 @@
+{# Organizations Band #}
+{# Outer container #}
+<div class="my-20 bg-alf-green">
+  {# Inner container #}
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-20">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+      <div class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-5 lg:text-left lg:pl-8 mt-auto mb-auto">
+        {# Title #}
+        <h1 class="block font-rubik text-4xl">
+          Organizations We Work With
+        </h1>
+
+        {# Text #}
+        <p class="font-light font-rubik mt-8 text-left sm:text-center sm:text-xl lg:text-left sm:mt-5 lg:block lg:pb-0 lg:text-lg">
+          Our partners subtitle ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit.
+        </p>
+      </div>
+
+      {# Image #}
+      {% set highFive = '/images/Highfive.svg' %}
+      <div class="mt-16 sm:mt-26 flex justify-center relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-center">
+        <img src="{{ highFive }}" alt="High Image" />
+      </div>
+      {# End | Image #}
+    </div>
+
+    {# Carousel #}
+    <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4 -translate-y-8">
+      <button aria-label="slide backward"
+        class="absolute z-30 left-0 ml-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+        id="prev">
+        <svg class="dark:text-gray-900"
+          width="8"
+          height="14"
+          viewbox="0 0 8 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 1L1 7L7 13"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      {# Items #}
+      {% set projectLogo = '/images/orgLogo.png' %}
+      <div class="w-full relative flex items-center justify-center">
+        <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+          <div id="slider"
+            class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+            <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl px-10">
+              <img src="{{ projectLogo }}" class="py-8" />
+              <h1 class="font-rubik text-2xl pb-5">
+                Partner Title
+              </h1>
+              <p class="font-rubik">
+                Partner description ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <a href=""
+                class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
+                Go to Partner Site
+              </a>
+            </div>
+            <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl px-10">
+              <img src="{{ projectLogo }}" class="py-8" />
+              <h1 class="font-rubik text-2xl pb-5">
+                Partner Title
+              </h1>
+              <p class="font-rubik">
+                Partner description ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <a href=""
+                class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
+                Go to Partner Site
+              </a>
+            </div>
+            <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl px-10">
+              <img src="{{ projectLogo }}" class="py-8" />
+              <h1 class="font-rubik text-2xl pb-5">
+                Partner Title
+              </h1>
+              <p class="font-rubik">
+                Partner description ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <a href=""
+                class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
+                Go to Partner Site
+              </a>
+            </div>
+            <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl px-10">
+              <img src="{{ projectLogo }}" class="py-8" />
+              <h1 class="font-rubik text-2xl pb-5">
+                Partner Title
+              </h1>
+              <p class="font-rubik">
+                Partner description ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <a href=""
+                class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
+                Go to Partner Site
+              </a>
+            </div>
+            <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl px-10">
+              <img src="{{ projectLogo }}" class="py-8" />
+              <h1 class="font-rubik text-2xl pb-5">
+                Partner Title
+              </h1>
+              <p class="font-rubik">
+                Partner description ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <a href=""
+                class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
+                Go to Partner Site
+              </a>
+            </div>
+            <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl px-10">
+              <img src="{{ projectLogo }}" class="py-8" />
+              <h1 class="font-rubik text-2xl pb-5">
+                Partner Title
+              </h1>
+              <p class="font-rubik">
+                Partner description ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <a href=""
+                class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
+                Go to Partner Site
+              </a>
+            </div>
+            <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl px-10">
+              <img src="{{ projectLogo }}" class="py-8" />
+              <h1 class="font-rubik text-2xl pb-5">
+                Partner Title
+              </h1>
+              <p class="font-rubik">
+                Partner description ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <a href=""
+                class="mx-auto w-full max-w-md mt-8 px-6 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
+                Go to Partner Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {# End | Items #}
+
+      <button aria-label="slide forward"
+        class="absolute z-30 right-0 mr-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+        id="next">
+        <svg class="dark:text-gray-900"
+          width="8"
+          height="14"
+          viewbox="0 0 8 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L7 7L1 13"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    {# End | Carousel #}
+  </div>
+  {# End | Inner container #}
+</div>
+{# End | Outer container #}
+{# End | Organizations Band #}
+
+<script>
+  let defaultTransform = 0;
+
+  function goNext() { defaultTransform = defaultTransform - 398; var slider =
+  document.getElementById("slider"); if (Math.abs(defaultTransform) >=
+  slider.scrollWidth / 1.7) defaultTransform = 0;
+
+  slider.style.transform = "translateX(" + defaultTransform + "px)"; }
+
+  next.addEventListener("click", goNext);
+
+  function goPrev() { var slider = document.getElementById("slider"); if
+  (Math.abs(defaultTransform) === 0) defaultTransform = 0; else defaultTransform
+  = defaultTransform + 398; slider.style.transform = "translateX(" +
+  defaultTransform + "px)"; }
+
+  prev.addEventListener("click", goPrev);
+</script>
