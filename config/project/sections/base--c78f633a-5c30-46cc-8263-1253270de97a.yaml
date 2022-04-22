@@ -4,7 +4,7 @@ handle: base
 name: Base
 propagationMethod: all
 siteSettings:
-  67f41e09-e046-48b2-8922-8f5c03bbb14c: # Alf Public
+  67f41e09-e046-48b2-8922-8f5c03bbb14c: # ALF Public
     enabledByDefault: true
     hasUrls: true
     template: globals/base.twig
