@@ -1,0 +1,128 @@
+{# What we do Band #}
+{# Outer container #}
+<div class="bg-alf-nav-blue translate-y-20">
+  {# Inner container #}
+
+  {# Top of Band Styling #}
+  {% set whatWeDoStyling = '/images/what_we_do_Styling.svg' %}
+  <div class="flex flex-col justify-center items-center -translate-y-10 sm:-translate-y-20 w-auto">
+    <img src="{{ whatWeDoStyling }}" />
+  </div>
+  {# End | Top of Band Styling #}
+
+  <div class="max-w-7xl mx-auto px-6 pb-12 pt-4 sm:pt-8 sm:px-8 md:px-12 lg:px-16 lg:pt-4">
+    {# Title #}
+    <h2 class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl">
+      WHAT WE DO
+    </h2>
+
+    {# Text #}
+    <div class="flex flex-col items-center">
+      <p class="mt-8 font-rubik text-alf-white text-2xl max-w-3xl text-center">
+        Our strength lies in teaching and learning in the STEM
+        (Science,Technology, Engineering and Mathematics) fields at a high
+        school level. We recognize our strengths and play to them by:
+      </p>
+    </div>
+
+    {# What We Do Styling (Mobile) #}
+    {% set smallStudent = '/images/smallstudent.svg' %}
+    <div class="md:invisible md:h-0 flex flex-col justify-center items-center pt-6 translate-y-6">
+      <img src="{{ smallStudent }}" />
+    </div>
+    {# End | What We Do Styling (Mobile) #}
+
+    {# What We Do Cards #}
+    <div class="max-w-7xl mx-auto">
+      {% set lock = '/images/lock.png' %}
+
+      {# Content grid #}
+      <div class="grid my-4 grid-cols-1 md:grid-cols-12 items-stretch font-rubik overflow-visible">
+        {# Content container #}
+
+        <div class="py-2 md:pt-16 px-2 rounded-lg md:col-span-5 flex flex-col md:flex-row">
+          <div class="flex-shrink bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl">
+            <img src="{{ lock }}" class="mx-auto" />
+          </div>
+          <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
+            <h2 class="font-semibold pb-4">
+              Future possibilities
+            </h2>
+            <p class="pb-4">
+              Providing under-resourced learners with access to our exam
+              preparation workshops to support them to achieve their best Matric
+              results which open doors to tertiary study, scholarships and
+              funding opportunities.
+            </p>
+          </div>
+        </div>
+
+        <div class="py-2 md:pt-16 px-2 md:rounded-lg md:col-span-4 flex flex-col md:flex-row">
+          <div class="flex-shrink bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl">
+            <img src="{{ lock }}" class="mx-auto" />
+          </div>
+          <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
+            <h2 class="font-semibold pb-4">
+              Future possibilities
+            </h2>
+            <p class="pb-4">
+              Granting access to under-resourced learners to benefit from our
+              online courses and online learning resources.
+            </p>
+          </div>
+        </div>
+
+        <div class="py-2 md:pb-16 px-2 rounded-lg md:col-span-4 flex flex-col md:flex-row">
+          <div class="flex-shrink bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl">
+            <img src="{{ lock }}" class="mx-auto" />
+          </div>
+          <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
+            <h2 class="font-semibold pb-4">
+              Future possibilities
+            </h2>
+            <p class="pb-4">
+              Granting access to under-resourced learners to benefit from our
+              online courses and online learning resources.
+            </p>
+          </div>
+        </div>
+
+        <div class="py-2 md:pb-16 px-2 rounded-lg md:col-span-5 flex flex-col md:flex-row">
+          <div class="flex-shrink bg-alf-blue py-20 px-5 w-full rounded-t-xl md:rounded-t-none md:rounded-l-xl">
+            <img src="{{ lock }}" class="mx-auto" />
+          </div>
+          <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl md:rounded-b-none md:rounded-r-xl bg-alf-white">
+            <h2 class="font-semibold pb-4">
+              Future possibilities
+            </h2>
+            <p class="pb-4">
+              Providing under-resourced learners with access to our exam
+              preparation workshops to support them to achieve their best Matric
+              results which open doors to tertiary study, scholarships and
+              funding opportunities.
+            </p>
+          </div>
+        </div>
+        {# End | Content container #}
+
+        {# Styling - Student Holding Book (Desktop) #}
+        {% set student = '/images/student.svg' %}
+        <div class="invisible h-0 md:visible md:h-auto py-2 self-center px-2 w-auto md:row-span-2 md:col-span-3 md:row-start-1 md:col-start-10 md:-translate-x-16 -z-10">
+          <img src="{{ student }}" />
+        </div>
+        {# End | Styling - Student Holding Book (Desktop) #}
+      </div>
+      {# End | Content grid #}
+    </div>
+    {# End | What We Do Cards #}
+  </div>
+  {# End | Inner container #}
+
+  {# Bottom of Band Styling #}
+  <div class="flex flex-col justify-center items-center translate-y-10 sm:translate-y-20">
+    <img src="{{ whatWeDoStyling }}" />
+  </div>
+  {# End | Bottom of Band Styling #}
+</div>
+{# End | Outer container #}
+{# End | What we do Band #}
