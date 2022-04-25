@@ -1,5 +1,7 @@
 {% set logo = '/images/FoundationLogo.png' %}
 {% set footerStyling = '/images/FooterStyling.svg' %}
+
+{# Script for Facebook Embed #}
 <div id="fb-root"></div>
 <script async
   defer
@@ -8,57 +10,93 @@
   nonce="r1FXSfeo"></script>
 
 <br />
+<div class="h-5 bg-alf-nav-blue w-auto rounded-t-md"></div>
+
+{# Footer #}
 <footer class="bg-alf-blue">
-<div class="max-w-7xl mx-auto">
-  <div class="grid grid-cols-1 md:grid-cols-12 py-10 items-center mx-auto max-w-5xl gap-10">
-    <div class="flex flex-col md:col-span-6">
-      <div class="py-4">
-        <img src="{{ logo }}" alt="ALF Logo" class="h-12" />
+  <div class="max-w-7xl mx-auto">
+    {# Content Grid #}
+    <div class="grid grid-cols-1 md:grid-cols-12 py-10 items-center mx-auto max-w-5xl gap-10">
+      {# Footer Images #}
+      <div class="flex flex-col md:col-span-5">
+        <div class="py-4">
+          <img src="{{ logo }}" alt="ALF Logo" class="h-12" />
+        </div>
+        <div class="">
+          <img src="{{ footerStyling }}"
+            alt="ALF Footer"
+            class="justify-center mx-auto" />
+        </div>
       </div>
-      <div class="">
-        <img src="{{ footerStyling }}" alt="ALF Footer" />
+
+      {# Footer Links #}
+      <div class="md:col-span-2 items-center justify-evenly font-rubik mx-auto">
+        <div class="flex flex-row md:flex-col">
+          <div class="flex flex-col px-5">
+            <h3 class="text-xl font-semibold tracking-wider uppercase py-2 text-alf-dark-blue">
+              About
+            </h3>
+            <ul role="list" class="mt-4 space-y-4 pb-5">
+              <li><a href="#" class="text-base">Who we are</a></li>
+
+              <li><a href="#" class="text-base">What we do</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col px-5">
+            <h3 class="text-xl font-semibold tracking-wider uppercase py-2 text-alf-dark-blue">
+              Partnerships
+            </h3>
+            <ul role="list" class="mt-4 space-y-4 pb-5">
+              <li><a href="#" class="text-base">Our partners</a></li>
+
+              <li><a href="#" class="text-base">Success stories</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {# Facebook Embed #}
+      <div class="md:col-span-4 row-start-2 md:row-start-1 md:col-start-9 mx-auto">
+        <div class="fb-page"
+          data-href="https://m.facebook.com/AdvantageLearnFoundation/"
+          data-tabs="timeline"
+          data-width="400"
+          data-height="400"
+          data-small-header="false"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="true">
+          <blockquote cite="https://m.facebook.com/AdvantageLearnFoundation/"
+            class="fb-xfbml-parse-ignore">
+            <a href="https://m.facebook.com/AdvantageLearnFoundation/">
+              Advantage Learn Foundation
+            </a>
+          </blockquote>
+        </div>
       </div>
     </div>
+    {# End | Content Grid #}
 
-    <div class="md:col-span-2 md:col-start-7 items-center justify-evenly font-rubik">
-      <h3 class="text-xl font-semibold tracking-wider uppercase self-center py-2 text-alf-dark-blue">
-        About
-      </h3>
-      <ul role="list" class="mt-4 space-y-4 pb-5">
-        <li><a href="#" class="text-base">Who we are</a></li>
-
-        <li><a href="#" class="text-base">What we do</a></li>
-      </ul>
-      <h3 class="text-xl font-semibold tracking-wider uppercase py-2 text-alf-dark-blue">
-        Partnerships
-      </h3>
-      <ul role="list" class="mt-4 space-y-4 pb-5">
-        <li><a href="#" class="text-base">Our partners</a></li>
-
-        <li><a href="#" class="text-base">Success stories</a></li>
-      </ul>
-    </div>
-
-    <div class="md:col-span-4">
-      <div class="fb-page"
-        data-href="https://m.facebook.com/AdvantageLearnFoundation/"
-        data-tabs="timeline"
-        data-width="300"
-        data-height="400"
-        data-small-header="false"
-        data-adapt-container-width="true"
-        data-hide-cover="false"
-        data-show-facepile="true">
-        <blockquote cite="https://m.facebook.com/AdvantageLearnFoundation/"
-          class="fb-xfbml-parse-ignore">
-          <a href="https://m.facebook.com/AdvantageLearnFoundation/">
-            Advantage Learn Foundation
-          </a>
-        </blockquote>
+    {# Connect With Us #}
+    <hr />
+    <div class="flex font-rubik p-4 flex-col md:flex-row mx-auto">
+      <div class="flex-1">
+        <h1 class="text-3xl text-alf-nav-blue text-center md:text-left">
+          Connect With Us
+        </h1>
+        <p class="text-md text-center md:text-left pb-4">
+          If you want to get involved reach out to us and let’s join hands in
+          building a better South Africa for all through the power of education.
+        </p>
       </div>
+      <a href=""
+        class="px-4 mx-auto max-w-md text-base my-auto py-4 rounded-md bg-alf-nav-blue text-alf-white text-center shadow hover:underline">
+        Request a Partnership
+      </a>
     </div>
+    <hr />
+    {# End | Connect With Us #}
+    <p>© 2020 Workflow, Inc. All rights reserved.</p>
   </div>
-  <hr>
-  <h1>Connect With Us</h1>
-</div>
 </footer>
+{# End | Footer #}
