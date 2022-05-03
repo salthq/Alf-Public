@@ -1,20 +1,145 @@
-dateModified: 1651151992
+dateModified: 1651583095
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Salt Public'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0a3f48ec-0255-4546-962c-d19d581c192e: 'Reach and Impact' # Reach and Impact
+    0b17d671-4851-4d33-b63a-26eb6f430c8b: 'Who We Are 1' # Who We Are 1
+    0b19e811-657a-4e02-a763-2fbaa7dc07a0: 'Who We Are Title' # Who We Are Title
     1ee655fc-8a9b-4899-b282-ac3480a05a46: 'Craft Boilerplate' # Craft Boilerplate
+    01fd7758-cc3a-4c0d-a325-5da6fb5cca5b: 'Item 1 Heading' # Item 1 Heading
+    2ba64c30-1ff4-4743-a3ee-13d50f797601: 'Item 3 Heading' # Item 3 Heading
+    2da9b1ef-d833-4d5c-af58-dfc453824f10: Partnership # Partnership
+    3b339030-c02c-4be0-9875-68c1a78fd8df: 'Item 2 Heading' # Item 2 Heading
+    4b2794b3-5803-43bf-957c-100528311028: 'How Can We Partner' # How Can We Partner
     5a512b18-6a4d-42d0-94c4-c37d8d60203b: 'Hero Title' # Hero Title
+    05e71383-a599-420e-8450-9bb710a8f63f: 'Item 2 Content' # Item 2 Content
+    5e84255f-0e14-4c9a-8537-468841c3c51f: 'Item 1 Content' # Item 1 Content
+    6a0ad08e-3c64-45de-b9c7-6778988794a8: Stats # Stats
+    6d223f40-8de2-450b-b55a-3db76fff36d4: 'Item 4 Heading' # Item 4 Heading
+    7b9504f3-0f44-4d8d-9157-366073044e9d: 'How Can We Partner' # How Can We Partner
+    8a3bc734-c006-4c18-ab9b-7951225a812c: 'Item 4 Content' # Item 4 Content
+    8d0e9b6f-c9da-4d79-a63e-00ceec2834ad: 'What We Do Title' # What We Do Title
+    8edeffe5-5b7c-46e5-8b93-96ff14ab5356: 'What We Do' # What We Do
+    9d395b8d-3002-4765-9a2b-45acea5d761d: 'How Can We Partner Subtitle' # How Can We Partner Subtitle
+    9d865bb3-3423-480b-90f2-9b6e0709a24d: 'Step One Heading' # Step One Heading
+    17aaaaea-4ec1-4faf-af71-8cc7eba8ce9d: 'Partnership Description' # Partnership Description
+    19dddbad-59d7-4efd-ac2e-b7d71deb7c5f: 'What We Do' # What We Do
+    40b24328-3a03-44e5-a870-8aa27d793326: Partnership # Partnership
+    42bc02db-d062-47ff-90fb-fa5e8fa1053f: 'Reach Stats' # Reach Stats
     58c77281-8d57-48cf-9aaa-31db51866672: Base # Base
+    59e00648-62f0-4119-a6de-a010982c6d6c: 'Reach And Impact Stats Heading' # Reach And Impact Stats Heading
     67f41e09-e046-48b2-8922-8f5c03bbb14c: 'Alf Public' # Alf Public
+    74dd3015-fe0c-4e09-99f2-3f7f715bab0f: 'Reach and Impact Subtitle' # Reach and Impact Subtitle
+    388bdc47-fb9f-499d-8b42-33853447db88: 'Who We Are 2' # Who We Are 2
+    694cb29d-5c54-4e05-a2b3-f5c3479a3ad1: 'Partnership Title' # Partnership Title
+    5475acc4-915c-4f9e-8d48-add166fb9b81: 'Step Two Heading' # Step Two Heading
     7829ab32-990e-4eb3-a6c9-5519032a584a: Common # Common
+    95981f25-0b70-4493-ac73-8b35763c9cc1: 'How Can We Partner Title' # How Can We Partner Title
     195006e8-7966-454b-8cd8-0942f09f79c6: Index # Index
+    214101f9-132f-47de-90c5-bfa9338638ca: Partnerships # Partnerships
+    919847da-318b-45ec-bed8-97615299d97a: 'Reach and Impact' # Reach and Impact
+    a17d62ed-87a1-49e6-ab10-c844c88e288f: 'Item 3 Content' # Item 3 Content
+    abd85c61-12aa-4ca9-9550-45caef0c2ae7: 'What We Do Subtitle' # What We Do Subtitle
+    b83dcc20-d894-4cd0-a532-b25220f12946: 'How Can We Partner' # How Can We Partner
     c78f633a-5c30-46cc-8263-1253270de97a: Base # Base
     c8832791-7230-4319-b3b6-570098980b47: Index # Index
+    d1bbfc3c-09eb-4fb9-831e-28eb2092df3d: 'Reach And Impact Title' # Reach And Impact Title
+    d2d28287-fcee-4423-b368-21bf61e75978: 'Reach And Impact' # Reach And Impact
+    d6d2296d-2220-4a74-94d7-a03275034d57: 'Hero Subtitle' # Hero Subtitle
+    da521a95-5e2f-4d91-ace3-83aa770156bd: 'Stat Description' # Stat Description
+    dbe5b2c4-ebe7-47e1-8052-b3bb9d2ff0df: 'Stat Number' # Stat Number
     e0aefdb5-4075-410e-9004-4bc14e157477: Index # Index
     f5dad74b-73d6-4dd9-a4d2-6385968a7209: Base # Base
+    f9571570-8238-44c9-a636-8b255b835ef6: 'What We Do' # What We Do
+plugins:
+  freeform:
+    edition: lite
+    enabled: true
+    licenseKey: DFZ7PF4HQ68ICGUDOEW23CFJ
+    schemaVersion: 3.6.3
+    settings:
+      ajaxByDefault: true
+      alertNotificationRecipients: ''
+      autoScroll: true
+      autoScrollToErrors: true
+      badgeType: all
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: false
+      clientDigestFrequency: 1
+      clientDigestRecipients: ''
+      customErrorMessage: null
+      customHoneypotName: null
+      defaultTemplates: true
+      defaultView: dashboard
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: ''
+      displayFeed: true
+      emailTemplateDirectory: null
+      emailTemplateStorage: db
+      exportLabels: false
+      fieldDisplayOrder: name
+      fillWithGet: false
+      footerScripts: false
+      formFieldShowOnlyAllowedForms: false
+      formSubmitDisable: true
+      formSubmitExpiration: null
+      formTemplateDirectory: embeds/forms
+      formattingTemplate: flexbox.html
+      freeformHoneypot: true
+      freeformHoneypotEnhancement: false
+      hideBannerDemo: false
+      hideBannerOldFreeform: false
+      minimumSubmitTime: null
+      pluginName: ''
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      recaptchaBehaviour: display_error
+      recaptchaEnabled: false
+      recaptchaErrorMessage: 'Please verify that you are not a robot.'
+      recaptchaKey: null
+      recaptchaLazyLoad: false
+      recaptchaMinScore: 0.5
+      recaptchaSecret: null
+      recaptchaSize: normal
+      recaptchaTheme: light
+      recaptchaType: v2_checkbox
+      rememberPageSubmitOrder: true
+      removeNewlines: false
+      renderFormHtmlInCpViews: true
+      salesforce_client_id: null
+      salesforce_client_secret: null
+      salesforce_password: null
+      salesforce_username: null
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
+      scriptInsertLocation: footer
+      scriptInsertType: pointers
+      sessionContext: payload
+      sessionContextCount: 100
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: 180
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      showTutorial: true
+      spamFolderEnabled: true
+      spamProtectionBehaviour: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+      successTemplateDirectory: null
+      twigInHtml: true
+      twigInHtmlIsolatedMode: true
+      updateSearchIndexes: true
 system:
   edition: solo
   live: true

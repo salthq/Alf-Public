@@ -2,6 +2,7 @@
 {# Outer container #}
 <div class="bg-alf-nav-blue translate-y-20">
   {# Inner container #}
+  {% set whatWeDo = craft.entries.section('whatWeDo').one() %}
 
   {# Top of Band Styling #}
   {% set whatWeDoStyling = '/images/what_we_do_Styling.svg' %}
@@ -13,15 +14,13 @@
   <div class="max-w-7xl mx-auto px-6 pb-12 pt-4 sm:pt-8 sm:px-8 md:px-12 lg:px-16 lg:pt-4">
     {# Title #}
     <h2 class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl">
-      WHAT WE DO
+      {{ index.whatWeDoTitle }}
     </h2>
 
     {# Text #}
     <div class="flex flex-col items-center">
       <p class="mt-8 font-rubik text-alf-white text-2xl max-w-3xl text-center">
-        Our strength lies in teaching and learning in the STEM
-        (Science,Technology, Engineering and Mathematics) fields at a high
-        school level. We recognize our strengths and play to them by:
+        {{ index.whatWeDoSubtitle }}
       </p>
     </div>
 
@@ -46,13 +45,10 @@
           </div>
           <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
             <h2 class="font-semibold pb-4">
-              Future possibilities
+              {{ whatWeDo.item1Heading }}
             </h2>
             <p class="pb-4">
-              Providing under-resourced learners with access to our exam
-              preparation workshops to support them to achieve their best Matric
-              results which open doors to tertiary study, scholarships and
-              funding opportunities.
+              {{ whatWeDo.item1Content }}
             </p>
           </div>
         </div>
@@ -63,11 +59,10 @@
           </div>
           <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
             <h2 class="font-semibold pb-4">
-              Future possibilities
+               {{ whatWeDo.item2Heading }}
             </h2>
             <p class="pb-4">
-              Granting access to under-resourced learners to benefit from our
-              online courses and online learning resources.
+               {{ whatWeDo.item2Content }}
             </p>
           </div>
         </div>
@@ -78,11 +73,10 @@
           </div>
           <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
             <h2 class="font-semibold pb-4">
-              Future possibilities
+               {{ whatWeDo.item3Heading }}
             </h2>
             <p class="pb-4">
-              Granting access to under-resourced learners to benefit from our
-              online courses and online learning resources.
+              {{ whatWeDo.item3Content }}
             </p>
           </div>
         </div>
@@ -93,13 +87,10 @@
           </div>
           <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
             <h2 class="font-semibold pb-4">
-              Future possibilities
+                {{ whatWeDo.item4Heading }}
             </h2>
             <p class="pb-4">
-              Providing under-resourced learners with access to our exam
-              preparation workshops to support them to achieve their best Matric
-              results which open doors to tertiary study, scholarships and
-              funding opportunities.
+                {{ whatWeDo.item4Content }}
             </p>
           </div>
         </div>

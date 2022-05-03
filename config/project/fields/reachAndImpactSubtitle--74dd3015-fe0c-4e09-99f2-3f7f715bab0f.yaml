@@ -1,0 +1,19 @@
+columnSuffix: kifqopto
+contentColumnType: text
+fieldGroup: d2d28287-fcee-4423-b368-21bf61e75978 # Reach And Impact
+handle: reachAndImpactSubtitle
+instructions: ''
+name: 'Reach and Impact Subtitle'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

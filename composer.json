@@ -5,6 +5,7 @@
     "ether/seo": "3.7.4",
     "putyourlightson/craft-sprig": "1.10.4",
     "salt/craft-auth0": "1.4.2",
+    "solspace/craft-freeform": "3.13.7",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

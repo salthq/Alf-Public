@@ -1,4 +1,5 @@
 <div class="relative">
+{% set partnership = craft.entries.section('partnership').one() %}
   {# Partnership Card #}
   <div class="z-20">
     <div class="mx-auto max-w-7xl">
@@ -16,7 +17,7 @@
           class="h-auto visible sm:invisible sm:h-0 w-full" />
       </div>
 
-      <div class="max-w-3xl text-left absolute left-0 right-0 mx-auto top-1/2 -translate-y-1/2 px-10">
+      <div class="max-w-3xl text-left absolute left-0 right-0 mx-auto top-1/2 -translate-y-1/2 px-4">
         {# Card container #}
         <div class="flex flex-col sm:flex-row bg-alf-white rounded-md shadow-md">
           {# Text content #}
@@ -30,16 +31,12 @@
 
             {# Heading #}
             <p class="font-semibold font-rubik text-xl py-4">
-              Request a Partnership
+              {{ partnership.partnershipTitle}}
             </p>
 
             {# Body #}
             <p class="mt-4 pb-4 font-rubik">
-              Request a consultation subtitle ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo. Request a consultation subtitle ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo.
+              {{ partnership.partnershipDescription}}
             </p>
             {# End | Body #}
           </div>

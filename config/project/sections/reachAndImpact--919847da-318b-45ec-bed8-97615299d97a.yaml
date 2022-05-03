@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: reachAndImpact
+name: 'Reach and Impact'
+propagationMethod: all
+siteSettings:
+  67f41e09-e046-48b2-8922-8f5c03bbb14c: # Alf Public
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: reach-and-impact
+type: single

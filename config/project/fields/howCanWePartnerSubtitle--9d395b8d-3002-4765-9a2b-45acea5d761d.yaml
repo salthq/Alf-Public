@@ -1,0 +1,19 @@
+columnSuffix: nzurdivo
+contentColumnType: text
+fieldGroup: 7b9504f3-0f44-4d8d-9157-366073044e9d # How Can We Partner
+handle: howCanWePartnerSubtitle
+instructions: ''
+name: 'How Can We Partner Subtitle'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,70 @@
+field: 42bc02db-d062-47ff-90fb-fa5e8fa1053f # Reach Stats
+fieldLayouts:
+  a5d63390-d855-4d1f-8c87-97ecda93dea8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: dbe5b2c4-ebe7-47e1-8052-b3bb9d2ff0df # Stat Number
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: da521a95-5e2f-4d91-ace3-83aa770156bd # Stat Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  da521a95-5e2f-4d91-ace3-83aa770156bd: # Stat Description
+    columnSuffix: ucbckfbl
+    contentColumnType: text
+    fieldGroup: null
+    handle: statDescription
+    instructions: ''
+    name: 'Stat Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  dbe5b2c4-ebe7-47e1-8052-b3bb9d2ff0df: # Stat Number
+    columnSuffix: wadrlmzc
+    contentColumnType: text
+    fieldGroup: null
+    handle: statNumber
+    instructions: ''
+    name: 'Stat Number'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: stat
+name: Stats
+sortOrder: 1

@@ -1,17 +1,8 @@
 fieldLayouts:
-  d11dd92f-5de6-4321-b0b0-f1f77a08ef64:
+  7b4ac83b-438a-4f9d-a68c-530877abbf41:
     tabs:
       -
         elements:
-          -
-            fieldUid: 5a512b18-6a4d-42d0-94c4-c37d8d60203b # Hero Title
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
           -
             autocapitalize: true
             autocomplete: false
@@ -36,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d6d2296d-2220-4a74-94d7-a03275034d57 # Hero Subtitle
+            fieldUid: d1bbfc3c-09eb-4fb9-831e-28eb2092df3d # Reach And Impact Title
             instructions: null
             label: null
             required: false
@@ -45,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 0b19e811-657a-4e02-a763-2fbaa7dc07a0 # Who We Are Title
+            fieldUid: 74dd3015-fe0c-4e09-99f2-3f7f715bab0f # Reach and Impact Subtitle
             instructions: null
             label: null
             required: false
@@ -54,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 0b17d671-4851-4d33-b63a-26eb6f430c8b # Who We Are 1
+            fieldUid: 59e00648-62f0-4119-a6de-a010982c6d6c # Reach And Impact Stats Heading
             instructions: null
             label: null
             required: false
@@ -63,25 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 388bdc47-fb9f-499d-8b42-33853447db88 # Who We Are 2
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 8d0e9b6f-c9da-4d79-a63e-00ceec2834ad # What We Do Title
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: abd85c61-12aa-4ca9-9550-45caef0c2ae7 # What We Do Subtitle
+            fieldUid: 42bc02db-d062-47ff-90fb-fa5e8fa1053f # Reach Stats
             instructions: null
             label: null
             required: false
@@ -91,11 +64,11 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: index
-hasTitleField: false
-name: Index
-section: 195006e8-7966-454b-8cd8-0942f09f79c6 # Index
+handle: reachAndImpact
+hasTitleField: true
+name: 'Reach and Impact'
+section: 919847da-318b-45ec-bed8-97615299d97a # Reach and Impact
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

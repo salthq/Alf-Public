@@ -1,0 +1,19 @@
+columnSuffix: wiqroyqe
+contentColumnType: text
+fieldGroup: c8832791-7230-4319-b3b6-570098980b47 # Index
+handle: whoWeAre1
+instructions: ''
+name: 'Who We Are 1'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

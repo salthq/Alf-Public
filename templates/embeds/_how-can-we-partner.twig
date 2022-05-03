@@ -1,12 +1,11 @@
 {# How Can We Partner Band #}
-
+{% set partnerInfo = craft.entries.section('howCanWePartner').one() %}
 {# Heading #}
 <p class="mx-auto mt-5 max-w-prose font-rubik tracking-tight text-4xl text-center pt-24">
-  How can we partner with you?
+  {{partnerInfo.howCanWePartnerTitle}}
 </p>
 <p class="mx-auto mt-5 max-w-prose text-xl font-rubik uppercase text-center">
-  Allocate CSR spend to a trusted initiative and together we can drive social
-  change and impact.
+  {{partnerInfo.howCanWePartnerSubtitle}}
 </p>
 {# End | Heading #}
 
@@ -27,7 +26,7 @@
           </div>
           <div class="flex-1 px-5 text-2xl font-rubik">
             <h1>
-              Sponsor a Foundation learner onto one of our programmes:
+              {{partnerInfo.stepOneHeading}}
             </h1>
           </div>
         </div>
@@ -217,9 +216,7 @@
 
           <div class="flex-1 px-5 text-2xl font-rubik">
             <h1>
-              Allocate a tertiary scholarship to a Foundation learner that
-              fulfills your requirements after having worked through our
-              multi-year programmes and proven their potential.
+              {{partnerInfo.stepTwoHeading}}
             </h1>
           </div>
         </div>
