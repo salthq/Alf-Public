@@ -21,7 +21,7 @@
   <div class="grid gap-24 md:gap-0 grid-cols-2 md:grid-cols-6 mx-12 my-5 md:mx-10">
     {# Bring in Reach and Impact matrix field #}
 
-    {% set stats = craft.matrixBlocks() %}
+    {% set stats = reachAndImpact.reachStats.all() %}
 
     {# Loop over all stats in Matrix field #}
     {% for stat in stats %}
@@ -31,10 +31,10 @@
         </div>
         <div class="text-center">
           <p class="font-rubik font-semibold">
-            {{stats.statNumber}}
+          {{stat.statNumber}}
           </p>
           <p>
-            {{stats.statDescription}}
+           {{stat.statDescription}}
           </p>
         </div>
       </div>

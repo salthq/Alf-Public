@@ -1,0 +1,41 @@
+field: 9535810e-7f85-4814-b848-16f889e7477f # CTA List
+fieldLayouts:
+  4abf6484-1cef-433d-9042-43b06dcf1d0d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 0cabfdf7-3657-4649-aac3-7c826b0a027d # Question
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0cabfdf7-3657-4649-aac3-7c826b0a027d: # Question
+    columnSuffix: xvecxreh
+    contentColumnType: text
+    fieldGroup: null
+    handle: question
+    instructions: ''
+    name: Question
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: questions
+name: Questions
+sortOrder: 1

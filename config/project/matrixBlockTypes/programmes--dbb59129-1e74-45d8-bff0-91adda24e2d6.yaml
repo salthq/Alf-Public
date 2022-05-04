@@ -1,0 +1,70 @@
+field: c028f2c9-1328-4db9-8982-5c2cdd412695 # Programme List
+fieldLayouts:
+  35f8787f-dc37-4333-89f5-46953cfbaf02:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 2ef70885-9a61-4132-b9c7-c7599db82436 # Program Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a457d7c8-f662-4a2b-9a8d-37f3f94263a1 # Program Price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2ef70885-9a61-4132-b9c7-c7599db82436: # Program Name
+    columnSuffix: ahzmghza
+    contentColumnType: text
+    fieldGroup: null
+    handle: programName
+    instructions: ''
+    name: 'Program Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a457d7c8-f662-4a2b-9a8d-37f3f94263a1: # Program Price
+    columnSuffix: ttozbasz
+    contentColumnType: text
+    fieldGroup: null
+    handle: programPrice
+    instructions: ''
+    name: 'Program Price'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: programmes
+name: Programmes
+sortOrder: 1

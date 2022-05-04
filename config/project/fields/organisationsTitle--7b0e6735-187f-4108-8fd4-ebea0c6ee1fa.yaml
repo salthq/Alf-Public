@@ -1,0 +1,19 @@
+columnSuffix: rmmbjbic
+contentColumnType: text
+fieldGroup: 9c6073a8-c901-4325-b199-2af389c8e856 # Organisations
+handle: organisationsTitle
+instructions: ''
+name: 'Organisations Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -54,7 +54,52 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: c028f2c9-1328-4db9-8982-5c2cdd412695 # Programme List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 5475acc4-915c-4f9e-8d48-add166fb9b81 # Step Two Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9535810e-7f85-4814-b848-16f889e7477f # CTA List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e04fcab5-62e3-493a-9698-b4a2aa21cc9f # Funders Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f4ea8fc1-113a-47f3-bfa4-e207d5756f53 # Further Discount
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 650ffca7-ea95-4539-974c-a9436bdfb27c # Get Involved Content
             instructions: null
             label: null
             required: false

@@ -1,0 +1,99 @@
+field: 73201f5f-19bf-4b82-9bfa-132e7058c223 # Testimonials
+fieldLayouts:
+  633ffbcc-eb21-4363-bea3-bfb101bfc221:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7c3dc0e3-d5dc-4bb2-aa73-2a9210c8d82e # Quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 16396281-07b7-4f70-a562-23c670112d08 # Person Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4abdfc35-a861-4632-9e81-b3c8983e5afe # Person Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  4abdfc35-a861-4632-9e81-b3c8983e5afe: # Person Title
+    columnSuffix: orageblw
+    contentColumnType: text
+    fieldGroup: null
+    handle: personTitle
+    instructions: ''
+    name: 'Person Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7c3dc0e3-d5dc-4bb2-aa73-2a9210c8d82e: # Quote
+    columnSuffix: hsugaopi
+    contentColumnType: text
+    fieldGroup: null
+    handle: quote
+    instructions: ''
+    name: Quote
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  16396281-07b7-4f70-a562-23c670112d08: # Person Name
+    columnSuffix: xyxwyxjm
+    contentColumnType: text
+    fieldGroup: null
+    handle: personName
+    instructions: ''
+    name: 'Person Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: testimonial
+name: Testimonial
+sortOrder: 1

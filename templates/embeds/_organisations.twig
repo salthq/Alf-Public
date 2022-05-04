@@ -3,6 +3,7 @@
   href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+{% set organisations = craft.entries.section('organisations').one() %}
 {# Outer container #}
 <div class="my-16 bg-alf-green">
   {# Inner container #}
@@ -11,14 +12,12 @@
       <div class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-5 lg:text-left lg:pl-8 mt-auto mb-auto">
         {# Title #}
         <h1 class="block font-rubik text-4xl">
-          Organizations We Work With
+          {{organisations.organisationsTitle}}
         </h1>
 
         {# Text #}
         <p class="font-light font-rubik mt-8 text-left sm:text-center sm:text-xl lg:text-left sm:mt-5 lg:block lg:pb-0 lg:text-lg">
-          Our partners subtitle ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit.
+        {{organisations.organisationsParagraph}}
         </p>
       </div>
 
@@ -32,36 +31,18 @@
 
      {% set projectLogo = '/images/projecLogo.svg' %}
     <div class="org-carousel pb-10">
-      <div class="carousel-cell px-5">
-        <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl">
-          <img src="{{ projectLogo }}" class="py-8 px-10" />
-          <hr class="bg-alf-dark-green h-0.5 border-0" />
-          <h1 class="font-rubik text-2xl pb-5 px-10 py-4">
-            Partner Title
-          </h1>
-          <p class="font-rubik px-10">
-            Partner description ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </p>
-          <a href=""
-            class="px-2 mx-auto w-2/3 max-w-md mt-8 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
-            Go to Partner Site
-          </a>
-        </div>
-      </div>
 
+      {% set orgs = organisations.organisationInfo.all() %}
+       {% for org in orgs %}
       <div class="carousel-cell px-5">
         <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl">
           <img src="{{ projectLogo }}" class="py-8 px-10" />
           <hr class="bg-alf-dark-green h-0.5 border-0" />
           <h1 class="font-rubik text-2xl pb-5 px-10 py-4">
-            Partner Title
+            {{org.orgName}}
           </h1>
           <p class="font-rubik px-10">
-            Partner description ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            {{org.orgDescription}}
           </p>
           <a href=""
             class="px-2 mx-auto w-2/3 max-w-md mt-8 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
@@ -69,44 +50,9 @@
           </a>
         </div>
       </div>
+       {% endfor %}
 
-      <div class="carousel-cell px-5">
-        <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl">
-          <img src="{{ projectLogo }}" class="py-8 px-10" />
-          <hr class="bg-alf-dark-green h-0.5 border-0" />
-          <h1 class="font-rubik text-2xl pb-5 px-10 py-4">
-            Partner Title
-          </h1>
-          <p class="font-rubik px-10">
-            Partner description ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </p>
-          <a href=""
-            class="px-2 mx-auto w-2/3 max-w-md mt-8 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
-            Go to Partner Site
-          </a>
-        </div>
-      </div>
-
-      <div class="carousel-cell px-5">
-        <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl">
-          <img src="{{ projectLogo }}" class="py-8 px-10" />
-          <hr class="bg-alf-dark-green h-0.5 border-0" />
-          <h1 class="font-rubik text-2xl pb-5 px-10 py-4">
-            Partner Title
-          </h1>
-          <p class="font-rubik px-10">
-            Partner description ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </p>
-          <a href=""
-            class="px-2 mx-auto w-2/3 max-w-md mt-8 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
-            Go to Partner Site
-          </a>
-        </div>
-      </div>
+     
     </div>
   </div>
   {# End | Inner container #}

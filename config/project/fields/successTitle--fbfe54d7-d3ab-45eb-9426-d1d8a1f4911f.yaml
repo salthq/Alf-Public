@@ -1,0 +1,19 @@
+columnSuffix: xkbwzdck
+contentColumnType: text
+fieldGroup: 8d945038-12f0-4434-be16-282c0d4db6d4 # Success Stories
+handle: successTitle
+instructions: ''
+name: 'Success Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 9c6073a8-c901-4325-b199-2af389c8e856 # Organisations
+handle: organisationInfo
+instructions: ''
+name: 'Organisation Info'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_organisationinfo}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

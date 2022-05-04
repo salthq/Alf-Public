@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 7b9504f3-0f44-4d8d-9157-366073044e9d # How Can We Partner
+handle: ctaList
+instructions: ''
+name: 'CTA List'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_ctalist}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
