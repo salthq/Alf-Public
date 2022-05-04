@@ -11,13 +11,15 @@
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-5 lg:text-left lg:pl-8 mt-auto mb-auto">
         {# Title #}
-        <h1 class="block font-rubik text-4xl">
-          {{organisations.organisationsTitle}}
-        </h1>
+        <a id="our-partners">
+          <h1 class="block font-rubik text-4xl">
+            {{ organisations.organisationsTitle }}
+          </h1>
+        </a>
 
         {# Text #}
         <p class="font-light font-rubik mt-8 text-left sm:text-center sm:text-xl lg:text-left sm:mt-5 lg:block lg:pb-0 lg:text-lg">
-        {{organisations.organisationsParagraph}}
+          {{ organisations.organisationsParagraph }}
         </p>
       </div>
 
@@ -29,30 +31,27 @@
       {# End | Image #}
     </div>
 
-     {% set projectLogo = '/images/projecLogo.svg' %}
+    {% set projectLogo = '/images/projecLogo.svg' %}
     <div class="org-carousel pb-10">
-
       {% set orgs = organisations.organisationInfo.all() %}
-       {% for org in orgs %}
-      <div class="carousel-cell px-5">
-        <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl">
-          <img src="{{ projectLogo }}" class="py-8 px-10" />
-          <hr class="bg-alf-dark-green h-0.5 border-0" />
-          <h1 class="font-rubik text-2xl pb-5 px-10 py-4">
-            {{org.orgName}}
-          </h1>
-          <p class="font-rubik px-10">
-            {{org.orgDescription}}
-          </p>
-          <a href=""
-            class="px-2 mx-auto w-2/3 max-w-md mt-8 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
-            Go to Partner Site
-          </a>
+      {% for org in orgs %}
+        <div class="carousel-cell px-5">
+          <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl">
+            <img src="{{ projectLogo }}" class="py-8 px-10" />
+            <hr class="bg-alf-dark-green h-0.5 border-0" />
+            <h1 class="font-rubik text-2xl pb-5 px-10 py-4">
+              {{ org.orgName }}
+            </h1>
+            <p class="font-rubik px-10">
+              {{ org.orgDescription }}
+            </p>
+            <a href=""
+              class="px-2 mx-auto w-2/3 max-w-md mt-8 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
+              Go to Partner Site
+            </a>
+          </div>
         </div>
-      </div>
-       {% endfor %}
-
-     
+      {% endfor %}
     </div>
   </div>
   {# End | Inner container #}
@@ -62,8 +61,7 @@
 
 <script>
   var elem = document.querySelector('.org-carousel'); var flkty = new Flickity(
-  elem, { cellAlign: 'left', contain: true, wrapAround:true, autoPlay:10000
-  });
+  elem, { cellAlign: 'left', contain: true, wrapAround:true, autoPlay:10000 });
 
   flkty = new Flickity( '.org-carousel', {
 

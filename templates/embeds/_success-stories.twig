@@ -4,13 +4,15 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 {% set successStories = craft.entries.section('successStories').one() %}
-
-<h1 class="text-center font-rubik text-2xl font-semibold uppercase">
-  {{ successStories.successTitle }}
-</h1>
+<a id="success-stories">
+  <h1 class="text-center font-rubik text-2xl font-semibold uppercase pt-5">
+    {{ successStories.successTitle }}
+  </h1>
+</a>
 
 <div class="max-w-7xl mx-auto pt-5 pb-10">
   {# Inner container #}
+
   <div class="main-carousel">
     {% set testimonials = successStories.testimonials.all() %}
     {% for testimonial in testimonials %}
@@ -64,6 +66,7 @@
       </div>
     {% endfor %}
   </div>
+
   {# End | Inner container #}
 </div>
 {# End | Success Stories Band #}
