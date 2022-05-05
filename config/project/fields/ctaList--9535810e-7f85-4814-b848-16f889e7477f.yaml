@@ -7,8 +7,8 @@ name: 'CTA List'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_ctalist}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: '2'
+  minBlocks: '1'
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

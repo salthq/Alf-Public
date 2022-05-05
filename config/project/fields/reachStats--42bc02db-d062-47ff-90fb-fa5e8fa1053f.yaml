@@ -7,8 +7,8 @@ name: 'Reach Stats'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_reachstats}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: '6'
+  minBlocks: '5'
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

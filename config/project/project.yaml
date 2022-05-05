@@ -1,4 +1,4 @@
-dateModified: 1651650520
+dateModified: 1651751478
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Salt Public'
@@ -23,7 +23,7 @@ meta:
     05e71383-a599-420e-8450-9bb710a8f63f: 'Item 2 Content' # Item 2 Content
     5e84255f-0e14-4c9a-8537-468841c3c51f: 'Item 1 Content' # Item 1 Content
     6a0ad08e-3c64-45de-b9c7-6778988794a8: Stats # Stats
-    6d4e8119-ad85-408d-8727-e0195dd495bd: 'org Description' # org Description
+    6d4e8119-ad85-408d-8727-e0195dd495bd: 'Org Description' # Org Description
     6d223f40-8de2-450b-b55a-3db76fff36d4: 'Item 4 Heading' # Item 4 Heading
     7b0e6735-187f-4108-8fd4-ebea0c6ee1fa: 'Organisations Title' # Organisations Title
     7b9504f3-0f44-4d8d-9157-366073044e9d: 'How Can We Partner' # How Can We Partner
@@ -38,6 +38,7 @@ meta:
     17aaaaea-4ec1-4faf-af71-8cc7eba8ce9d: 'Partnership Description' # Partnership Description
     19dddbad-59d7-4efd-ac2e-b7d71deb7c5f: 'What We Do' # What We Do
     20e0895a-d2db-409c-b381-c86b971aaef5: Organisations # Organisations
+    35c4947d-43eb-4d8f-a09d-139d6ebcdffc: 'Who We Are Image' # Who We Are Image
     39fc3bc3-0e20-493f-b211-015793be3407: 'Success Stories' # Success Stories
     40b24328-3a03-44e5-a870-8aa27d793326: Partnership # Partnership
     42bc02db-d062-47ff-90fb-fa5e8fa1053f: 'Reach Stats' # Reach Stats
@@ -46,12 +47,16 @@ meta:
     67f41e09-e046-48b2-8922-8f5c03bbb14c: 'Alf Public' # Alf Public
     74dd3015-fe0c-4e09-99f2-3f7f715bab0f: 'Reach and Impact Subtitle' # Reach and Impact Subtitle
     83f5e3ec-a5d6-43e3-88c6-d95e61b3287a: 'Success Stories' # Success Stories
+    267cceaa-0983-4f7e-aecf-569f20454f62: 'Link to Site' # Link to Site
+    298f95e2-bd51-4cde-8b07-931edfdbce2d: 'Who We Are Styling' # Who We Are Styling
     388bdc47-fb9f-499d-8b42-33853447db88: 'Who We Are 2' # Who We Are 2
     650ffca7-ea95-4539-974c-a9436bdfb27c: 'Get Involved Content' # Get Involved Content
     694cb29d-5c54-4e05-a2b3-f5c3479a3ad1: 'Partnership Title' # Partnership Title
     5331f35f-a9ac-40ff-bd91-532055011591: Testimonial # Testimonial
     5475acc4-915c-4f9e-8d48-add166fb9b81: 'Step Two Heading' # Step Two Heading
     7829ab32-990e-4eb3-a6c9-5519032a584a: Common # Common
+    8567f973-c78d-4bea-85f6-047ce4e9c3fc: 'Who We Are Styling Mobile' # Who We Are Styling Mobile
+    56746bd2-f0d9-44ea-866b-c405cbe440e4: 'Hero Styling' # Hero Styling
     73201f5f-19bf-4b82-9bfa-132e7058c223: Testimonials # Testimonials
     95981f25-0b70-4493-ac73-8b35763c9cc1: 'How Can We Partner Title' # How Can We Partner Title
     165558ee-a0fa-4f3b-8b76-b1b78382c20c: Org # Org
@@ -60,11 +65,13 @@ meta:
     919847da-318b-45ec-bed8-97615299d97a: 'Reach and Impact' # Reach and Impact
     9535810e-7f85-4814-b848-16f889e7477f: 'CTA List' # CTA List
     16396281-07b7-4f70-a562-23c670112d08: 'Person Name' # Person Name
+    a1d35375-fad3-43fb-a1ed-44da484a56e9: Images # Images
     a17d62ed-87a1-49e6-ab10-c844c88e288f: 'Item 3 Content' # Item 3 Content
     a457d7c8-f662-4a2b-9a8d-37f3f94263a1: 'Program Price' # Program Price
     a28151a3-58ee-40e0-8035-74233b471d46: Questions # Questions
     abd85c61-12aa-4ca9-9550-45caef0c2ae7: 'What We Do Subtitle' # What We Do Subtitle
     b83dcc20-d894-4cd0-a532-b25220f12946: 'How Can We Partner' # How Can We Partner
+    b577d2aa-b61c-4b57-b934-acbb22bf7b63: heroImage # heroImage
     c028f2c9-1328-4db9-8982-5c2cdd412695: 'Programme List' # Programme List
     c78f633a-5c30-46cc-8263-1253270de97a: Base # Base
     c8832791-7230-4319-b3b6-570098980b47: Index # Index
@@ -77,12 +84,17 @@ meta:
     e0aefdb5-4075-410e-9004-4bc14e157477: Index # Index
     e04fcab5-62e3-493a-9698-b4a2aa21cc9f: 'Funders Content' # Funders Content
     e9dba679-88fc-43a6-a9c2-b85286ee8d06: Organisations # Organisations
+    e7044c69-af30-4498-bde6-e74df1fbae70: 'Hero Styling Mobile' # Hero Styling Mobile
     f4ea8fc1-113a-47f3-bfa4-e207d5756f53: 'Further Discount' # Further Discount
     f5dad74b-73d6-4dd9-a4d2-6385968a7209: Base # Base
     f9571570-8238-44c9-a636-8b255b835ef6: 'What We Do' # What We Do
     fbfe54d7-d3ab-45eb-9426-d1d8a1f4911f: 'Success Title' # Success Title
     fea1e2b7-40e2-4f91-9032-82136bbe0309: 'Organisation Info' # Organisation Info
 plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.2'
   freeform:
     edition: lite
     enabled: true

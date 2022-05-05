@@ -1,8 +1,9 @@
 {# Hero Band #}
 {# Styling Wrapper #}
 <div>
-  {% set heroStyling = '/images/HeroStyling.png' %}
-  <img src="{{ heroStyling }}"
+
+  {% set heroStyling =  index.heroStyling.one() %}  
+  <img src="{{ heroStyling.url }}"
     alt="Hero Styling"
     class="z-20 invisible h-0 lg:visible lg:h-fit absolute right-0 top-8" />
 
@@ -12,8 +13,8 @@
     {# Inner container #}
     <div class="-z-20 max-w-7xl rounded-l-3xl xl:rounded-r-3xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-10 md:py-32 bg-alf-blue relative">
       {# Styling for Mobile #}
-      {% set heroStylingMobile = '/images/HeroMobileStying.svg' %}
-      <img src="{{ heroStylingMobile }}"
+      {% set heroStylingMobile = index.heroStylingMobile.one() %}
+      <img src="{{ heroStylingMobile.url }}"
         alt="Hero Styling"
         class="z-20 visible h-auto lg:invisible lg:h-0 absolute right-0 -bottom-20" />
       {# End | Styling for Mobile #}
@@ -31,7 +32,7 @@
           </p>
 
           {# Button #}
-          <a href=""
+          <a href="#"
             class="hidden mt-8 px-6 py-3 font-rubik text-base font-bold rounded-md bg-alf-nav-blue text-alf-white shadow hover:underline w-full md:w-fit md:px-16 lg:block">
             Go to advantagelearn.com
           </a>
@@ -40,9 +41,9 @@
         <div class="col-span-1"></div>
 
         {# Hero Image #}
-        {% set heroImage = '/images/HeroImage.svg' %}
+        {% set heroImage = index.heroimage.one() %}
         <div class="mt-16 sm:mt-26 flex justify-center sm:max-w-lg sm:mx-auto lg:mt-0 lg:mx-0 lg:col-span-3 lg:flex lg:items-center lg:justify-center">
-          <img src="{{ heroImage }}" alt="Hero Image" />
+          <img src=" {{ heroImage.url }}" alt="Hero Image" />
         </div>
         {# End | Hero Image #}
 
@@ -54,7 +55,7 @@
           </p>
 
           {# Button #}
-          <a href=""
+          <a href="#"
             class="mx-auto max-w-sm mt-8 px-6 py-3 text-base font-bold rounded-md bg-alf-nav-blue text-alf-white text-center shadow hover:underline">
             Go to advantagelearn.com
           </a>

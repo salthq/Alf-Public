@@ -1,0 +1,52 @@
+fieldLayouts:
+  5e5465ba-b8ea-4b7a-acf3-81650ad151c2:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: images
+hasUrls: true
+name: Images
+settings:
+  addSubfolderToRootUrl: '1'
+  autoFocalPoint: ''
+  bucket: alf-public
+  bucketSelectionMode: choose
+  cfDistributionId: ''
+  cfPrefix: ''
+  expires: ''
+  keyId: $AWS_ACCESS_KEY_ID
+  makeUploadsPublic: '1'
+  region: eu-west-1
+  secret: $AWS_SECRET_ACCESS_KEY
+  storageClass: ''
+  subfolder: ''
+sortOrder: 3
+titleTranslationKeyFormat: null
+titleTranslationMethod: null
+type: craft\awss3\Volume
+url: 'https://s3.eu-west-1.amazonaws.com/alf-public/'

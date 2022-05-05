@@ -36,6 +36,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: b577d2aa-b61c-4b57-b934-acbb22bf7b63 # heroImage
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: d6d2296d-2220-4a74-94d7-a03275034d57 # Hero Subtitle
             instructions: null
             label: null
@@ -46,6 +55,15 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 0b19e811-657a-4e02-a763-2fbaa7dc07a0 # Who We Are Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 35c4947d-43eb-4d8f-a09d-139d6ebcdffc # Who We Are Image
             instructions: null
             label: null
             required: false
@@ -82,6 +100,42 @@ fieldLayouts:
             width: 100
           -
             fieldUid: abd85c61-12aa-4ca9-9550-45caef0c2ae7 # What We Do Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 56746bd2-f0d9-44ea-866b-c405cbe440e4 # Hero Styling
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 298f95e2-bd51-4cde-8b07-931edfdbce2d # Who We Are Styling
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e7044c69-af30-4498-bde6-e74df1fbae70 # Hero Styling Mobile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8567f973-c78d-4bea-85f6-047ce4e9c3fc # Who We Are Styling Mobile
             instructions: null
             label: null
             required: false

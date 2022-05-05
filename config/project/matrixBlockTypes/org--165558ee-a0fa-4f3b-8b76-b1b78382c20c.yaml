@@ -14,7 +14,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6d4e8119-ad85-408d-8727-e0195dd495bd # org Description
+            fieldUid: 6d4e8119-ad85-408d-8727-e0195dd495bd # Org Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 267cceaa-0983-4f7e-aecf-569f20454f62 # Link to Site
             instructions: null
             label: null
             required: false
@@ -45,13 +54,33 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  6d4e8119-ad85-408d-8727-e0195dd495bd: # org Description
+  6d4e8119-ad85-408d-8727-e0195dd495bd: # Org Description
     columnSuffix: hkbvqwgm
     contentColumnType: text
     fieldGroup: null
     handle: orgDescription
     instructions: ''
-    name: 'org Description'
+    name: 'Org Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  267cceaa-0983-4f7e-aecf-569f20454f62: # Link to Site
+    columnSuffix: sfodykwz
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkToSite
+    instructions: ''
+    name: 'Link to Site'
     searchable: false
     settings:
       byteLimit: null

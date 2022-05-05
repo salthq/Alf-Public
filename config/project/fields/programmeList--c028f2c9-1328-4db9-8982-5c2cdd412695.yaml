@@ -7,8 +7,8 @@ name: 'Programme List'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_programmelist}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: '5'
+  minBlocks: '5'
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
