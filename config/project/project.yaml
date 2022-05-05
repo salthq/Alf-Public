@@ -1,4 +1,4 @@
-dateModified: 1651751478
+dateModified: 1651759771
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Salt Public'
@@ -12,10 +12,12 @@ meta:
     1ee655fc-8a9b-4899-b282-ac3480a05a46: 'Craft Boilerplate' # Craft Boilerplate
     01fd7758-cc3a-4c0d-a325-5da6fb5cca5b: 'Item 1 Heading' # Item 1 Heading
     2ba64c30-1ff4-4743-a3ee-13d50f797601: 'Item 3 Heading' # Item 3 Heading
+    2bf31006-dd8b-455e-8f12-7bc14425caac: 'What We Do Image' # What We Do Image
     2da9b1ef-d833-4d5c-af58-dfc453824f10: Partnership # Partnership
     2ef70885-9a61-4132-b9c7-c7599db82436: 'Program Name' # Program Name
     3a765611-7b01-40df-99f5-55da10d744c5: 'Organisations Paragraph' # Organisations Paragraph
     3b339030-c02c-4be0-9875-68c1a78fd8df: 'Item 2 Heading' # Item 2 Heading
+    03df479a-f9d6-4289-acf9-d2507f28b7d2: 'What We Do Styling' # What We Do Styling
     4abdfc35-a861-4632-9e81-b3c8983e5afe: 'Person Title' # Person Title
     4b2794b3-5803-43bf-957c-100528311028: 'How Can We Partner' # How Can We Partner
     4d70caad-a88c-48cf-a48a-1f34eb8a70e8: 'Org Name' # Org Name
@@ -32,6 +34,7 @@ meta:
     8d0e9b6f-c9da-4d79-a63e-00ceec2834ad: 'What We Do Title' # What We Do Title
     8d945038-12f0-4434-be16-282c0d4db6d4: 'Success Stories' # Success Stories
     8edeffe5-5b7c-46e5-8b93-96ff14ab5356: 'What We Do' # What We Do
+    9b5f16b1-ccd4-4edc-8c30-bc2d80725058: 'What We Do Styling Mobile' # What We Do Styling Mobile
     9c6073a8-c901-4325-b199-2af389c8e856: Organisations # Organisations
     9d395b8d-3002-4765-9a2b-45acea5d761d: 'How Can We Partner Subtitle' # How Can We Partner Subtitle
     9d865bb3-3423-480b-90f2-9b6e0709a24d: 'Step One Heading' # Step One Heading

@@ -5,9 +5,9 @@
   {% set whatWeDo = craft.entries.section('whatWeDo').one() %}
 
   {# Top of Band Styling #}
-  {% set whatWeDoStyling = '/images/what_we_do_Styling.svg' %}
+  {% set whatWeDoStyling = whatWeDo.whatWeDoStyling.one() %}
   <div class="flex flex-col justify-center items-center -translate-y-10 sm:-translate-y-20 w-auto">
-    <img src="{{ whatWeDoStyling }}" />
+    <img src="{{ whatWeDoStyling.url }}" />
   </div>
   {# End | Top of Band Styling #}
 
@@ -98,9 +98,9 @@
         {# End | Content container #}
 
         {# Styling - Student Holding Book (Desktop) #}
-        {% set student = '/images/student.svg' %}
+        {% set student = whatWeDo.whatWeDoImage.one() %}
         <div class="invisible h-0 lg:visible lg:h-auto py-2 self-center px-2 w-auto lg:row-span-2 lg:col-span-3 lg:row-start-1 lg:col-start-10 lg:-translate-x-16 -z-10">
-          <img src="{{ student }}" />
+          <img src="{{ student.url }}" />
         </div>
         {# End | Styling - Student Holding Book (Desktop) #}
       </div>
@@ -112,7 +112,7 @@
 
   {# Bottom of Band Styling #}
   <div class="flex flex-col justify-center items-center translate-y-10 sm:translate-y-20">
-    <img src="{{ whatWeDoStyling }}" />
+    <img src="{{ whatWeDoStyling.url }}" />
   </div>
   {# End | Bottom of Band Styling #}
 </div>

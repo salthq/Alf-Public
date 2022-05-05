@@ -27,6 +27,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 2bf31006-dd8b-455e-8f12-7bc14425caac # What We Do Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 01fd7758-cc3a-4c0d-a325-5da6fb5cca5b # Item 1 Heading
             instructions: null
             label: null
@@ -91,6 +100,24 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 8a3bc734-c006-4c18-ab9b-7951225a812c # Item 4 Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 03df479a-f9d6-4289-acf9-d2507f28b7d2 # What We Do Styling
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9b5f16b1-ccd4-4edc-8c30-bc2d80725058 # What We Do Styling Mobile
             instructions: null
             label: null
             required: false
