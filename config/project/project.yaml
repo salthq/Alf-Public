@@ -1,4 +1,4 @@
-dateModified: 1652090126
+dateModified: 1652098272
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Salt Public'
@@ -57,6 +57,7 @@ meta:
     650ffca7-ea95-4539-974c-a9436bdfb27c: 'Get Involved Content' # Get Involved Content
     694cb29d-5c54-4e05-a2b3-f5c3479a3ad1: 'Partnership Title' # Partnership Title
     749acd1b-2bbc-4e85-9132-3842c0b12e06: 'Programme Image' # Programme Image
+    1711f46b-9498-472d-a284-fdbf153b8ebf: 'Funders Image' # Funders Image
     5331f35f-a9ac-40ff-bd91-532055011591: Testimonial # Testimonial
     5475acc4-915c-4f9e-8d48-add166fb9b81: 'Step Two Heading' # Step Two Heading
     7829ab32-990e-4eb3-a6c9-5519032a584a: Common # Common
@@ -80,6 +81,7 @@ meta:
     b577d2aa-b61c-4b57-b934-acbb22bf7b63: heroImage # heroImage
     bff79e3c-2368-4e48-8131-33cd7ae0168a: 'Org Image' # Org Image
     c028f2c9-1328-4db9-8982-5c2cdd412695: 'Programme List' # Programme List
+    c74b138e-5657-426c-b60b-c7f308b54df4: 'Footer Image' # Footer Image
     c76a426d-de2d-4a20-ab2f-19211fe897e9: 'Testimonial Image' # Testimonial Image
     c78f633a-5c30-46cc-8263-1253270de97a: Base # Base
     c1290708-9c46-4cb3-85ba-c6541921e469: 'Partnership Background' # Partnership Background
@@ -98,6 +100,8 @@ meta:
     e7a2455c-7aa3-4cc4-ab7d-244c210567f8: 'Number One' # Number One
     e9dba679-88fc-43a6-a9c2-b85286ee8d06: Organisations # Organisations
     e7044c69-af30-4498-bde6-e74df1fbae70: 'Hero Styling Mobile' # Hero Styling Mobile
+    ed472fd5-7d72-4ee5-af6a-1b4bafde337e: 'Question Image' # Question Image
+    eeb2fa43-5fae-4937-b3fc-043bf7ce2758: Logo # Logo
     f4ea8fc1-113a-47f3-bfa4-e207d5756f53: 'Further Discount' # Further Discount
     f5dad74b-73d6-4dd9-a4d2-6385968a7209: Base # Base
     f4860a69-f49f-4207-a5a5-455f0c60e75a: 'Item Type' # Item Type

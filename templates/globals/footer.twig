@@ -1,5 +1,5 @@
-{% set logo = '/images/FoundationLogo.png' %}
-{% set footerStyling = '/images/FooterStyling.svg' %}
+
+
 
 {# Script for Facebook Embed #}
 <div id="fb-root"></div>
@@ -21,12 +21,14 @@
       <div class="flex flex-col md:col-span-4">
         <div class="py-4">
           <a href="#">
-          <img src="{{ logo }}" alt="ALF Logo" class="h-12" />
+           {% set logo = base.logo.one() %}
+          <img src="{{ logo.url }}" alt="ALF Logo" class="h-12" />
           </a>
         
         </div>
         <div class="">
-          <img src="{{ footerStyling }}"
+        {% set footerStyling = base.footerImage.one() %}
+          <img src="{{ footerStyling.url }}"
             alt="ALF Footer"
             class="justify-center mx-auto" />
         </div>

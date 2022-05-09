@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="{{ craft.app.language }}">
-  <head >
+  <head>
+    {% set base = craft.entries.section('base').one() %}
   
-    <meta charset="utf-8"/>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
-    
+
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+      name="viewport" />
+
     {# SEO #}
     {# {% hook "seo" %} #}
-    
+
     {# Tailwind and custom CSS styles #}
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
 
     {# Alpine.JS script #}
     <script src="https://unpkg.com/alpinejs@3.2.1/dist/cdn.min.js"></script>
-    
-    {# Custom JS script #}
-    {# <script src="/js/custom.js" defer></script> #}
 
     {# Google Fonts (Rubik) #}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
+      rel="stylesheet" />
 
     {# Favicon #}
     {# <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"> #}
-
   </head>
 
   <body>
-    
     {# Header #}
     {% block header %}
-      {% include "/globals/menu.twig" %}
+      {% include '/globals/menu.twig' %}
     {% endblock %}
 
     {# Content #}
@@ -45,8 +43,7 @@
 
     {# Footer #}
     {% block footer %}
-      {% include "/globals/footer.twig" %}
+      {% include '/globals/footer.twig' %}
     {% endblock %}
-    
   </body>
 </html>

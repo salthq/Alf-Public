@@ -1,4 +1,4 @@
- {% set logo = "/images/FoundationLogo.png" %}
+
 
   <div x-cloak>
 
@@ -10,8 +10,9 @@
         {# Logo #}
         <div class="flex justify-start flex-shrink-0 mr-4">
           <a href="/">
+            {% set logo = base.logo.one() %}
             <span class="sr-only">ALF Logo</span>
-            <img class="h-10 w-auto" src="{{logo}}" alt="ALF logo">
+            <img class="h-10 w-auto" src="{{ logo.url }}" alt="ALF logo">
           </a>
         </div>
 

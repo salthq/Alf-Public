@@ -117,6 +117,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 1711f46b-9498-472d-a284-fdbf153b8ebf # Funders Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: f4ea8fc1-113a-47f3-bfa4-e207d5756f53 # Further Discount
             instructions: null
             label: null
