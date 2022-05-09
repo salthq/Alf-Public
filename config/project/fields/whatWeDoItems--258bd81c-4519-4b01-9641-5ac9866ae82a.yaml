@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 19dddbad-59d7-4efd-ac2e-b7d71deb7c5f # What We Do
+handle: whatWeDoItems
+instructions: ''
+name: 'What We Do Items'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_whatwedoitems}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

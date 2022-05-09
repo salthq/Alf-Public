@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 19dddbad-59d7-4efd-ac2e-b7d71deb7c5f # What We Do
-handle: whatWeDoImage
-instructions: 'The image that goes along with the content of the what we do band.'
-name: 'What We Do Image'
+fieldGroup: 214101f9-132f-47de-90c5-bfa9338638ca # Partnerships
+handle: partnershipBackgroundMobile
+instructions: 'Background styling for mobile screens'
+name: 'Partnership Background Mobile'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -16,7 +16,7 @@ settings:
   previewMode: full
   restrictFiles: ''
   selectionLabel: ''
-  showSiteMenu: true
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:a1d35375-fad3-43fb-a1ed-44da484a56e9' # Images
@@ -26,7 +26,7 @@ settings:
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false
-  viewMode: large
+  viewMode: list
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Assets

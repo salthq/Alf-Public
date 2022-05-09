@@ -31,6 +31,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: c76a426d-de2d-4a20-ab2f-19211fe897e9 # Testimonial Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -94,6 +103,39 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  c76a426d-de2d-4a20-ab2f-19211fe897e9: # Testimonial Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: testimonialImage
+    instructions: ''
+    name: 'Testimonial Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:a1d35375-fad3-43fb-a1ed-44da484a56e9' # Images
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:a1d35375-fad3-43fb-a1ed-44da484a56e9' # Images
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
 handle: testimonial
 name: Testimonial
 sortOrder: 1

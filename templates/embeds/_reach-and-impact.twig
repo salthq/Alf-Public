@@ -17,7 +17,7 @@
   </div>
 
   {# Stats #}
-  {% set statsLock = '/images/statslock.svg' %}
+  
   <div class="grid gap-24 md:gap-0 grid-cols-2 md:grid-cols-6 mx-12 my-5 md:mx-10">
     {# Bring in Reach and Impact matrix field #}
 
@@ -25,9 +25,10 @@
 
     {# Loop over all stats in Matrix field #}
     {% for stat in stats %}
+    {% set image = stat.statImage.one() %}
       <div class="md:col-span-2 flex flex-col items-center">
         <div class="flex-1 py-4 w-44 my-auto">
-          <img src="{{ statsLock }}" />
+          <img src="{{ image.url }}" />
         </div>
         <div class="text-center">
           <p class="font-rubik font-semibold">

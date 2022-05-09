@@ -22,6 +22,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: e0da9c8b-7340-4e05-81ba-6c6b1e03d853 # Stat Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -65,6 +74,39 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  e0da9c8b-7340-4e05-81ba-6c6b1e03d853: # Stat Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: statImage
+    instructions: ''
+    name: 'Stat Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:a1d35375-fad3-43fb-a1ed-44da484a56e9' # Images
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:a1d35375-fad3-43fb-a1ed-44da484a56e9' # Images
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
 handle: stat
 name: Stats
 sortOrder: 1

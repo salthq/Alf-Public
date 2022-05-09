@@ -4,16 +4,16 @@
   <div class="z-20">
     <a id="connect-with-us">
       <div class="mx-auto max-w-7xl">
-        {% set partnershipBg = '/images/PartnershipBackground.svg' %}
+        {% set partnershipBg = partnership.partnershipBackground.one() %}
         <div class="z-10 pt-10">
-          <img src="{{ partnershipBg }}"
+          <img src="{{ partnershipBg.url }}"
             alt="Styling"
             class="invisible h-0 sm:visible sm:h-auto w-full" />
         </div>
 
-        {% set partnershipBgMobile = '/images/MobilePartnershipStyling.svg' %}
+        {% set partnershipBgMobile = partnership.partnershipBackgroundMobile.one() %}
         <div class="z-10 pt-5">
-          <img src="{{ partnershipBgMobile }}"
+          <img src="{{ partnershipBgMobile.url }}"
             alt="Styling"
             class="h-auto visible sm:invisible sm:h-0 w-full" />
         </div>
@@ -24,9 +24,9 @@
             {# Text content #}
             <div class="w-full px-5 py-5">
               {# Image (Mobile) #}
-              {% set brandIconMobile = '/images/MobileBrandIcon.svg' %}
+              {% set brandIconMobile = partnership.partnershipImageMobile.one() %}
               <div class="visible h-auto sm:invisible sm:h-0 flex items-center justify-center">
-                <img src="{{ brandIconMobile }}" class="" />
+                <img src="{{ brandIconMobile.url }}" class="" />
               </div>
 
               {# Heading #}
@@ -43,9 +43,9 @@
             {# End | Text content #}
 
             {# Image (Desktop) #}
-            {% set brandIcon = '/images/BrandIcon.svg' %}
+            {% set brandIcon = partnership.partnershipImage.one() %}
             <div class="invisible h-0 sm:visible sm:h-auto flex items-center justify-center p-4">
-              <img src="{{ brandIcon }}" class="" />
+              <img src="{{ brandIcon.url }}" class="" />
             </div>
           </div>
           {# End | Card container #}

@@ -36,6 +36,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 6a30f0b6-9dfb-472c-88cf-4cdc34869cf5 # Organisation Band Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 3a765611-7b01-40df-99f5-55da10d744c5 # Organisations Paragraph
             instructions: null
             label: null

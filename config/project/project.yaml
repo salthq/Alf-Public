@@ -1,4 +1,4 @@
-dateModified: 1651759771
+dateModified: 1652090126
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Salt Public'
@@ -10,27 +10,22 @@ meta:
     0b19e811-657a-4e02-a763-2fbaa7dc07a0: 'Who We Are Title' # Who We Are Title
     0cabfdf7-3657-4649-aac3-7c826b0a027d: Question # Question
     1ee655fc-8a9b-4899-b282-ac3480a05a46: 'Craft Boilerplate' # Craft Boilerplate
-    01fd7758-cc3a-4c0d-a325-5da6fb5cca5b: 'Item 1 Heading' # Item 1 Heading
-    2ba64c30-1ff4-4743-a3ee-13d50f797601: 'Item 3 Heading' # Item 3 Heading
     2bf31006-dd8b-455e-8f12-7bc14425caac: 'What We Do Image' # What We Do Image
     2da9b1ef-d833-4d5c-af58-dfc453824f10: Partnership # Partnership
     2ef70885-9a61-4132-b9c7-c7599db82436: 'Program Name' # Program Name
     3a765611-7b01-40df-99f5-55da10d744c5: 'Organisations Paragraph' # Organisations Paragraph
-    3b339030-c02c-4be0-9875-68c1a78fd8df: 'Item 2 Heading' # Item 2 Heading
     03df479a-f9d6-4289-acf9-d2507f28b7d2: 'What We Do Styling' # What We Do Styling
     4abdfc35-a861-4632-9e81-b3c8983e5afe: 'Person Title' # Person Title
     4b2794b3-5803-43bf-957c-100528311028: 'How Can We Partner' # How Can We Partner
     4d70caad-a88c-48cf-a48a-1f34eb8a70e8: 'Org Name' # Org Name
     5a512b18-6a4d-42d0-94c4-c37d8d60203b: 'Hero Title' # Hero Title
-    05e71383-a599-420e-8450-9bb710a8f63f: 'Item 2 Content' # Item 2 Content
-    5e84255f-0e14-4c9a-8537-468841c3c51f: 'Item 1 Content' # Item 1 Content
     6a0ad08e-3c64-45de-b9c7-6778988794a8: Stats # Stats
+    6a2f84be-0aa8-436d-9647-8716eb634c37: 'How can we partner Image' # How can we partner Image
+    6a30f0b6-9dfb-472c-88cf-4cdc34869cf5: 'Organisation Band Image' # Organisation Band Image
     6d4e8119-ad85-408d-8727-e0195dd495bd: 'Org Description' # Org Description
-    6d223f40-8de2-450b-b55a-3db76fff36d4: 'Item 4 Heading' # Item 4 Heading
     7b0e6735-187f-4108-8fd4-ebea0c6ee1fa: 'Organisations Title' # Organisations Title
     7b9504f3-0f44-4d8d-9157-366073044e9d: 'How Can We Partner' # How Can We Partner
     7c3dc0e3-d5dc-4bb2-aa73-2a9210c8d82e: Quote # Quote
-    8a3bc734-c006-4c18-ab9b-7951225a812c: 'Item 4 Content' # Item 4 Content
     8d0e9b6f-c9da-4d79-a63e-00ceec2834ad: 'What We Do Title' # What We Do Title
     8d945038-12f0-4434-be16-282c0d4db6d4: 'Success Stories' # Success Stories
     8edeffe5-5b7c-46e5-8b93-96ff14ab5356: 'What We Do' # What We Do
@@ -40,21 +35,28 @@ meta:
     9d865bb3-3423-480b-90f2-9b6e0709a24d: 'Step One Heading' # Step One Heading
     17aaaaea-4ec1-4faf-af71-8cc7eba8ce9d: 'Partnership Description' # Partnership Description
     19dddbad-59d7-4efd-ac2e-b7d71deb7c5f: 'What We Do' # What We Do
+    20dcde3b-f1f4-4244-80ed-5e6b92e80af5: 'Number Two' # Number Two
     20e0895a-d2db-409c-b381-c86b971aaef5: Organisations # Organisations
     35c4947d-43eb-4d8f-a09d-139d6ebcdffc: 'Who We Are Image' # Who We Are Image
+    36eb7dad-c8a7-495f-b53a-55436cf4ad7e: 'Partnership Background Mobile' # Partnership Background Mobile
     39fc3bc3-0e20-493f-b211-015793be3407: 'Success Stories' # Success Stories
     40b24328-3a03-44e5-a870-8aa27d793326: Partnership # Partnership
     42bc02db-d062-47ff-90fb-fa5e8fa1053f: 'Reach Stats' # Reach Stats
+    57d29676-1c3c-442b-8948-a43f000c898e: 'What We Do Image Mobile' # What We Do Image Mobile
     58c77281-8d57-48cf-9aaa-31db51866672: Base # Base
     59e00648-62f0-4119-a6de-a010982c6d6c: 'Reach And Impact Stats Heading' # Reach And Impact Stats Heading
+    66a3296c-ce72-4805-b8de-2eb1341d2e6e: 'Partnership Image' # Partnership Image
     67f41e09-e046-48b2-8922-8f5c03bbb14c: 'Alf Public' # Alf Public
     74dd3015-fe0c-4e09-99f2-3f7f715bab0f: 'Reach and Impact Subtitle' # Reach and Impact Subtitle
     83f5e3ec-a5d6-43e3-88c6-d95e61b3287a: 'Success Stories' # Success Stories
+    95a1d6a3-10cc-4e02-8a5a-a501ee7523e6: 'Partnership Image Mobile' # Partnership Image Mobile
+    258bd81c-4519-4b01-9641-5ac9866ae82a: 'What We Do Items' # What We Do Items
     267cceaa-0983-4f7e-aecf-569f20454f62: 'Link to Site' # Link to Site
     298f95e2-bd51-4cde-8b07-931edfdbce2d: 'Who We Are Styling' # Who We Are Styling
     388bdc47-fb9f-499d-8b42-33853447db88: 'Who We Are 2' # Who We Are 2
     650ffca7-ea95-4539-974c-a9436bdfb27c: 'Get Involved Content' # Get Involved Content
     694cb29d-5c54-4e05-a2b3-f5c3479a3ad1: 'Partnership Title' # Partnership Title
+    749acd1b-2bbc-4e85-9132-3842c0b12e06: 'Programme Image' # Programme Image
     5331f35f-a9ac-40ff-bd91-532055011591: Testimonial # Testimonial
     5475acc4-915c-4f9e-8d48-add166fb9b81: 'Step Two Heading' # Step Two Heading
     7829ab32-990e-4eb3-a6c9-5519032a584a: Common # Common
@@ -69,15 +71,20 @@ meta:
     9535810e-7f85-4814-b848-16f889e7477f: 'CTA List' # CTA List
     16396281-07b7-4f70-a562-23c670112d08: 'Person Name' # Person Name
     a1d35375-fad3-43fb-a1ed-44da484a56e9: Images # Images
-    a17d62ed-87a1-49e6-ab10-c844c88e288f: 'Item 3 Content' # Item 3 Content
     a457d7c8-f662-4a2b-9a8d-37f3f94263a1: 'Program Price' # Program Price
     a28151a3-58ee-40e0-8035-74233b471d46: Questions # Questions
     abd85c61-12aa-4ca9-9550-45caef0c2ae7: 'What We Do Subtitle' # What We Do Subtitle
+    b1ccfcfc-10bd-4989-ae3b-dc533efffc74: 'Item Content' # Item Content
+    b66ce59e-0812-4eef-ab9d-2fa8e27dae56: Items # Items
     b83dcc20-d894-4cd0-a532-b25220f12946: 'How Can We Partner' # How Can We Partner
     b577d2aa-b61c-4b57-b934-acbb22bf7b63: heroImage # heroImage
+    bff79e3c-2368-4e48-8131-33cd7ae0168a: 'Org Image' # Org Image
     c028f2c9-1328-4db9-8982-5c2cdd412695: 'Programme List' # Programme List
+    c76a426d-de2d-4a20-ab2f-19211fe897e9: 'Testimonial Image' # Testimonial Image
     c78f633a-5c30-46cc-8263-1253270de97a: Base # Base
+    c1290708-9c46-4cb3-85ba-c6541921e469: 'Partnership Background' # Partnership Background
     c8832791-7230-4319-b3b6-570098980b47: Index # Index
+    cd941a9e-524d-4a66-9e4b-b431128c00ab: 'Item Image' # Item Image
     d1bbfc3c-09eb-4fb9-831e-28eb2092df3d: 'Reach And Impact Title' # Reach And Impact Title
     d2d28287-fcee-4423-b368-21bf61e75978: 'Reach And Impact' # Reach And Impact
     d6d2296d-2220-4a74-94d7-a03275034d57: 'Hero Subtitle' # Hero Subtitle
@@ -85,11 +92,15 @@ meta:
     dbb59129-1e74-45d8-bff0-91adda24e2d6: Programmes # Programmes
     dbe5b2c4-ebe7-47e1-8052-b3bb9d2ff0df: 'Stat Number' # Stat Number
     e0aefdb5-4075-410e-9004-4bc14e157477: Index # Index
+    e0da9c8b-7340-4e05-81ba-6c6b1e03d853: 'Stat Image' # Stat Image
     e04fcab5-62e3-493a-9698-b4a2aa21cc9f: 'Funders Content' # Funders Content
+    e6d6f23c-0f24-45a8-b2cc-25b4db286154: 'Item Heading' # Item Heading
+    e7a2455c-7aa3-4cc4-ab7d-244c210567f8: 'Number One' # Number One
     e9dba679-88fc-43a6-a9c2-b85286ee8d06: Organisations # Organisations
     e7044c69-af30-4498-bde6-e74df1fbae70: 'Hero Styling Mobile' # Hero Styling Mobile
     f4ea8fc1-113a-47f3-bfa4-e207d5756f53: 'Further Discount' # Further Discount
     f5dad74b-73d6-4dd9-a4d2-6385968a7209: Base # Base
+    f4860a69-f49f-4207-a5a5-455f0c60e75a: 'Item Type' # Item Type
     f9571570-8238-44c9-a636-8b255b835ef6: 'What We Do' # What We Do
     fbfe54d7-d3ab-45eb-9426-d1d8a1f4911f: 'Success Title' # Success Title
     fea1e2b7-40e2-4f91-9032-82136bbe0309: 'Organisation Info' # Organisation Info

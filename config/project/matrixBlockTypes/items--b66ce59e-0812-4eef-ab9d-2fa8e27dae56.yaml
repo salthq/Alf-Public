@@ -1,11 +1,11 @@
-field: c028f2c9-1328-4db9-8982-5c2cdd412695 # Programme List
+field: 258bd81c-4519-4b01-9641-5ac9866ae82a # What We Do Items
 fieldLayouts:
-  35f8787f-dc37-4333-89f5-46953cfbaf02:
+  9041f21e-2b90-43a3-89eb-ad8a09375d47:
     tabs:
       -
         elements:
           -
-            fieldUid: 2ef70885-9a61-4132-b9c7-c7599db82436 # Program Name
+            fieldUid: e6d6f23c-0f24-45a8-b2cc-25b4db286154 # Item Heading
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a457d7c8-f662-4a2b-9a8d-37f3f94263a1 # Program Price
+            fieldUid: b1ccfcfc-10bd-4989-ae3b-dc533efffc74 # Item Content
             instructions: null
             label: null
             required: false
@@ -23,7 +23,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 749acd1b-2bbc-4e85-9132-3842c0b12e06 # Programme Image
+            fieldUid: cd941a9e-524d-4a66-9e4b-b431128c00ab # Item Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f4860a69-f49f-4207-a5a5-455f0c60e75a # Item Type
             instructions: null
             label: null
             required: false
@@ -34,13 +43,13 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  2ef70885-9a61-4132-b9c7-c7599db82436: # Program Name
-    columnSuffix: ahzmghza
+  b1ccfcfc-10bd-4989-ae3b-dc533efffc74: # Item Content
+    columnSuffix: vjhtvpgz
     contentColumnType: text
     fieldGroup: null
-    handle: programName
+    handle: itemContent
     instructions: ''
-    name: 'Program Name'
+    name: 'Item Content'
     searchable: false
     settings:
       byteLimit: null
@@ -54,13 +63,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  749acd1b-2bbc-4e85-9132-3842c0b12e06: # Programme Image
-    columnSuffix: null
+  cd941a9e-524d-4a66-9e4b-b431128c00ab: # Item Image
+    columnSuffix: cnbeuqgc
     contentColumnType: string
     fieldGroup: null
-    handle: programmeImage
+    handle: itemImage
     instructions: ''
-    name: 'Programme Image'
+    name: 'Item Image'
     searchable: false
     settings:
       allowSelfRelations: false
@@ -73,7 +82,7 @@ fields:
       previewMode: full
       restrictFiles: ''
       selectionLabel: ''
-      showSiteMenu: false
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:a1d35375-fad3-43fb-a1ed-44da484a56e9' # Images
@@ -87,13 +96,13 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  a457d7c8-f662-4a2b-9a8d-37f3f94263a1: # Program Price
-    columnSuffix: ttozbasz
+  e6d6f23c-0f24-45a8-b2cc-25b4db286154: # Item Heading
+    columnSuffix: oxjzfdug
     contentColumnType: text
     fieldGroup: null
-    handle: programPrice
+    handle: itemHeading
     instructions: ''
-    name: 'Program Price'
+    name: 'Item Heading'
     searchable: false
     settings:
       byteLimit: null
@@ -107,6 +116,27 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-handle: programmes
-name: Programmes
+  f4860a69-f49f-4207-a5a5-455f0c60e75a: # Item Type
+    columnSuffix: svfuchte
+    contentColumnType: smallint(1)
+    fieldGroup: null
+    handle: itemType
+    instructions: ''
+    name: 'Item Type'
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: 0
+      max: 1
+      min: 0
+      prefix: null
+      previewCurrency: ''
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+handle: items
+name: Items
 sortOrder: 1

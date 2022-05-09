@@ -14,9 +14,9 @@
   <div class="max-w-7xl mx-auto px-6 pb-12 pt-4 sm:pt-8 sm:px-8 md:px-12 lg:px-16 lg:pt-4">
     {# Title #}
     <a id="what-we-do">
-    <h2 class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl">
-      {{ index.whatWeDoTitle }}
-    </h2>
+      <h2 class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl">
+        {{ index.whatWeDoTitle }}
+      </h2>
     </a>
     {# Text #}
     <div class="flex flex-col items-center">
@@ -26,75 +26,54 @@
     </div>
 
     {# What We Do Styling (Mobile) #}
-    {% set smallStudent = '/images/smallstudent.svg' %}
+    {% set smallStudent = whatWeDo.whatWeDoImageMobile.one() %}
     <div class="lg:invisible lg:h-0 flex flex-col justify-center items-center pt-6 translate-y-6">
-      <img src="{{ smallStudent }}" />
+      <img src="{{ smallStudent.url }}" />
     </div>
     {# End | What We Do Styling (Mobile) #}
 
     {# What We Do Cards #}
     <div class="max-w-7xl mx-auto">
-      {% set lock = '/images/lock.png' %}
+      
 
       {# Content grid #}
       <div class="grid my-4 grid-cols-1 lg:grid-cols-12 items-stretch font-rubik overflow-visible">
         {# Content container #}
 
-        <div class="py-2 lg:pt-16 px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
-          <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-            <img src="{{ lock }}" class="mx-auto" />
-          </div>
-          <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
-            <h2 class="font-semibold pb-4">
-              {{ whatWeDo.item1Heading }}
-            </h2>
-            <p class="pb-4">
-              {{ whatWeDo.item1Content }}
-            </p>
-          </div>
-        </div>
-
-        <div class="py-2 lg:pt-16 px-2 lg:rounded-lg lg:col-span-4 flex flex-col lg:flex-row">
-          <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-            <img src="{{ lock }}" class="mx-auto" />
-          </div>
-          <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
-            <h2 class="font-semibold pb-4">
-               {{ whatWeDo.item2Heading }}
-            </h2>
-            <p class="pb-4">
-               {{ whatWeDo.item2Content }}
-            </p>
-          </div>
-        </div>
-
-        <div class="py-2 lg:pb-16 px-2 rounded-lg lg:col-span-4 flex flex-col lg:flex-row">
-          <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-            <img src="{{ lock }}" class="mx-auto" />
-          </div>
-          <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
-            <h2 class="font-semibold pb-4">
-               {{ whatWeDo.item3Heading }}
-            </h2>
-            <p class="pb-4">
-              {{ whatWeDo.item3Content }}
-            </p>
-          </div>
-        </div>
-
-        <div class="py-2 lg:pb-16 px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
-          <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-            <img src="{{ lock }}" class="mx-auto" />
-          </div>
-          <div class="flex-initial pl-6 pr-6 pt-4 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
-            <h2 class="font-semibold pb-4">
-                {{ whatWeDo.item4Heading }}
-            </h2>
-            <p class="pb-4">
-                {{ whatWeDo.item4Content }}
-            </p>
-          </div>
-        </div>
+        {% set items = whatWeDo.whatWeDoItems.all() %}
+        {% for item in items %}
+          {% if item.itemType == 1 %}
+          {% set image = item.itemImage.one() %}
+            <div class="pt-4 px-2 lg:rounded-lg lg:col-span-4 flex flex-col lg:flex-row">
+              <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
+                <img src="{{ image.url }}" class="mx-auto" />
+              </div>
+              <div class="flex-initial pl-6 pr-6 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
+                <h2 class="font-semibold pb-4">
+                  {{ item.itemHeading }}
+                </h2>
+                <p class="pb-2">
+                  {{ item.itemContent }}
+                </p>
+              </div>
+            </div>
+          {% else %}
+          {% set image = item.itemImage.one() %}
+            <div class="pt-4  px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
+              <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
+                <img src="{{  image.url }}" class="mx-auto" />
+              </div>
+              <div class="flex-initial pl-6 pr-6 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
+                <h2 class="font-semibold pb-4">
+                  {{ item.itemHeading }}
+                </h2>
+                <p class="pb-2">
+                   {{ item.itemContent }}
+                </p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
         {# End | Content container #}
 
         {# Styling - Student Holding Book (Desktop) #}
