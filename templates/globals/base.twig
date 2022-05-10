@@ -29,7 +29,8 @@
     {# <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"> #}
   </head>
 
-  <body>
+  <body  x-data="{ contactModal : false }">
+  
     {# Header #}
     {% block header %}
       {% include '/globals/menu.twig' %}
@@ -45,5 +46,6 @@
     {% block footer %}
       {% include '/globals/footer.twig' %}
     {% endblock %}
+    {% include "/embeds/modals/_contact-modal.twig" %}
   </body>
 </html>

@@ -15,10 +15,10 @@ if (form) {
     form.addEventListener("freeform-ready", function (event) {
     var freeform = event.target.freeform;
 
-    freeform.setOption("errorClassBanner", ["bg-red-100", "border", "border-red-400", "text-red-700", "px-4", "py-3", "rounded", "relative", "mb-4"]);
-    freeform.setOption("errorClassList", ["errors", "text-red-500", "text-xs", "italic"]);
-    freeform.setOption("errorClassField", ["border-red-500"]);
-    freeform.setOption("successClassBanner", ["bg-green-100", "border", "border-green-500", "text-green-700", "px-4", "py-3", "rounded", "relative", "mb-4"]);
+    freeform.setOption("errorClassBanner", ["border", "border-alf-red", "px-4", "py-3", "rounded", "relative", "mb-4"]);
+    freeform.setOption("errorClassList", ["errors", "text-alf-red", "text-xs", "italic"]);
+    freeform.setOption("errorClassField", ["border-alf-red"]);
+    freeform.setOption("successClassBanner", ["bg-alf-green", "border", "border-green-500", "text-green-700", "px-4", "py-3", "rounded", "relative", "mb-4"]);
     })
 
     form.addEventListener("freeform-stripe-styling", function (event) {
@@ -40,7 +40,7 @@ if (form) {
                     <span class="flex flex-col {% if form.pages|last.index > page.index %} flex-grow {% endif %}">
                         <li class="relative flex {% if form.pages|last.index > page.index %} pr-8 sm:pr-20 {% endif %}">
                             <div class="absolute inset-0 flex items-center" aria-hidden="true">
-                                <div class="h-0.5 w-full bg-alf-blue" style="position: absolute; top:16px; {% if form.pages|first.index == page.index %} margin-left:10px; {% endif %}"></div>
+                                <div class="h-0.5 w-full bg-alf-nav-blue" style="position: absolute; top:16px; {% if form.pages|first.index == page.index %} margin-left:10px; {% endif %}"></div>
                             </div>
                             <div class="flex flex-col items-center">
                                 <a href="#" class="relative w-8 h-8 flex items-center justify-center bg-alf-blue rounded-full hover:opacity-90">
@@ -63,7 +63,7 @@ if (form) {
                                 <div class="h-0.5 w-full {% if form.pages|last.index == page.index %}bg-alf-blue {% else %}bg-gray-200 ml-4 {% endif %}" style="position: absolute; top:16px; {% if form.pages|last.index == page.index %} width:50%; {% endif %}"></div>
                             </div>
                             <div class="flex flex-col items-center">
-                                <a href="#" class="relative w-8 h-8 flex items-center justify-center bg-white border-2 border-ptc-red rounded-full" aria-current="step">
+                                <a href="#" class="relative w-8 h-8 flex items-center justify-center bg-white border-2 rounded-full" aria-current="step">
                                     <span class="h-2.5 w-2.5 bg-alf-blue rounded-full" aria-hidden="true"></span>
                                 </a>
                                 <span>{{page.label}}</span>
@@ -98,7 +98,7 @@ if (form) {
 
 {# Render errors #}
 {% if form.hasErrors %}
-    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+    <div class="border border-alf-red px-4 py-3 rounded relative mb-4" role="alert">
         <strong class="font-bold">{{ "Error! Please review the form and try submitting again."|t('freeform') }}</strong>
         {% if form.errors|length %}
             <ul class="mb-0 ">
@@ -139,7 +139,7 @@ if (form) {
 
             {# Set a custom column class for the submit button #}
             {% if field.type == "submit" %}
-                {% set columnClass = columnClass ~ " text-" ~ field.position %}
+                {% set columnClass = columnClass ~ "" ~ field.position %}
             {% endif %}
 
             {# Set field class based on field type #}
@@ -160,17 +160,17 @@ if (form) {
                     {% set fieldClass = signatureFieldClasses %}
             {% endswitch %}
 
-            {% set fieldClass = fieldClass ~ (field.hasErrors ? " border-red-500") %}
+            {% set fieldClass = fieldClass ~ (field.hasErrors ? " border-alf-red") %}
 
             {# Set label class #}
             {% set labelClass = standardLabelsClasses ~ " block text-left" %}
             {% set labelClass = labelClass ~ (field.required ? " required" : "") %}
 
             {# Set error class #}
-            {% set errorClass = "text-red-500 text-xs italic" %}
+            {% set errorClass = "text-alf-red text-xs italic" %}
 
             {# Set instructions class #}
-            {% set instructionClass = "text-gray-600 text-xs italic" %}
+            {% set instructionClass = "text-xs italic" %}
 
 
             {# Create a column except when creating Freeform Payments columns #}
@@ -191,7 +191,7 @@ if (form) {
                                 name="{{ field.handle }}[]"
                                 value="{{ option.value }}"
                                 id="{{ field.idAttribute }}-{{ index }}"
-                                class="form-check-input{{ field.hasErrors ? " border-red-500" }}"
+                                class="form-check-input{{ field.hasErrors ? " border-alf-red" }}"
                                     {{ option.checked ? "checked" : "" }}
                             />
 
@@ -218,7 +218,7 @@ if (form) {
                                 name="{{ field.handle }}"
                                 value="{{ option.value }}"
                                 id="{{ field.idAttribute }}-{{ index }}"
-                                class="form-check-input{{ field.hasErrors ? " border-red-500" }}"
+                                class="form-check-input{{ field.hasErrors ? " border-alf-red" }}"
                                     {{ option.checked ? "checked" : "" }}
                             />
                             <label class="form-check-label" for="{{ field.idAttribute }}-{{ index }}">
@@ -308,15 +308,15 @@ if (form) {
                 {% elseif field.type in ["checkbox", "mailing_list"] %}
 
                     <div class="form-check">
-                        {{ field.renderInput({ class: fieldClass ~ (field.hasErrors ? " border-red-500") }) }}
-                        {{ field.renderLabel({ labelClass: (field.hasErrors ? " border-red-500") }) }}
+                        {{ field.renderInput({ class: fieldClass ~ (field.hasErrors ? " border-alf-red") }) }}
+                        {{ field.renderLabel({ labelClass: (field.hasErrors ? " border-alf-red") }) }}
                         {{ field.renderErrors({ errorClass: errorClass }) }}
                     </div>
 
                 {% elseif field.type == "submit" %}
 
                     {# Submit button #}
-                    {{ field.render({ class: "bg-alf-blue font-nunito hover:underline text-white py-3 px-10 rounded" }) }}
+                    {{ field.render({ class: "bg-alf-nav-blue hover:underline text-alf-white py-3 px-10 rounded" }) }}
 
                 {% elseif field.type == "table" %}
 
@@ -329,7 +329,7 @@ if (form) {
                         addButtonLabel: "Add +",
                         addButtonClass: "bg-green-500 hover:bg-green-700 text-white font-normal py-2 px-4 rounded m-4",
                         removeButtonLabel: "x",
-                        removeButtonClass: "bg-red-500 hover:bg-red-700 text-white font-normal py-2 px-4 rounded ml-2",
+                        removeButtonClass: "bg-alf-red hover:bg-alf-red text-white font-normal py-2 px-4 rounded ml-2",
                         tableTextInputClass: standardFieldClasses ~ " my-2",
                         tableSelectInputClass: selectFieldClasses,
                         tableCheckboxInputClass: checkboxFieldClasses ~ " m-1",

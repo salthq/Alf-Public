@@ -121,7 +121,7 @@ fields:
     contentColumnType: smallint(1)
     fieldGroup: null
     handle: itemType
-    instructions: ''
+    instructions: 'This changes how the items are displayed, ''0'' is a long card and ''1'' is a short card. Alternating types of 1 and 2 are needed for the content to line up correctly.'
     name: 'Item Type'
     searchable: false
     settings:
