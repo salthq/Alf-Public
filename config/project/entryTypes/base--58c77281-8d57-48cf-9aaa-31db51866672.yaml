@@ -27,15 +27,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c74b138e-5657-426c-b60b-c7f308b54df4 # Footer Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: eeb2fa43-5fae-4937-b3fc-043bf7ce2758 # Logo
             instructions: null
             label: null
@@ -45,7 +36,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 3c5066ae-06b3-4781-ba39-d23b63f0922d # Favicon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 7464326a-3bff-483f-85b0-8215b17436fc # Modal Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c74b138e-5657-426c-b60b-c7f308b54df4 # Footer Image
             instructions: null
             label: null
             required: false

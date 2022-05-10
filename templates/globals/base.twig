@@ -26,7 +26,8 @@
       rel="stylesheet" />
 
     {# Favicon #}
-    {# <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"> #}
+      {% set favicon =  base.favicon.one() %}  
+    <link rel="icon" href="{{ favicon.url}}" type="image/x-icon">
   </head>
 
   <body  x-data="{ contactModal : false }">
