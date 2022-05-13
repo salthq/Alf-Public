@@ -6,16 +6,17 @@
 {% set organisations = craft.entries.section('organisations').one() %}
 {# Outer container #}
 <div class="my-16 bg-alf-green">
+<a id="our-partners">
   {# Inner container #}
   <div class="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-20">
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-5 lg:text-left lg:pl-8 mt-auto mb-auto">
         {# Title #}
-        <a id="our-partners">
+        
           <h1 class="block font-rubik text-4xl">
             {{ organisations.organisationsTitle }}
           </h1>
-        </a>
+     
 
         {# Text #}
         <p class="font-light font-rubik mt-8 text-left sm:text-center sm:text-xl lg:text-left sm:mt-5 lg:block lg:pb-0 lg:text-lg">
@@ -56,6 +57,7 @@
     </div>
   </div>
   {# End | Inner container #}
+  </a>
 </div>
 {# End | Outer container #}
 {# End | Organizations Band #}

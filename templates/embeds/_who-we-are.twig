@@ -1,18 +1,19 @@
 {# Who We Are Band #}
 {# Styling Wrapper #}
-<div>
-  {% set whoWeAreStyling =  index.whoWeAreStyling.one() %}  
-  <img src="{{ whoWeAreStyling.url }}"
-    alt="Styling"
-    class="invisible h-0 lg:visible lg:h-fit absolute" />
+<a id="who-we-are">
+  <div>
+    {% set whoWeAreStyling = index.whoWeAreStyling.one() %}
+    <img src="{{ whoWeAreStyling.url }}"
+      alt="Styling"
+      class="invisible h-0 lg:visible lg:h-fit absolute" />
 
- {% set whoWeAreStylingMobile =  index.whoWeAreStylingMobile.one() %}  
-  <img src="{{ whoWeAreStylingMobile.url }}"
-    alt="Styling"
-    class="visible h-auto lg:invisible lg:h-0 absolute" />
+    {% set whoWeAreStylingMobile = index.whoWeAreStylingMobile.one() %}
+    <img src="{{ whoWeAreStylingMobile.url }}"
+      alt="Styling"
+      class="visible h-auto lg:invisible lg:h-0 absolute" />
 
-  {# Outer container #}
-  <a id="who-we-are">
+    {# Outer container #}
+
     <div class="mx-10 lg:pt-24 my-5">
       {# Inner container #}
       <div class="max-w-6xl mx-auto">
@@ -50,8 +51,9 @@
       </div>
       {# End | Inner container #}
     </div>
-  </a>
-  {# End | Outer container #}
-  {# End | Who We Are Band #}
-</div>
+
+    {# End | Outer container #}
+    {# End | Who We Are Band #}
+  </div>
+</a>
 {# End | Styling Wrapper #}

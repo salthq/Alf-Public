@@ -31,9 +31,11 @@
   <body  x-data="{ contactModal : false }">
   
     {# Header #}
+    <header class="fixed z-50 top-0 w-full">
     {% block header %}
       {% include '/globals/menu.twig' %}
     {% endblock %}
+    </header>
 
     {# Content #}
     {% block content %}
