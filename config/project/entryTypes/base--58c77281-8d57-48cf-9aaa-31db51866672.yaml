@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3c5066ae-06b3-4781-ba39-d23b63f0922d # Favicon
+            fieldUid: 3c5066ae-06b3-4781-ba39-d23b63f0922d
             instructions: null
             label: null
             required: false
