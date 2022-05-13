@@ -12,9 +12,11 @@
 
 <div class="max-w-7xl mx-auto pt-5 pb-10">
   {# Inner container #}
-
+  {# Testimonials carousel #}
   <div class="main-carousel">
+    {# Bringing in the matrix block of testimonials #}
     {% set testimonials = successStories.testimonials.all() %}
+    {# Looping through and displaying testimonials #}
     {% for testimonial in testimonials %}
       <div class="carousel-cell px-10">
         <div class="w-full relative flex items-center justify-center">
@@ -27,7 +29,7 @@
                       class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
                     <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
                       <div class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                       {% set image = testimonial.testimonialImage.one() %}
+                        {% set image = testimonial.testimonialImage.one() %}
                         <img class="object-cover lg:h-full lg:w-full"
                           src="{{ image.url }}"
                           alt="" />
@@ -67,6 +69,7 @@
       </div>
     {% endfor %}
   </div>
+  {# End | Testimonials carousel #}
 
   {# End | Inner container #}
 </div>

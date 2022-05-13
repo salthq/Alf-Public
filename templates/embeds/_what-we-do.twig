@@ -34,16 +34,16 @@
 
     {# What We Do Cards #}
     <div class="max-w-7xl mx-auto">
-      
-
       {# Content grid #}
       <div class="grid my-4 grid-cols-1 lg:grid-cols-12 items-stretch font-rubik overflow-visible">
         {# Content container #}
-
+        {# Bringing in the matrix block of items for the what we do band #}
         {% set items = whatWeDo.whatWeDoItems.all() %}
+        {# Looping through and displaying those items #}
         {% for item in items %}
+          {# Displaying the shorter cards #}
           {% if item.itemType == 1 %}
-          {% set image = item.itemImage.one() %}
+            {% set image = item.itemImage.one() %}
             <div class="pt-4 px-2 lg:rounded-lg lg:col-span-4 flex flex-col lg:flex-row">
               <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
                 <img src="{{ image.url }}" class="mx-auto" />
@@ -57,18 +57,19 @@
                 </p>
               </div>
             </div>
+            {# Displaying the longer cards #}
           {% else %}
-          {% set image = item.itemImage.one() %}
-            <div class="pt-4  px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
+            {% set image = item.itemImage.one() %}
+            <div class="pt-4 px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
               <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-                <img src="{{  image.url }}" class="mx-auto" />
+                <img src="{{ image.url }}" class="mx-auto" />
               </div>
               <div class="flex-initial pl-6 pr-6 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
                 <h2 class="font-semibold pb-4">
                   {{ item.itemHeading }}
                 </h2>
                 <p class="pb-2">
-                   {{ item.itemContent }}
+                  {{ item.itemContent }}
                 </p>
               </div>
             </div>
