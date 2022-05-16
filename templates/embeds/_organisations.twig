@@ -27,7 +27,7 @@
       {# Image #}
       {% set image = organisations.organisationBandImage.one() %}
       <div class="mt-16 sm:mt-26 flex justify-center relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-center">
-        <img src="{{ image.url }}" alt="High Image" />
+        <img src="{{ image.url }}" alt="High Five Image" />
       </div>
       {# End | Image #}
     </div>
@@ -39,7 +39,7 @@
       {% set logo = org.orgImage.one() %}
         <div class="carousel-cell px-5">
           <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl">
-            <img src="{{ logo.url }}" class="py-10 mx-auto h-40" />
+            <img src="{{ logo.url }}" class="py-10 mx-auto h-40" alt="Org Logo" />
             <hr class="bg-alf-dark-green h-0.5 border-0" />
             <h1 class="font-rubik text-2xl pb-5 px-10 py-4">
               {{ org.orgName }}

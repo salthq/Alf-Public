@@ -8,7 +8,7 @@
     {# Top of Band Styling #}
     {% set whatWeDoStyling = whatWeDo.whatWeDoStyling.one() %}
     <div class="flex flex-col justify-center items-center -translate-y-10 sm:-translate-y-20 w-auto">
-      <img src="{{ whatWeDoStyling.url }}" />
+      <img src="{{ whatWeDoStyling.url }}" alt="What We Do Styling" />
     </div>
     {# End | Top of Band Styling #}
 
@@ -29,7 +29,7 @@
       {# What We Do Styling (Mobile) #}
       {% set smallStudent = whatWeDo.whatWeDoImageMobile.one() %}
       <div class="lg:invisible lg:h-0 flex flex-col justify-center items-center pt-6 translate-y-8">
-        <img src="{{ smallStudent.url }}" />
+        <img src="{{ smallStudent.url }}" alt="What We Do Styling" />
       </div>
       {# End | What We Do Styling (Mobile) #}
 
@@ -47,7 +47,7 @@
               {% set image = item.itemImage.one() %}
               <div class="pt-4 px-2 lg:rounded-lg lg:col-span-4 flex flex-col lg:flex-row">
                 <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-                  <img src="{{ image.url }}" class="mx-auto" />
+                  <img src="{{ image.url }}" class="mx-auto" alt="Item Image" />
                 </div>
                 <div class="flex-initial pl-6 pr-6 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
                   <h2 class="font-semibold pb-4">
@@ -63,7 +63,7 @@
               {% set image = item.itemImage.one() %}
               <div class="pt-4 px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
                 <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-                  <img src="{{ image.url }}" class="mx-auto" />
+                  <img src="{{ image.url }}" class="mx-auto" alt="Item Image" />
                 </div>
                 <div class="flex-initial pl-6 pr-6 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
                   <h2 class="font-semibold pb-4">
@@ -81,7 +81,7 @@
           {# Styling - Student Holding Book (Desktop) #}
           {% set student = whatWeDo.whatWeDoImage.one() %}
           <div class="invisible h-0 lg:visible lg:h-auto py-2 self-center px-2 w-auto lg:row-span-2 lg:col-span-3 lg:row-start-1 lg:col-start-10 lg:-translate-x-16 -z-10">
-            <img src="{{ student.url }}" />
+            <img src="{{ student.url }}" alt="Student Image"/>
           </div>
           {# End | Styling - Student Holding Book (Desktop) #}
         </div>
@@ -93,7 +93,7 @@
 
     {# Bottom of Band Styling #}
     <div class="flex flex-col justify-center items-center translate-y-10 sm:translate-y-20">
-      <img src="{{ whatWeDoStyling.url }}" />
+      <img src="{{ whatWeDoStyling.url }}" alt="What We Do Styling" />
     </div>
     {# End | Bottom of Band Styling #}
   </a>

@@ -26,7 +26,7 @@
               {# Image (Mobile) #}
               {% set brandIconMobile = partnership.partnershipImageMobile.one() %}
               <div class="visible h-auto sm:invisible sm:h-0 flex items-center justify-center">
-                <img src="{{ brandIconMobile.url }}" class="" />
+                <img src="{{ brandIconMobile.url }}" class="" alt="Brand Icon" />
               </div>
 
               {# Heading #}
@@ -45,7 +45,7 @@
             {# Image (Desktop) #}
             {% set brandIcon = partnership.partnershipImage.one() %}
             <div class="invisible h-0 sm:visible sm:h-auto flex items-center justify-center p-4">
-              <img src="{{ brandIcon.url }}" class="" />
+              <img src="{{ brandIcon.url }}" class="" alt="Brand Icon" />
             </div>
           </div>
           {# End | Card container #}

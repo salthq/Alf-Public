@@ -22,7 +22,7 @@
         </div>
         <div class="flex flex-row my-10 mx-2 items-start">
           <div class="flex-shrink">
-            <img src="{{ numberOne.url }}" />
+            <img src="{{ numberOne.url }}" alt="Number One" />
           </div>
           <div class="flex-1 px-5 text-2xl font-rubik">
             <h1>
@@ -43,7 +43,7 @@
           <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
             <div class="absolute top-0 p-5 inline-block bg-alf-dark-blue rounded-xl shadow-lg transform -translate-y-1/2">
               {% set image = program.programmeImage.one() %}
-              <img class="h-6 w-6 text-white" src="{{ image.url }}" />
+              <img class="h-6 w-6 text-white" src="{{ image.url }}" alt="Program Image" />
             </div>
             <h3 class="text-xl font-medium font-rubik">
               {{ program.programName }}
@@ -74,7 +74,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-4 xl:-translate-x-24">
       <div class="invisible h-0 lg:h-auto lg:visible col-span-1 row-span-2">
         {% set jump = partnerInfo.howCanWePartnerImage.one() %}
-        <img src="{{ jump.url }}" />
+        <img src="{{ jump.url }}" alt="Jump Image" />
       </div>
 
       {# Heading #}
@@ -86,10 +86,10 @@
         <div class="flex flex-row my-10 mx-2 items-start">
           <div class="flex flex-col">
             <div class="flex-grow">
-              <img src="{{ numberTwo.url }}" />
+              <img src="{{ numberTwo.url }}" alt="Number 2" />
             </div>
             <div class="flex-shrink lg:hidden lg:h-0 -translate-x-8">
-              <img src="{{ jump.url  }}" class="max-h-56" />
+              <img src="{{ jump.url  }}" class="max-h-56" alt="Styling Image" />
             </div>
           </div>
 
@@ -111,7 +111,7 @@
           <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
             <div class="absolute top-0 p-5 inline-block bg-alf-dark-blue rounded-xl shadow-lg transform -translate-y-1/2">
             {% set image = question.questionImage.one() %}
-              <img class="h-6 w-6 text-white" src="{{ image.url }}">
+              <img class="h-6 w-6 text-white" src="{{ image.url }}" alt="Question Image">
                 <path stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
@@ -151,7 +151,7 @@
       </div>
       {% set percentage = partnerInfo.fundersImage.one() %}
       <div class="col-span-4 row-start-1 lg:col-start-9 mx-auto">
-        <img src="{{ percentage.url }}" />
+        <img src="{{ percentage.url }}" alt="Percentage Image" />
       </div>
     </div>
 
