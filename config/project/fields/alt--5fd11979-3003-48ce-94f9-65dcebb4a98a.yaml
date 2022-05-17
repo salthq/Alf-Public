@@ -1,0 +1,19 @@
+columnSuffix: cskylstl
+contentColumnType: text
+fieldGroup: f5dad74b-73d6-4dd9-a4d2-6385968a7209 # Base
+handle: alt
+instructions: ''
+name: 'Image Text Alternative'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

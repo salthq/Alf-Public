@@ -22,14 +22,14 @@
         <div class="py-4">
           <a href="#">
            {% set logo = base.logo.one() %}
-          <img src="{{ logo.url }}" alt="ALF Logo" class="h-12" alt="Logo" />
+          <img src="{{ logo.url }}" alt="ALF Logo" class="h-12" alt="{{ logo.alt }}" />
           </a>
         
         </div>
         <div class="">
         {% set footerStyling = base.footerImage.one() %}
           <img src="{{ footerStyling.url }}"
-            alt="ALF Footer"
+            alt="{{ footerStyling.alt }}"
             class="justify-center mx-auto" />
         </div>
       </div>

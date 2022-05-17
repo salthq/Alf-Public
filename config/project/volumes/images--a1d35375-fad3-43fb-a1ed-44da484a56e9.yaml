@@ -26,6 +26,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\AssetTitleField
             warning: null
             width: 100
+          -
+            fieldUid: 5fd11979-3003-48ce-94f9-65dcebb4a98a # Image Text Alternative
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: images
@@ -47,6 +56,6 @@ settings:
   subfolder: ''
 sortOrder: 3
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: null
 type: craft\awss3\Volume
 url: 'https://s3.eu-west-1.amazonaws.com/alf-public/'

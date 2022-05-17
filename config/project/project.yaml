@@ -1,4 +1,4 @@
-dateModified: 1652428834
+dateModified: 1652705784
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Salt Public'
@@ -19,6 +19,7 @@ meta:
     4b2794b3-5803-43bf-957c-100528311028: 'How Can We Partner' # How Can We Partner
     4d70caad-a88c-48cf-a48a-1f34eb8a70e8: 'Org Name' # Org Name
     5a512b18-6a4d-42d0-94c4-c37d8d60203b: 'Hero Title' # Hero Title
+    5fd11979-3003-48ce-94f9-65dcebb4a98a: 'Image Text Alternative' # Image Text Alternative
     6a0ad08e-3c64-45de-b9c7-6778988794a8: Stats # Stats
     6a2f84be-0aa8-436d-9647-8716eb634c37: 'How can we partner Image' # How can we partner Image
     6a30f0b6-9dfb-472c-88cf-4cdc34869cf5: 'Organisation Band Image' # Organisation Band Image
@@ -49,7 +50,6 @@ meta:
     67f41e09-e046-48b2-8922-8f5c03bbb14c: 'Alf Public' # Alf Public
     74dd3015-fe0c-4e09-99f2-3f7f715bab0f: 'Reach and Impact Subtitle' # Reach and Impact Subtitle
     83f5e3ec-a5d6-43e3-88c6-d95e61b3287a: 'Success Stories' # Success Stories
-    92fa8cb5-051a-45e0-9bba-9766c674f5dd: 'Public Schema' # Public Schema
     95a1d6a3-10cc-4e02-8a5a-a501ee7523e6: 'Partnership Image Mobile' # Partnership Image Mobile
     258bd81c-4519-4b01-9641-5ac9866ae82a: 'What We Do Items' # What We Do Items
     267cceaa-0983-4f7e-aecf-569f20454f62: 'Link to Site' # Link to Site
