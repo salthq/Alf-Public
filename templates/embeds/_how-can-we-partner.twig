@@ -39,7 +39,7 @@
       {% set programmes = partnerInfo.programmeList.all() %}
       {# Items #}
       {% for program in programmes %}
-        <div class="flex flex-col bg-alf-white rounded-2xl shadow-xl lg:my-10 my-5 mx-2">
+        <a  href="#contact"  @click="contactModal = true" class="group flex flex-col bg-alf-white rounded-2xl shadow-xl lg:my-10 my-5 mx-2">
           <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
             <div class="absolute top-0 p-5 inline-block bg-alf-dark-blue rounded-xl shadow-lg transform -translate-y-1/2">
               {% set image = program.programmeImage.one() %}
@@ -53,11 +53,11 @@
             </p>
           </div>
           <div class="p-6 bg-alf-blue rounded-bl-2xl rounded-br-2xl md:px-8">
-            <a href="#contact"  @click="contactModal = true" class="text-base font-medium font-rubik hover:underline">
+            <div class="text-base font-medium font-rubik group-hover:underline">
               Contact us<span aria-hidden="true">&rarr;</span>
-            </a>
+            </div>
           </div>
-        </div>
+        </a>
       {% endfor %}
 
       {# End | Items #}
@@ -107,7 +107,7 @@
 
       {% set questions = partnerInfo.ctaList.all() %}
       {% for question in questions %}
-        <div class="flex flex-col bg-alf-white rounded-2xl shadow-xl my-10 mx-2">
+        <a href="#contact" @click="contactModal = true" class="group flex flex-col bg-alf-white rounded-2xl shadow-xl my-10 mx-2">
           <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
             <div class="absolute top-0 p-5 inline-block bg-alf-dark-blue rounded-xl shadow-lg transform -translate-y-1/2">
             {% set image = question.questionImage.one() %}
@@ -123,11 +123,11 @@
             </p>
           </div>
           <div class="p-6 bg-alf-blue rounded-bl-2xl rounded-br-2xl md:px-8">
-            <a href="#contact" @click="contactModal = true" class="text-base font-medium font-rubik hover:underline">
+            <div class="text-base font-medium font-rubik group-hover:underline">
               Contact us<span aria-hidden="true">&rarr;</span>
-            </a>
+            </div>
           </div>
-        </div>
+        </a>
       {% endfor %}
     </div>
   </div>

@@ -50,10 +50,10 @@
           {# Who we are #}
           <a 
             href="#who-we-are" 
-            class="-m-3 p-3 flex items-center rounded-md pb-4"
+            class="-m-3 p-3 flex items-center rounded-md pb-4" x-on:click="menuMobile = false"
           >
             
-            <span class="text-lg font-medium">
+            <span class="text-lg font-medium" >
               Who we are
             </span>
           </a>
@@ -61,7 +61,7 @@
           {# What we do #}
           <a 
             href="#what-we-do" 
-            class="-m-3 p-3 flex items-center rounded-md pb-4"
+            class="-m-3 p-3 flex items-center rounded-md pb-4" x-on:click="menuMobile = false"
           >
             
             <span class="text-lg font-medium">
@@ -72,7 +72,7 @@
           {# Our partners #}
           <a 
             href="#our-partners" 
-            class="-m-3 p-3 flex items-center rounded-md pb-4"
+            class="-m-3 p-3 flex items-center rounded-md pb-4" x-on:click="menuMobile = false"
           >
             
             <span class="text-lg font-medium">
@@ -83,7 +83,7 @@
           {# Success stories #}
           <a 
             href="#success-stories" 
-            class="-m-3 p-3 flex items-center rounded-md pb-4"
+            class="-m-3 p-3 flex items-center rounded-md pb-4" x-on:click="menuMobile = false"
           >
             
             <span class="text-lg font-medium">
@@ -103,13 +103,13 @@
       <div class="font-rubik flex space-y-4 flex-col items-center">
 
         {# Connect with us button #}
-        <a href="#connect-with-us" class="inline-flex justify-center w-full sm:max-w-lg px-4 py-3 rounded-md shadow-sm text-lg bg-alf-blue"
+        <a href="#connect-with-us" class="inline-flex justify-center w-full sm:max-w-lg px-4 py-3 rounded-md shadow-sm text-lg bg-alf-blue" x-on:click="menuMobile = false"
         >
             Connect with us
         </a>
 
          {# Request a partnership button #}
-        <a href="#" class="inline-flex justify-center w-full sm:max-w-lg px-4 py-3 rounded-md shadow-sm text-lg bg-alf-blue"
+        <a href="#" class="inline-flex justify-center w-full sm:max-w-lg px-4 py-3 rounded-md shadow-sm text-lg bg-alf-blue" x-on:click="menuMobile = false"
          @click="contactModal = true"
         >
             Request a partnership
