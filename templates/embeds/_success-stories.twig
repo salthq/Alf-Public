@@ -13,12 +13,12 @@
 <div class="max-w-7xl mx-auto pt-5 pb-10">
   {# Inner container #}
   {# Testimonials carousel #}
-  <div class="main-carousel">
+  <div class="main-carousel mx-12">
     {# Bringing in the matrix block of testimonials #}
     {% set testimonials = successStories.testimonials.all() %}
     {# Looping through and displaying testimonials #}
     {% for testimonial in testimonials %}
-      <div class="carousel-cell px-10">
+      <div class="carousel-cell px-2">
         <div class="w-full relative flex items-center justify-center">
           <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
             <div class="bg-white pt-16 lg:py-24">
