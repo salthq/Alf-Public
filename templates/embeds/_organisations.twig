@@ -6,7 +6,8 @@
 {% set organisations = craft.entries.section('organisations').one() %}
 {# Outer container #}
 <div class="my-16 bg-alf-green">
-<a id="our-partners">
+<a  id="our-partners"></a>
+
   {# Inner container #}
   <div class="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-20">
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
@@ -33,7 +34,7 @@
     </div>
 
     
-    <div class="org-carousel py-10">
+    <div class="org-carousel py-10 mx-auto">
       {% set orgs = organisations.organisationInfo.all() %}
       {% for org in orgs %}
       {% set logo = org.orgImage.one() %}
@@ -55,18 +56,49 @@
         </div>
       {% endfor %}
     </div>
+    
   </div>
   {# End | Inner container #}
-  </a>
+  
 </div>
 {# End | Outer container #}
 {# End | Organizations Band #}
 
 <script>
   var elem = document.querySelector('.org-carousel'); var flkty = new Flickity(
-  elem, { cellAlign: 'left', contain: true, wrapAround:true, autoPlay:10000 });
+  elem, { cellAlign: 'center', wrapAround:true, autoPlay:10000});
 
   flkty = new Flickity( '.org-carousel', {
 
   });
 </script>
+
+<style>
+    /* Carousel styling */
+	.flickity-button {
+		background: white;
+    border: 1px solid #191716;
+	}
+	.flickity-button:hover .flickity-button-icon {
+		fill: #0fade8;
+	}
+  .flickity-prev-next-button.previous {
+    left: -40px;
+  }
+  .flickity-prev-next-button.next {
+    right: -40px;
+  }
+  .org-carousel {
+   width: 90%;
+  }
+  .flickity-page-dots .dot.is-selected {
+    background: #0fade8;
+    border: none;
+  }
+ 
+
+
+
+  
+
+</style>
