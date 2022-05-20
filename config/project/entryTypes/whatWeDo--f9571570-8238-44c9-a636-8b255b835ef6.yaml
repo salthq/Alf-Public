@@ -63,7 +63,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9b5f16b1-ccd4-4edc-8c30-bc2d80725058 # What We Do Styling Mobile
+            fieldUid: 9b5f16b1-ccd4-4edc-8c30-bc2d80725058
             instructions: null
             label: null
             required: false
