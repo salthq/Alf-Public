@@ -1,7 +1,11 @@
-dateModified: 1653029466
+dateModified: 1653032488
 email:
   fromEmail: paul@advantagelearn.com
-  fromName: 'Salt Public'
+  fromName: 'Advantage Learn Foundation'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
