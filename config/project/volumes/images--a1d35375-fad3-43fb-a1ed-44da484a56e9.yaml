@@ -56,6 +56,6 @@ settings:
   subfolder: ''
 sortOrder: 3
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
+titleTranslationMethod: site
 type: craft\awss3\Volume
 url: 'https://s3.eu-west-1.amazonaws.com/alf-public/'

@@ -1,4 +1,4 @@
-dateModified: 1652705784
+dateModified: 1653029466
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Salt Public'
@@ -93,6 +93,7 @@ meta:
     d2d28287-fcee-4423-b368-21bf61e75978: 'Reach And Impact' # Reach And Impact
     d6d2296d-2220-4a74-94d7-a03275034d57: 'Hero Subtitle' # Hero Subtitle
     da521a95-5e2f-4d91-ace3-83aa770156bd: 'Stat Description' # Stat Description
+    dabf01f8-6179-4010-9a41-2744be70d508: 'Public Schema' # Public Schema
     dbb59129-1e74-45d8-bff0-91adda24e2d6: Programmes # Programmes
     dbe5b2c4-ebe7-47e1-8052-b3bb9d2ff0df: 'Stat Number' # Stat Number
     e0aefdb5-4075-410e-9004-4bc14e157477: Index # Index
