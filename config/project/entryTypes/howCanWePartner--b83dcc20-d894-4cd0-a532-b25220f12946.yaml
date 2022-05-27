@@ -81,6 +81,24 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 5475acc4-915c-4f9e-8d48-add166fb9b81 # Step Two Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 21f106b8-83b2-4648-9e70-94adc36fab96 # FS List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 6a2f84be-0aa8-436d-9647-8716eb634c37 # How can we partner Image
             instructions: null
             label: null
@@ -90,7 +108,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 5475acc4-915c-4f9e-8d48-add166fb9b81 # Step Two Heading
+            fieldUid: e0ba8e8e-433f-412c-ba85-989fd3c1de95 # Number Three
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f50e3fdf-4d4a-4023-8108-532bc6d15e7a # Number Three Title
             instructions: null
             label: null
             required: false
