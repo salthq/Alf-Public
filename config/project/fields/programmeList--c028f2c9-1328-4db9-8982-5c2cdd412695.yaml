@@ -8,7 +8,7 @@ searchable: false
 settings:
   contentTable: '{{%matrixcontent_programmelist}}'
   maxBlocks: '5'
-  minBlocks: '5'
+  minBlocks: '3'
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
