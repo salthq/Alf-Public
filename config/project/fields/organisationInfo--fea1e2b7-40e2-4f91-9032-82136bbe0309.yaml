@@ -7,7 +7,7 @@ name: 'Organisation Info'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_organisationinfo}}'
-  maxBlocks: ''
+  maxBlocks: '10'
   minBlocks: '3'
   propagationKeyFormat: null
   propagationMethod: all
