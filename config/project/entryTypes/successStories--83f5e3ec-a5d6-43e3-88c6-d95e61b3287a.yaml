@@ -28,18 +28,18 @@ fieldLayouts:
             width: 100
           -
             fieldUid: fbfe54d7-d3ab-45eb-9426-d1d8a1f4911f # Success Title
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 73201f5f-19bf-4b82-9bfa-132e7058c223 # Testimonials
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

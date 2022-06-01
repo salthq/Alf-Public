@@ -28,36 +28,36 @@ fieldLayouts:
             width: 100
           -
             fieldUid: d1bbfc3c-09eb-4fb9-831e-28eb2092df3d # Reach And Impact Title
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 74dd3015-fe0c-4e09-99f2-3f7f715bab0f # Reach and Impact Subtitle
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 59e00648-62f0-4119-a6de-a010982c6d6c # Reach And Impact Stats Heading
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 42bc02db-d062-47ff-90fb-fa5e8fa1053f # Reach Stats
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

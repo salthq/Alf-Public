@@ -28,36 +28,36 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 7b0e6735-187f-4108-8fd4-ebea0c6ee1fa # Organisations Title
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 6a30f0b6-9dfb-472c-88cf-4cdc34869cf5 # Organisation Band Image
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 3a765611-7b01-40df-99f5-55da10d744c5 # Organisations Paragraph
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: fea1e2b7-40e2-4f91-9032-82136bbe0309 # Organisation Info
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

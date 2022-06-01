@@ -28,54 +28,54 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 694cb29d-5c54-4e05-a2b3-f5c3479a3ad1 # Partnership Title
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: c1290708-9c46-4cb3-85ba-c6541921e469 # Partnership Background
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 36eb7dad-c8a7-495f-b53a-55436cf4ad7e # Partnership Background Mobile
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 17aaaaea-4ec1-4faf-af71-8cc7eba8ce9d # Partnership Description
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 66a3296c-ce72-4805-b8de-2eb1341d2e6e # Partnership Image
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 95a1d6a3-10cc-4e02-8a5a-a501ee7523e6 # Partnership Image Mobile
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

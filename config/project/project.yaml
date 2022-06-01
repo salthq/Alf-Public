@@ -1,4 +1,4 @@
-dateModified: 1653901671
+dateModified: 1654067487
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Advantage Learn Foundation'
@@ -210,6 +210,10 @@ plugins:
       twigInHtml: true
       twigInHtmlIsolatedMode: true
       updateSearchIndexes: true
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true
