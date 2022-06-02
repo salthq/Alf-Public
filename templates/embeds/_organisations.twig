@@ -42,11 +42,11 @@
           <div class="flex flex-col flex-shrink-0 relative w-full md:w-72 bg-alf-white rounded-xl">
             <img src="{{ logo.url }}" class="py-10 mx-auto h-40" alt="{{ logo.alt }}" />
             <hr class="bg-alf-dark-green h-0.5 border-0" />
-            <h1 class="font-rubik text-2xl pb-5 px-10 py-4">
+            <h1 class="font-rubik text-xl font-bold pb-5 px-8 py-4">
               {{ org.orgName }}
             </h1>
-            <p class="font-rubik px-10">
-              {{ org.orgDescription }}
+            <p class="font-rubik px-8 text-sm">
+              {{ org.orgDescription | truncate(150) }}
             </p>
             <a href={{org.linkToSite}}
               class="px-2 mx-auto w-2/3 max-w-md mt-8 py-3 mb-8 text-base rounded-md bg-alf-green border border-alf-dark-green text-center shadow hover:underline">
