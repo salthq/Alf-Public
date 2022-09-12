@@ -6,7 +6,7 @@
     {% set whatWeDo = craft.entries.section('whatWeDo').one() %}
 
     {# Top of Band Styling #}
-    {% set whatWeDoStyling = whatWeDo.whatWeDoStyling.one() %}
+    {% set whatWeDoStyling = whatWeDo.styling.one() %}
     <div class="flex flex-col justify-center items-center -translate-y-10 sm:-translate-y-20 w-auto">
       <img src="{{ whatWeDoStyling.url }}" alt="{{ whatWeDoStyling.alt }}" />
     </div>
@@ -16,18 +16,18 @@
       {# Title #}
 
       <h2 class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl">
-        {{ index.whatWeDoTitle }}
+        {{ whatWeDo.titleText }}
       </h2>
 
       {# Text #}
       <div class="flex flex-col items-center">
         <p class="mt-8 font-rubik text-alf-white text-2xl max-w-3xl text-center">
-          {{ index.whatWeDoSubtitle }}
+          {{ whatWeDo.subtitleText }}
         </p>
       </div>
 
       {# What We Do Styling (Mobile) #}
-      {% set smallStudent = whatWeDo.whatWeDoImageMobile.one() %}
+      {% set smallStudent = whatWeDo.mobileImage.one() %}
       <div class="lg:invisible lg:h-0 flex flex-col justify-center items-center pt-6 translate-y-8">
         <img src="{{ smallStudent.url }}" alt="{{ smallStudent.alt }}" />
       </div>
@@ -79,7 +79,7 @@
           {# End | Content container #}
 
           {# Styling - Student Holding Book (Desktop) #}
-          {% set student = whatWeDo.whatWeDoImage.one() %}
+          {% set student = whatWeDo.image.one() %}
           <div class="invisible h-0 lg:visible lg:h-auto py-2 self-center px-2 w-auto lg:row-span-2 lg:col-span-3 lg:row-start-1 lg:col-start-10 lg:-translate-x-16 -z-10">
             <img src="{{ student.url }}" alt="{{ student.alt }}"/>
           </div>

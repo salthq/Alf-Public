@@ -27,10 +27,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: fbfe54d7-d3ab-45eb-9426-d1d8a1f4911f # Success Title
-            instructions: ''
-            label: ''
-            required: '1'
+            fieldUid: 6b01ab0f-5e1e-459b-aa6a-951def457885 # Title Text
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -47,10 +47,10 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 handle: successStories
-hasTitleField: true
-name: 'Success Stories'
-section: 39fc3bc3-0e20-493f-b211-015793be3407 # Success Stories
+hasTitleField: false
+name: '6. Success Stories Band'
+section: 39fc3bc3-0e20-493f-b211-015793be3407 # 6. Success Stories Band
 sortOrder: 1
-titleFormat: null
+titleFormat: '6. Success Stories Band'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

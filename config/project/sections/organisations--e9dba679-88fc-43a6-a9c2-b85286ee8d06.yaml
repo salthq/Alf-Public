@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: organisations
-name: Organisations
+name: '5. Organisations We Work With Band'
 propagationMethod: all
 siteSettings:
   67f41e09-e046-48b2-8922-8f5c03bbb14c: # Alf Public

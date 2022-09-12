@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: index
-name: Index
+handle: whoWeAreBand
+name: '2. Who We Are Band'
 propagationMethod: all
 siteSettings:
   67f41e09-e046-48b2-8922-8f5c03bbb14c: # Alf Public
     enabledByDefault: true
     hasUrls: true
-    template: index.twig
-    uriFormat: __home__
+    template: who-we-are-band/_entry
+    uriFormat: who-we-are-band
 type: single

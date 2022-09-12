@@ -27,19 +27,37 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2bf31006-dd8b-455e-8f12-7bc14425caac # What We Do Image
-            instructions: ''
-            label: ''
-            required: '1'
+            fieldUid: 6b01ab0f-5e1e-459b-aa6a-951def457885 # Title Text
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
-            fieldUid: 57d29676-1c3c-442b-8948-a43f000c898e # What We Do Image Mobile
-            instructions: ''
-            label: ''
-            required: '1'
+            fieldUid: 9d1fb737-435c-4b0e-978b-ef8951ee24e7 # Subtitle Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 63298583-683f-4180-b33a-e00d84c8b2d0 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f7a4da3f-b25f-4786-9651-3a055d3390b3 # Mobile Image
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -54,10 +72,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 03df479a-f9d6-4289-acf9-d2507f28b7d2 # What We Do Styling
-            instructions: ''
-            label: ''
-            required: '1'
+            fieldUid: 0a6e7a59-a78b-45ff-895e-472427126846 # Styling
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -66,8 +84,8 @@ fieldLayouts:
         sortOrder: 1
 handle: whatWeDo
 hasTitleField: false
-name: 'What We Do'
-section: 8edeffe5-5b7c-46e5-8b93-96ff14ab5356 # What We Do
+name: '3. What We Do Band'
+section: 8edeffe5-5b7c-46e5-8b93-96ff14ab5356 # 3. What We Do Band
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

@@ -1,9 +1,9 @@
-columnSuffix: iahelpst
+columnSuffix: sfmozgfl
 contentColumnType: text
-fieldGroup: c8832791-7230-4319-b3b6-570098980b47 # Index
-handle: whoWeAreTitle
+fieldGroup: 7829ab32-990e-4eb3-a6c9-5519032a584a # Common
+handle: bodyText
 instructions: ''
-name: 'Who We Are Title'
+name: 'Body Text'
 searchable: false
 settings:
   byteLimit: null
@@ -11,7 +11,7 @@ settings:
   code: ''
   columnType: null
   initialRows: '4'
-  multiline: ''
+  multiline: '1'
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

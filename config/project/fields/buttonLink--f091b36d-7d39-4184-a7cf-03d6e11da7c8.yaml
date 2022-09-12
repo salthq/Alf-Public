@@ -1,9 +1,9 @@
-columnSuffix: aagimosn
+columnSuffix: dbvabkqa
 contentColumnType: text
-fieldGroup: 214101f9-132f-47de-90c5-bfa9338638ca # Partnerships
-handle: partnershipTitle
+fieldGroup: 7829ab32-990e-4eb3-a6c9-5519032a584a # Common
+handle: buttonLink
 instructions: ''
-name: 'Partnership Title'
+name: 'Button Link'
 searchable: false
 settings:
   byteLimit: null
