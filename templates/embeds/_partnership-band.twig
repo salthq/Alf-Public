@@ -5,17 +5,17 @@
     <a id="connect-with-us">
       <div class="mx-auto max-w-7xl">
         {% set partnershipBg = partnership.partnershipBackground.one() %}
-        <div class="z-10 pt-10">
+        <div class="z-10 pt-10 opacity-20">
           <img src="{{ partnershipBg.url }}"
             alt="{{ partnershipBg.alt }}"
             class="invisible h-0 sm:visible sm:h-auto w-full" />
         </div>
 
         {% set partnershipBgMobile = partnership.partnershipBackgroundMobile.one() %}
-        <div class="z-10 pt-5">
+        <div class="z-10 pt-5 opacity-20">
           <img src="{{ partnershipBgMobile.url }}"
             alt="{{ partnershipBgMobile.alt }}"
-            class="h-auto visible sm:invisible sm:h-0 w-full" />
+            class="h-auto visible sm:invisible sm:h-0 w-full " />
         </div>
 
         <div class="max-w-3xl text-left absolute left-0 right-0 mx-auto top-1/2 -translate-y-1/2 px-4">
@@ -49,7 +49,7 @@
             </div>
           </div>
           {# End | Card container #}
-          <div class="max-w-5xl rounded-b-lg bg-alf-dark-green hover:bg-alf-nav-blue h-16 font-rubik text-alf-white font-semibold">
+          <div class="max-w-5xl rounded-b-lg bg-alf-nav-blue hover:bg-alf-blue h-16 font-rubik text-alf-white font-semibold hover:text-alf-black">
             <a href="#partnership"  @click="contactModal = true">
               <p class="text-center py-5">
                 Connect with us
