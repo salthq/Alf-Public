@@ -46,9 +46,13 @@
             {% if item.itemType == 1 %}
               {% set image = item.itemImage.one() %}
               <div class="pt-4 px-2 lg:rounded-lg lg:col-span-4 flex flex-col lg:flex-row">
-                <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-                  <img src="{{ image.url }}" class="mx-auto" alt="{{ image.alt }}" />
-                </div>
+                
+                  <div class="flex bg-alf-blue py-5 px-5 rounded-t-xl lg:rounded-t-none lg:rounded-l-xl ">
+              
+                    <img src="{{ image.url }}" class="w-44 mx-auto" alt="{{ image.alt }}" />
+                    
+                  </div>
+                
                 <div class="flex-initial pl-4 pr-4 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
                   <h2 class="font-semibold pb-4 text-xl">
                     {{ item.itemHeading }}
@@ -62,8 +66,10 @@
             {% else %}
               {% set image = item.itemImage.one() %}
               <div class="pt-4 px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
-                <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-                  <img src="{{ image.url }}" class="mx-auto" alt="{{ image.alt }}" />
+                <div class="flex bg-alf-blue py-5 px-5 rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
+              
+                    <img src="{{ image.url }}" class="w-44 mx-auto" alt="{{ image.alt }}" />
+                    
                 </div>
                 <div class="flex-initial pl-4 pr-4 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
                   <h2 class="font-semibold pb-4 text-xl">
