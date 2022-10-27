@@ -1,48 +1,71 @@
 {# Reach and Impact Band #}
-{% set reachAndImpact = craft.entries.section('reachAndImpact').one() %}
-<div class="max-w-4xl mx-auto mt-64">
-  {# Title #}
-  <h2 class="font-rubik text-3xl text-center sm:text-3xl lg:text-3xl px-2 uppercase">
-    {{ reachAndImpact.titleText }}
-  </h2>
+<div>
+  {# Bring in the reach and impact entry from the Craft admin section #}
+  {% set reachAndImpact = craft.entries.section('reachAndImpact').one() %}
 
-  {# Text #}
-  <div class="flex flex-col items-center">
-    <p class="mt-8 font-rubik text-xl max-w-3xl text-center px-2">
-      {{ reachAndImpact.subtitleText }}
-    </p>
-    <p class="mt-8 font-rubik font-semibold text-xl max-w-3xl text-center px-2">
-      {{ reachAndImpact.secondaryHeading }}
-    </p>
-  </div>
+  {# Content Container #}
+  <div class="max-w-4xl mx-auto mt-64">
 
-  {# Stats #}
+    {# Title #}
+    <h2 class="font-rubik text-3xl text-center sm:text-3xl lg:text-3xl px-2 uppercase">
+      {{ reachAndImpact.titleText }}
+    </h2>
 
-  <div class="grid gap-24 md:gap-0 grid-cols-2 md:grid-cols-6 mx-12 my-5 md:mx-10">
-    {# Bring in Reach and Impact matrix field #}
+    {# Text #}
+    <div class="flex flex-col items-center">
+      <p class="mt-8 font-rubik text-xl max-w-3xl text-center px-2">
+        {{ reachAndImpact.subtitleText }}
+      </p>
+      <p class="mt-8 font-rubik font-semibold text-xl max-w-3xl text-center px-2">
+        {{ reachAndImpact.secondaryHeading }}
+      </p>
+    </div>
 
-    {% set stats = reachAndImpact.reachStats.all() %}
-    
-    {# Loop over all stats in Matrix field #}
-    {% for stat in stats %}
-      {% set image = stat.statImage.one() %}
-     
-        <div class="md:col-span-2 flex flex-col items-center ">
-          <div class="flex-1 py-4 w-44 my-auto">
-            <img src="{{ image.url }}" alt="{{ image.alt }}" />
+    {# Stats Grid #}
+    <div class="grid gap-2 md:gap-0 grid-cols-1 md:grid-cols-3 mx-12 my-5 md:mx-10">
+
+      {# Bring in Reach and Impact matrix field #}
+      {% set stats = reachAndImpact.reachStats.all() %}
+      
+      {# Loop over all stats in Matrix field #}
+      {% for stat in stats %}
+
+        {# Setting the image for the stat #}
+        {% set image = stat.statImage.one() %}
+
+          {# Displaying the stat #}
+          <div class="flex flex-col items-center ">
+
+            {# Stat Image #}
+            <div class="flex-1 py-4 w-44 my-auto">
+              <img src="{{ image.url }}" alt="{{ image.alt }}" />
+            </div>
+
+            {# Stat Content#}
+            <div class="text-center flex flex-col justify-start md:px-8">
+
+              {# Stat Number #}
+              <p class="font-rubik font-semibold">
+                {{ stat.statNumber }}
+              </p>
+
+              {# Stat Description #}
+              <p>
+                {{ stat.statDescription }}
+              </p>
+            </div>
+            {# End | Stat Content#}
+
           </div>
-          <div class="text-center flex flex-col justify-start md:px-8">
-            <p class="font-rubik font-semibold">
-              {{ stat.statNumber }}
-            </p>
-            <p>
-              {{ stat.statDescription }}
-            </p>
-          </div>
-        </div>
-     
-    {% endfor %}
+          {# End | Displaying the stat #}
+      
+      {% endfor %}
+
+    </div>
+    {# End | Stats Grid #}
+
   </div>
-  {# End | Stats #}
+  {# End | Content Container #}
+  
 </div>
 {# End | Reach and Impact Band #}
