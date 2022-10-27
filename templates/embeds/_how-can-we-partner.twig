@@ -229,43 +229,69 @@
   {# End | Section 2 - Skills Development Spend #}
 
   {# Section 3 - Provide to learners #}
-  <section class="mx-10 py-6">
+  <section class="mx-10 py-6 lg:-translate-x-14">
+
+    {# Content Container #}
     <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-nav-blue bg-opacity-10 pt-5 rounded-3xl">
-      {# Heading #}
+
+      {# Setting the number image from the Craft admin section #}
       {% set numberThree = partnerInfo.numberThree.one() %}
+
+      {# Heading #}
       <div class="flex flex-col py-10 lg:row-span-3 lg:col-span-3 col-start-1 row-start-1 ">
+
+        {# Line Breaker #}
         <div>
           <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
         </div>
+
+        {# Heading Container #}
         <div class="flex flex-row my-5 mx-2 items-start">
+
+          {# Displaying the number image #}
           <div class="flex flex-col">
             <div class="flex-grow">
               <img src="{{ numberThree.url }}" alt="{{ numberThree.alt }}" />
             </div>
-            
           </div>
 
+          {# Displaying the title text #}
           <div class="flex-1 px-5 text-lg lg:text-2xl font-rubik my-5">
             <h1>
               {{ partnerInfo.numberThreeTitle }}
             </h1>
           </div>
+
         </div>
+        {# Heading Container #}
+
+        {# Line Breaker #}
         <div>
           <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
         </div>
+
       </div>
       {# End | Heading #}
+
+      {# Content #}
       <div class="lg:col-span-3 pb-5">
-        <p class="text-lg pb-5">Designed for academically advanced learners, the IEB’s Further Studies subjects (also known as Advanced Programme) are set to improve self-discipline and critical thinking skills. Because of this, the IEB Further Studies subjects are the ideal way for learners to give themselves a competitive edge in their chosen degree programmes.</p>
+      
+        {# Text #}
+        <p class="text-lg pb-5"> {{ partnerInfo.numberThreeSubtitle }}</p>
+
+        {# Contact us link #}
         <a 
           href="#connect-with-us" 
-          class="mx-auto py-5 font-rubik hover:text-alf-nav-blue underline">
+          class="mx-auto py-5 font-rubik text-alf-nav-blue underline">
           Contact Us
         </a>
+
       </div>
+      {# End | Content #}
 
     </div>
+    {# End | Content Container #}
+
   </section>
   {# End | Section 3 - Provide to learners #}
 
