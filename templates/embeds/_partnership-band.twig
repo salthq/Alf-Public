@@ -1,30 +1,51 @@
+{# Partner with us band #}
 <div class="relative">
+
+  {# Bring in the partnership entry from the Craft admin section #}
   {% set partnership = craft.entries.section('partnership').one() %}
+
+  {# Anchor Tag #}
+  <a id="connect-with-us">
+
   {# Partnership Card #}
   <div class="z-20">
-    <a id="connect-with-us">
+
+      {# Outer Container #}
       <div class="mx-auto max-w-7xl">
+
+        {# Setting the desktop background image #}
         {% set partnershipBg = partnership.partnershipBackground.one() %}
+
+        {# Displaying the desktop background image #}
         <div class="z-10 pt-10 opacity-20">
+
           <img src="{{ partnershipBg.url }}"
             alt="{{ partnershipBg.alt }}"
             class="invisible h-0 sm:visible sm:h-auto w-full" />
+
         </div>
 
+        {# Setting the mobile background image #}
         {% set partnershipBgMobile = partnership.partnershipBackgroundMobile.one() %}
+
+        {# Displaying the mobile background image #}
         <div class="z-10 pt-5 opacity-20">
+
           <img src="{{ partnershipBgMobile.url }}"
             alt="{{ partnershipBgMobile.alt }}"
             class="visible sm:invisible sm:h-0 w-full " />
-        </div>
 
+        </div>
+        
+        {# Inner Container #}
         <div class="max-w-3xl text-left absolute left-0 right-0 mx-auto top-1/2 -translate-y-1/2 px-4">
+
           {# Card container #}
           <div class="flex flex-col sm:flex-row bg-alf-white rounded-t-lg shadow-md">
+
             {# Text content #}
             <div class="w-full px-5 py-5">
               
-
               {# Heading #}
               <p class="font-semibold font-rubik text-xl py-4 uppercase">
                 {{ partnership.titleText }}
@@ -34,13 +55,14 @@
               <p class="mt-4 pb-4 font-rubik">
                 {{ partnership.subtitleText }}
               </p>
-              {# End | Body #}
+
             </div>
             {# End | Text content #}
-
-           
+  
           </div>
           {# End | Card container #}
+
+          {# Connect with us button #}
           <div class="max-w-5xl rounded-b-lg bg-alf-nav-blue hover:bg-alf-blue h-16 font-rubik text-alf-white font-semibold hover:text-alf-black">
             <a href="#partnership"  @click="contactModal = true">
               <p class="text-center py-5">
@@ -48,9 +70,16 @@
               </p>
             </a>
           </div>
+          {# End | Connect with us button #}
+
         </div>
+        {# Inner Container #}
+
       </div>
-    </a>
-    {# End | Partnership Card #}
+      {# End | Outer Container #}
+    
   </div>
+  {# End | Partnership Card #}
+
 </div>
+{# Partner with us band #}
