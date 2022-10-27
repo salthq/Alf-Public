@@ -275,7 +275,7 @@
 
       {# Content #}
       <div class="lg:col-span-3 pb-5">
-      
+
         {# Text #}
         <p class="text-lg pb-5"> {{ partnerInfo.numberThreeSubtitle }}</p>
 
@@ -296,53 +296,90 @@
   {# End | Section 3 - Provide to learners #}
 
   {# Section 4 - NGO Information #}
-  <section  class="mx-10 py-6" >
+  <section  class="mx-10 py-6 lg:translate-x-14" >
+
+    {# Content Container #}
     <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-white pt-5 rounded-3xl">
 
-      <div class="flex  lg:-translate-x-20">
+      {# Inner Container #}
+      <div class="flex lg:-translate-x-20">
 
-        <div class="w-0 hidden lg:visible lg:flex lg:w-1/2">
+        {# Displaying the band image #}
+        <div class="w-0 hidden lg:visible lg:flex lg:w-full">
+
+          {# Setting the band image from the Craft admin section #}
           {% set image = partnerInfo.fundersImage.one() %}
+
           <img src="{{ image.url }}" alt="{{ image.alt }}" />
+
         </div>
+
+        {# Text content container #}
         <div>
-          {# Heading #}
+
+          {# Setting the number image from the Craft admin section #}
           {% set numberFour = partnerInfo.numberFour.one() %}
+
+          {# Heading container #}
           <div class="flex flex-col py-10 lg:row-span-3 lg:col-span-3 col-start-1 row-start-1 ">
+
+            {# Line Breaker #}
             <div>
               <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
             </div>
+
+            {# Inner Container #}
             <div class="flex flex-row my-5 mx-2 items-start">
+
+              {# Displaying the number image #}
               <div class="flex flex-col">
                 <div class="flex-grow">
                   <img src="{{ numberFour.url }}" alt="{{ numberFour.alt }}" />
-                </div>
-                
+                </div>             
               </div>
 
+              {# Displaying the text title #}
               <div class="flex-1 px-5 text-lg lg:text-2xl font-rubik my-5">
                 <h1>
                   {{ partnerInfo.numberFourTitle }}
                 </h1>
               </div>
+
             </div>
+            {# End | Inner Container #}
+
+            {# Line Breaker #}
             <div>
               <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
             </div>
           </div>
-          {# End | Heading #}
-          <div class="lg:col-span-3 pb-5 px-20">
+          {# End | Heading container #}
+
+          {# Subtitle container #}
+          <div class="lg:col-span-3 pb-5 lg:px-20">
+
+            {# Subtitle #}
             <p class="text-lg pb-5">{{ partnerInfo.numberFourSubtitle }}</p>
+
+            {# Contact us button #}
             <a 
               href="#connect-with-us" 
               class="mx-auto py-5 font-rubik hover:text-alf-nav-blue underline">
               Contact Us
             </a>
+
           </div>
+          {# End | Subtitle container #}
+
         </div>
+        {# End | Text content container #}
 
       </div>
+      {# End | Inner Container #}
+
     </div>
+    {# End | Content Container #}
+
   </section>
   {# End | Section 4 - NGO Information #}
 
