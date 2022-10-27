@@ -103,7 +103,7 @@
       {# Contact us button #}
       <div class="pb-5 flex">
         <a 
-            href="#connect-with-us" 
+            href="#contact" @click="contactModal = true"
             class="mx-auto py-2 px-10 font-rubik rounded-md shadow-sm border-solid border-2 bg-alf-blue border-alf-nav-blue hover:bg-alf-nav-blue"     >
             Contact us
         </a>
@@ -182,7 +182,7 @@
           <div class="lg:col-span-3 pb-5">
             <p class="text-lg pb-5">{{partnerInfo.numberTwoSubtitle}}</p>
             <a 
-              href="#connect-with-us" 
+              href="#contact"  @click="contactModal = true"
               class="mx-auto py-5 font-rubik text-alf-nav-blue underline">
               Contact Us
             </a>
@@ -281,7 +281,7 @@
 
         {# Contact us link #}
         <a 
-          href="#connect-with-us" 
+          href="#contact" @click="contactModal = true"
           class="mx-auto py-5 font-rubik text-alf-nav-blue underline">
           Contact Us
         </a>
@@ -363,8 +363,8 @@
 
             {# Contact us button #}
             <a 
-              href="#connect-with-us" 
-              class="mx-auto py-5 font-rubik hover:text-alf-nav-blue underline">
+              href="#contact"  @click="contactModal = true"
+              class="mx-auto py-5 font-rubik text-alf-nav-blue underline">
               Contact Us
             </a>
 
@@ -396,7 +396,7 @@
 
     </div>
     {# End | Content Container #}
-    
+
   </section>
   {# End | Section 5 - Discount Information #}
 
