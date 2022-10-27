@@ -1,9 +1,9 @@
-columnSuffix: srhtyuun
+columnSuffix: hduumhfn
 contentColumnType: text
 fieldGroup: 7b9504f3-0f44-4d8d-9157-366073044e9d # How Can We Partner
-handle: furtherDiscount
+handle: numberFourTitle
 instructions: ''
-name: 'Further Discount'
+name: 'Number Four Title'
 searchable: false
 settings:
   byteLimit: null
@@ -11,7 +11,7 @@ settings:
   code: ''
   columnType: null
   initialRows: '4'
-  multiline: '1'
+  multiline: ''
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
