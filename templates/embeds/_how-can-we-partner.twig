@@ -1,253 +1,293 @@
 {# How Can We Partner Band #}
-{% set partnerInfo = craft.entries.section('howCanWePartner').one() %}
-{# Heading #}
-<p class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl uppercase pt-10">
-  {{ partnerInfo.howCanWePartnerTitle }}
-</p>
-{# End | Heading #}
+<div>
+  {# Bring in the How can we partner band from the Craft admin section #}
+  {% set partnerInfo = craft.entries.section('howCanWePartner').one() %}
 
-{# Section 1 - Sponsorship #}
-<section class="mx-10 py-6">
-  <div class="my-5 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 md:bg-alf-nav-blue pt-5 md:bg-opacity-10 rounded-3xl">
-    
-    {# Heading #}
-    {% set numberOne = partnerInfo.numberOne.one() %}
-    <div class="flex flex-col py-10 col-span-1 lg:col-span-3 xl:translate-x-20">
-      <div>
-        <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
-      </div>
-      <div class="flex flex-row my-5 mx-2 items-start">
-        <div class="flex flex-col">
-          <div class="flex-grow">
-            <img src="{{ numberOne.url }}" alt="{{ numberOne.alt }}" />
-          </div>
-          
-        </div>
+  {# Heading #}
+  <p class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl uppercase pt-10">
+    {{ partnerInfo.howCanWePartnerTitle }}
+  </p>
+  {# End | Heading #}
 
-        <div class="flex-1 px-5 text-2xl font-rubik my-5">
-          <h1>
-            {{ partnerInfo.stepOneHeading }}
-          </h1>
-        </div>
-      </div>
-      <div>
-        <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
-      </div>
-    </div>
-    {# End | Heading #}
-    
-    {# Programme Grid #}
-    <div class="grid grid-cols-1 md:gap-y-10 gap-y-4 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-4 xl:translate-x-20">
+  {# Section 1 - Sponsorship #}
+  <section class="mx-10 py-6 lg:-translate-x-14">
+
+    {# Sponsorship Container #}
+    <div class="my-5 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 md:bg-alf-nav-blue pt-5 md:bg-opacity-10 rounded-3xl">
       
+      {# Set the number image of the section #}
+      {% set numberOne = partnerInfo.numberOne.one() %}
 
-      {% set programmes = partnerInfo.programmeList.all() %}
-      {# Items #}
-      {% for program in programmes %}
-        <a  href="#contact"  @click="contactModal = true" class="group flex flex-col bg-alf-white rounded-2xl shadow-xl lg:my-10 my-5 mx-2">
-          <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-            <div class="absolute top-0 p-5 inline-block bg-alf-dark-blue rounded-xl shadow-lg transform -translate-y-1/2">
-              {% set image = program.programmeImage.one() %}
-              <img class="h-6 w-6 text-white" src="{{ image.url }}" alt="{{ image.alt }}" />
+      {# Heading #}
+      <div class="flex flex-col py-10 col-span-1 lg:col-span-3 xl:translate-x-20">
+
+        {# Line divider #}
+        <div>
+          <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+        </div>
+
+        {# Heading Container #}
+        <div class="flex flex-row my-5 mx-2 items-start">
+
+          {# Displaying the number #}
+          <div class="flex flex-col">
+            <div class="flex-grow">
+              <img src="{{ numberOne.url }}" alt="{{ numberOne.alt }}" />
             </div>
-            <h3 class="text-xl font-medium font-rubik">
-              {{ program.programName }}
-            </h3>
-            <br>
-            <p class="pt-2 text-sm font-medium font-rubik">
-              {{ program.programmeSubtitle }}
-            </p>
-           
           </div>
+
+          {# Displaying the heading #}
+          <div class="flex-1 px-5 text-2xl font-rubik my-5">
+            <h1>
+              {{ partnerInfo.stepOneHeading }}
+            </h1>
+          </div>
+
+        </div>
+        {# Heading Container #}
         
-        </a>
-      {% endfor %}
+        {# Line divider #}
+        <div>
+          <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+        </div>
 
-      {# End | Items #}
-    </div>
-
-    <div class="pb-5 flex">
-      <a 
-          href="#connect-with-us" 
-          class="mx-auto py-2 px-10 font-rubik rounded-md shadow-sm border-solid border-2 bg-alf-blue border-alf-nav-blue hover:bg-alf-nav-blue"     >
-          Contact us
-      </a>
-    </div>
-    {# End | Programme Grid #}
-  </div>
-</section>
-{# End | Section 1 - Sponsorship #}
-
-{# Section 2 - Skills Development Spend #}
-<section class="mx-10 py-6">
-  <div class="my-5 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-white pt-5 rounded-3xl">
-    <div class="flex lg:-translate-x-20">
-      <div class="w-0 hidden lg:visible lg:flex lg:w-full">
-        {% set jump = partnerInfo.howCanWePartnerImage.one() %}
-        <img src="{{ jump.url }}" alt="{{ jump.alt }}" />
       </div>
+      {# End | Heading #}
+      
+      {# Programme Grid #}
+      <div class="grid grid-cols-1 md:gap-y-10 gap-y-4 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-4 xl:translate-x-20">
+        
+        {# Bring in the programme matrix from the Craft admin section #}
+        {% set programmes = partnerInfo.programmeList.all() %}
 
-      <div class="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-3">
-        {# Heading #}
-        {% set numberTwo = partnerInfo.numberTwo.one() %}
-        <div class="flex flex-col py-10 lg:row-span-3 lg:col-span-3 col-start-1 row-start-1 ">
-          <div>
-            <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
-          </div>
-          <div class="flex flex-row my-5 mx-2 items-start">
-            <div class="flex flex-col">
-              <div class="flex-grow">
-                <img src="{{ numberTwo.url }}" alt="{{ numberTwo.alt }}" />
-              </div>
-              
-            </div>
-
-            <div class="flex-1 px-5 text-lg lg:text-2xl font-rubik my-5">
-              <h1>
-                {{ partnerInfo.stepTwoHeading }}
-              </h1>
-            </div>
-          </div>
-          <div>
-            <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
-          </div>
-        </div>
-        {# End | Heading #}
-        <div class="lg:col-span-3 pb-5">
-          <p class="text-lg pb-5">{{partnerInfo.numberTwoSubtitle}}</p>
-          <a 
-            href="#connect-with-us" 
-            class="mx-auto py-5 font-rubik hover:text-alf-nav-blue underline">
-            Contact Us
-          </a>
-        </div>
-
-        {% set programmes = partnerInfo.fsList.all() %}
-        {# Items #}
+        {# Looping through the items #}
         {% for program in programmes %}
-        <a  href="#contact"  @click="contactModal = true" class="group flex flex-col py-5 bg-alf-white rounded-2xl shadow-xl lg:my-10 my-5 mx-2">
-          <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-            <div class="absolute top-0 p-5 inline-block bg-alf-dark-blue rounded-xl shadow-lg transform -translate-y-1/2">
-              {% set image = program.courseImage.one() %}
-              <img class="h-6 w-6 text-white" src="{{ image.url }}" alt="{{ image.alt }}" />
-            </div>
-            <h3 class="text-xl font-medium font-rubik">
-              {{ program.courseName }}
-            </h3>
-            <br>
-           
-           
-          </div>
-        
-        </a>
-        {% endfor %}
-
-        {# End | Items #}
-
-      </div>
-    </div>
-  </div>
-</section>
-{# End | Section 2 - Skills Development Spend #}
-
-{# Section 3 - Provide to learners #}
-<section class="mx-10 py-6">
-  <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-nav-blue bg-opacity-10 pt-5 rounded-3xl">
-    {# Heading #}
-    {% set numberThree = partnerInfo.numberThree.one() %}
-    <div class="flex flex-col py-10 lg:row-span-3 lg:col-span-3 col-start-1 row-start-1 ">
-      <div>
-        <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
-      </div>
-      <div class="flex flex-row my-5 mx-2 items-start">
-        <div class="flex flex-col">
-          <div class="flex-grow">
-            <img src="{{ numberThree.url }}" alt="{{ numberThree.alt }}" />
-          </div>
-          
-        </div>
-
-        <div class="flex-1 px-5 text-lg lg:text-2xl font-rubik my-5">
-          <h1>
-            {{ partnerInfo.numberThreeTitle }}
-          </h1>
-        </div>
-      </div>
-      <div>
-        <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
-      </div>
-    </div>
-    {# End | Heading #}
-    <div class="lg:col-span-3 pb-5">
-      <p class="text-lg pb-5">Designed for academically advanced learners, the IEB’s Further Studies subjects (also known as Advanced Programme) are set to improve self-discipline and critical thinking skills. Because of this, the IEB Further Studies subjects are the ideal way for learners to give themselves a competitive edge in their chosen degree programmes.</p>
-      <a 
-        href="#connect-with-us" 
-        class="mx-auto py-5 font-rubik hover:text-alf-nav-blue underline">
-        Contact Us
-      </a>
-    </div>
-
-  </div>
-</section>
-{# End | Section 3 - Provide to learners #}
-
-{# Section 4 - NGO Information #}
-<section  class="mx-10 py-6" >
-  <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-white pt-5 rounded-3xl">
-
-    <div class="flex  lg:-translate-x-20">
-
-      <div class="w-0 hidden lg:visible lg:flex lg:w-1/2">
-        {% set image = partnerInfo.fundersImage.one() %}
-        <img src="{{ image.url }}" alt="{{ image.alt }}" />
-      </div>
-      <div>
-        {# Heading #}
-        {% set numberFour = partnerInfo.numberFour.one() %}
-        <div class="flex flex-col py-10 lg:row-span-3 lg:col-span-3 col-start-1 row-start-1 ">
-          <div>
-            <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
-          </div>
-          <div class="flex flex-row my-5 mx-2 items-start">
-            <div class="flex flex-col">
-              <div class="flex-grow">
-                <img src="{{ numberFour.url }}" alt="{{ numberFour.alt }}" />
-              </div>
+          {# Item Container #}
+          <a  href="#contact"  @click="contactModal = true" class="group flex flex-col bg-alf-white rounded-2xl shadow-xl lg:my-10 my-5 mx-2">
+            
+            {# Displaying the item #}
+            <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
               
-            </div>
+              {# Displaying the item image #}
+              <div class="absolute top-0 p-5 inline-block bg-alf-dark-blue rounded-xl shadow-lg transform -translate-y-1/2">
+                
+                {# Setting the item image #}
+                {% set image = program.programmeImage.one() %}
 
-            <div class="flex-1 px-5 text-lg lg:text-2xl font-rubik my-5">
-              <h1>
-                {{ partnerInfo.numberFourTitle }}
-              </h1>
+                <img class="h-6 w-6 text-white" src="{{ image.url }}" alt="{{ image.alt }}" />
+
+              </div>
+
+              {# Displaying the item name #}
+              <h3 class="text-xl font-medium font-rubik">
+                {{ program.programName }}
+              </h3>
+
+              <br>
+
+              {# Displaying the item subtitle #}
+              <p class="pt-2 text-sm font-medium font-rubik">
+                {{ program.programmeSubtitle }}
+              </p>
+            
+            </div>
+            {# End | Displaying the item #}
+          
+          </a>
+          {# End | Item Container #}
+        {% endfor %}
+        
+      </div>
+      {# End | Programme Grid #}
+
+      {# Contact us button #}
+      <div class="pb-5 flex">
+        <a 
+            href="#connect-with-us" 
+            class="mx-auto py-2 px-10 font-rubik rounded-md shadow-sm border-solid border-2 bg-alf-blue border-alf-nav-blue hover:bg-alf-nav-blue"     >
+            Contact us
+        </a>
+      </div>
+      {# Contact us button #}
+
+    </div>
+    {# Sponsorship Container #}
+
+  </section>
+  {# End | Section 1 - Sponsorship #}
+
+  {# Section 2 - Skills Development Spend #}
+  <section class="mx-10 py-6">
+    <div class="my-5 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-white pt-5 rounded-3xl">
+      <div class="flex lg:-translate-x-20">
+        <div class="w-0 hidden lg:visible lg:flex lg:w-full">
+          {% set jump = partnerInfo.howCanWePartnerImage.one() %}
+          <img src="{{ jump.url }}" alt="{{ jump.alt }}" />
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-3">
+          {# Heading #}
+          {% set numberTwo = partnerInfo.numberTwo.one() %}
+          <div class="flex flex-col py-10 lg:row-span-3 lg:col-span-3 col-start-1 row-start-1 ">
+            <div>
+              <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+            </div>
+            <div class="flex flex-row my-5 mx-2 items-start">
+              <div class="flex flex-col">
+                <div class="flex-grow">
+                  <img src="{{ numberTwo.url }}" alt="{{ numberTwo.alt }}" />
+                </div>
+                
+              </div>
+
+              <div class="flex-1 px-5 text-lg lg:text-2xl font-rubik my-5">
+                <h1>
+                  {{ partnerInfo.stepTwoHeading }}
+                </h1>
+              </div>
+            </div>
+            <div>
+              <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
             </div>
           </div>
-          <div>
-            <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+          {# End | Heading #}
+          <div class="lg:col-span-3 pb-5">
+            <p class="text-lg pb-5">{{partnerInfo.numberTwoSubtitle}}</p>
+            <a 
+              href="#connect-with-us" 
+              class="mx-auto py-5 font-rubik hover:text-alf-nav-blue underline">
+              Contact Us
+            </a>
+          </div>
+
+          {% set programmes = partnerInfo.fsList.all() %}
+          {# Items #}
+          {% for program in programmes %}
+          <a  href="#contact"  @click="contactModal = true" class="group flex flex-col py-5 bg-alf-white rounded-2xl shadow-xl lg:my-10 my-5 mx-2">
+            <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+              <div class="absolute top-0 p-5 inline-block bg-alf-dark-blue rounded-xl shadow-lg transform -translate-y-1/2">
+                {% set image = program.courseImage.one() %}
+                <img class="h-6 w-6 text-white" src="{{ image.url }}" alt="{{ image.alt }}" />
+              </div>
+              <h3 class="text-xl font-medium font-rubik">
+                {{ program.courseName }}
+              </h3>
+              <br>
+            
+            
+            </div>
+          
+          </a>
+          {% endfor %}
+
+          {# End | Items #}
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {# End | Section 2 - Skills Development Spend #}
+
+  {# Section 3 - Provide to learners #}
+  <section class="mx-10 py-6">
+    <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-nav-blue bg-opacity-10 pt-5 rounded-3xl">
+      {# Heading #}
+      {% set numberThree = partnerInfo.numberThree.one() %}
+      <div class="flex flex-col py-10 lg:row-span-3 lg:col-span-3 col-start-1 row-start-1 ">
+        <div>
+          <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+        </div>
+        <div class="flex flex-row my-5 mx-2 items-start">
+          <div class="flex flex-col">
+            <div class="flex-grow">
+              <img src="{{ numberThree.url }}" alt="{{ numberThree.alt }}" />
+            </div>
+            
+          </div>
+
+          <div class="flex-1 px-5 text-lg lg:text-2xl font-rubik my-5">
+            <h1>
+              {{ partnerInfo.numberThreeTitle }}
+            </h1>
           </div>
         </div>
-        {# End | Heading #}
-        <div class="lg:col-span-3 pb-5 px-20">
-          <p class="text-lg pb-5">{{ partnerInfo.numberFourSubtitle }}</p>
-          <a 
-            href="#connect-with-us" 
-            class="mx-auto py-5 font-rubik hover:text-alf-nav-blue underline">
-            Contact Us
-          </a>
+        <div>
+          <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
         </div>
+      </div>
+      {# End | Heading #}
+      <div class="lg:col-span-3 pb-5">
+        <p class="text-lg pb-5">Designed for academically advanced learners, the IEB’s Further Studies subjects (also known as Advanced Programme) are set to improve self-discipline and critical thinking skills. Because of this, the IEB Further Studies subjects are the ideal way for learners to give themselves a competitive edge in their chosen degree programmes.</p>
+        <a 
+          href="#connect-with-us" 
+          class="mx-auto py-5 font-rubik hover:text-alf-nav-blue underline">
+          Contact Us
+        </a>
       </div>
 
     </div>
-  </div>
-</section>
-{# End | Section 4 - NGO Information #}
+  </section>
+  {# End | Section 3 - Provide to learners #}
 
-{# Section 5 - Discount Information #}
-<section class="mx-10 py-6">
-  <div class="py-20 my-auto lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-nav-blue bg-opacity-10 rounded-3xl">
-  <div class="text-xl">{{ partnerInfo.furtherDiscount|nl2br }}</div>
-  </div>
-</section>
-{# End | Section 5 - Discount Information #}
+  {# Section 4 - NGO Information #}
+  <section  class="mx-10 py-6" >
+    <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-white pt-5 rounded-3xl">
 
-<br />
+      <div class="flex  lg:-translate-x-20">
+
+        <div class="w-0 hidden lg:visible lg:flex lg:w-1/2">
+          {% set image = partnerInfo.fundersImage.one() %}
+          <img src="{{ image.url }}" alt="{{ image.alt }}" />
+        </div>
+        <div>
+          {# Heading #}
+          {% set numberFour = partnerInfo.numberFour.one() %}
+          <div class="flex flex-col py-10 lg:row-span-3 lg:col-span-3 col-start-1 row-start-1 ">
+            <div>
+              <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+            </div>
+            <div class="flex flex-row my-5 mx-2 items-start">
+              <div class="flex flex-col">
+                <div class="flex-grow">
+                  <img src="{{ numberFour.url }}" alt="{{ numberFour.alt }}" />
+                </div>
+                
+              </div>
+
+              <div class="flex-1 px-5 text-lg lg:text-2xl font-rubik my-5">
+                <h1>
+                  {{ partnerInfo.numberFourTitle }}
+                </h1>
+              </div>
+            </div>
+            <div>
+              <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+            </div>
+          </div>
+          {# End | Heading #}
+          <div class="lg:col-span-3 pb-5 px-20">
+            <p class="text-lg pb-5">{{ partnerInfo.numberFourSubtitle }}</p>
+            <a 
+              href="#connect-with-us" 
+              class="mx-auto py-5 font-rubik hover:text-alf-nav-blue underline">
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  {# End | Section 4 - NGO Information #}
+
+  {# Section 5 - Discount Information #}
+  <section class="mx-10 py-6">
+    <div class="py-20 my-auto lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-nav-blue bg-opacity-10 rounded-3xl">
+    <div class="text-xl">{{ partnerInfo.furtherDiscount|nl2br }}</div>
+    </div>
+  </section>
+  {# End | Section 5 - Discount Information #}
+
+  <br />
+</div>
 {# End | How Can We Partner Band #}
