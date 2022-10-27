@@ -23,14 +23,10 @@
           <div class="flex flex-col sm:flex-row bg-alf-white rounded-t-lg shadow-md">
             {# Text content #}
             <div class="w-full px-5 py-5">
-              {# Image (Mobile) #}
-              {% set brandIconMobile = partnership.mobileImage.one() %}
-              <div class="visible h-auto sm:invisible sm:h-0 flex items-center justify-center">
-                <img src="{{ brandIconMobile.url }}" class="" alt="{{ brandIconMobile.alt }}" />
-              </div>
+              
 
               {# Heading #}
-              <p class="font-semibold font-rubik text-xl py-4">
+              <p class="font-semibold font-rubik text-xl py-4 uppercase">
                 {{ partnership.titleText }}
               </p>
 
@@ -42,11 +38,7 @@
             </div>
             {# End | Text content #}
 
-            {# Image (Desktop) #}
-            {% set brandIcon = partnership.image.one() %}
-            <div class="invisible h-0 sm:visible sm:h-auto flex items-center justify-center p-4">
-              <img src="{{ brandIcon.url }}" class="" alt="{{ brandIcon.alt }}" />
-            </div>
+           
           </div>
           {# End | Card container #}
           <div class="max-w-5xl rounded-b-lg bg-alf-nav-blue hover:bg-alf-blue h-16 font-rubik text-alf-white font-semibold hover:text-alf-black">
