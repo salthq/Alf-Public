@@ -1,29 +1,37 @@
 {# Hero Band #}
-{# Styling Wrapper #}
 <div>
 
-   
+  {# Bring in the hero band entry #} 
   {% set hero = craft.entries.section('heroBand').one() %}
+
+  {# Set the band styling for desktop #}
   {% set heroStyling =  hero.styling.one() %} 
 
+  {# Desktop styling #}
   <img src="{{ heroStyling.url }}"
     alt="{{ heroStyling.alt }}"
     class="z-20 invisible h-0 lg:visible lg:h-fit absolute right-0 top-8" />
 
- 
   {# Outer container #}
   <div class="mt-24 ml-10 xl:mr-10 relative">
+
     {# Inner container #}
     <div class="-z-20 max-w-7xl rounded-l-3xl xl:rounded-r-3xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-10 md:py-32 bg-alf-blue">
-      {# Styling for Mobile #}
+
+      {# Set the band styling for mobile #}
       {% set heroStylingMobile = hero.mobileStyling.one() %}
+
+      {# Mobile styling #}
       <img src="{{ heroStylingMobile.url }}"
         alt="{{ heroStylingMobile.alt }}"
         class="z-20 visible h-auto lg:invisible lg:h-0 absolute right-0 -bottom-20" />
-      {# End | Styling for Mobile #}
 
+      {# Content Grid #}
       <div class="lg:grid lg:grid-cols-8">
+
+        {# Content #}
         <div class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-3 lg:text-left lg:pl-8 lg:py-18">
+
           {# Hero Title #}
           <h1 class="block font-rubik text-4xl">
             {{ hero.titleText }}
@@ -35,12 +43,13 @@
           </p>
 
           {# Button #}
-          <a href="https://advantagelearn.com/"
+          <a href="/connect-with-us"
             class="hidden mt-8 px-6 py-3 font-rubik text-base font-bold rounded-md bg-alf-nav-blue text-alf-white shadow hover:bg-alf-blue hover:text-alf-black w-full md:w-fit md:px-16 lg:block border-solid border-2 border-alf-nav-blue">
             Partner with us
           </a>
         </div>
 
+        {# Spacer #}
         <div class="col-span-1"></div>
 
         {# Hero Image #}
@@ -48,27 +57,30 @@
         <div class="mt-16 sm:mt-26 flex justify-center sm:max-w-lg sm:mx-auto lg:mt-0 lg:mx-0 lg:col-span-3 lg:flex lg:items-center lg:justify-center">
           <img src=" {{ heroImage.url }}" alt="{{ heroImage.alt }}" />
         </div>
-        {# End | Hero Image #}
 
         {# Subtitle and Button for mobile and tablet #}
         <div class="flex flex-col items-center lg:hidden">
+
           {# Subtitle #}
           <p class="py-4 max-w-2xl text-left sm:text-center lg:text-left sm:mt-5 sm:text-xl mt-8 lg:pb-0 lg:text-lg xl:text-xl">
             {{ hero.subtitleText }}
           </p>
 
           {# Button #}
-          <a href="https://advantagelearn.com/"
+          <a href="/connect-with-us"
             class="mx-auto max-w-sm mt-8 px-6 py-3 text-base font-bold rounded-md bg-alf-nav-blue text-alf-white text-center shadow hover:underline ">
             Partner with us
           </a>
+
         </div>
         {# End | Subtitle and Button for mobile and tablet #}
+
       </div>
+      {# End | Content Grid #}
+
     </div>
     {# End | Inner container #}
   </div>
   {# End | Outer container #}
-  {# End | Hero Band #}
 </div>
-{# End | Styling Wrapper #}
+{# End | Hero Band #}
