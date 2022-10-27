@@ -385,9 +385,18 @@
 
   {# Section 5 - Discount Information #}
   <section class="mx-10 py-6">
-    <div class="py-20 my-auto lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-nav-blue bg-opacity-10 rounded-3xl">
-    <div class="text-xl">{{ partnerInfo.furtherDiscount|nl2br }}</div>
+
+    {# Content Container #}
+    <div class="py-10 my-auto lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-nav-blue bg-opacity-10 rounded-3xl">
+
+      {# Displaying the text content #}
+      <div class="text-xl">
+        {{ partnerInfo.furtherDiscount|nl2br }}
+      </div>
+
     </div>
+    {# End | Content Container #}
+    
   </section>
   {# End | Section 5 - Discount Information #}
 
