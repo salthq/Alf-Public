@@ -47,9 +47,9 @@
               {% set image = item.itemImage.one() %}
               <div class="pt-4 px-2 lg:rounded-lg lg:col-span-4 flex flex-col lg:flex-row">
                 
-                  <div class="flex bg-alf-blue py-5 px-5 rounded-t-xl lg:rounded-t-none lg:rounded-l-xl ">
+                  <div class="flex bg-alf-blue w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl h-56 lg:h-auto ">
               
-                    <img src="{{ image.url }}" class="w-44 mx-auto" alt="{{ image.alt }}" />
+                    <img src="{{ image.url }}" class=" p-10 lg:p-0 w-1/2 mx-auto" alt="{{ image.alt }}" />
                     
                   </div>
                 
@@ -66,9 +66,9 @@
             {% else %}
               {% set image = item.itemImage.one() %}
               <div class="pt-4 px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
-                <div class="flex bg-alf-blue py-5 px-5 rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
+                <div class="flex bg-alf-blue w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl h-56 lg:h-auto">
               
-                    <img src="{{ image.url }}" class="w-44 mx-auto" alt="{{ image.alt }}" />
+                    <img src="{{ image.url }}" class="py-10 lg:p-0  w-1/2 mx-auto" alt="{{ image.alt }}" />
                     
                 </div>
                 <div class="flex-initial pl-4 pr-4 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
