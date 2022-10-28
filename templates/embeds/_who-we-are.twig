@@ -13,7 +13,7 @@
     {% set whoWeAreStyling = whoWeAre.styling.one() %}
     <img src="{{ whoWeAreStyling.url }}"
       alt="{{ whoWeAreStyling.alt }}"
-      class="invisible h-0 lg:visible lg:h-fit absolute" />
+      class="invisible h-0 lg:visible lg:h-fit absolute mt-24" />
 
     {# Setting the mobile styling for the band #}
     {% set whoWeAreStylingMobile = whoWeAre.mobileStyling.one() %}
@@ -34,7 +34,7 @@
           {% set lockAndKey = whoWeAre.image.one() %}
 
           {# Displaying the content image #}
-          <div class="mt-16 lg:translate-y-8 sm:mt-26 flex justify-center sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-center z-10 px-10 pb-10">
+          <div class="mt-16 w-full lg:translate-y-8 sm:mt-26 flex justify-center sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-center z-10 px-10 pb-10">
             <img src="{{ lockAndKey.url }}" alt="{{ lockAndKey.alt }}" />
           </div>
 
@@ -45,17 +45,17 @@
           <div class="text-left sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
 
             {# Title #}
-            <h1 class="block font-rubik text-4xl uppercase py-4 md:py-0">
+            <h1 class="block  font-rubik font-semibold text-3xl uppercase py-3">
               {{ whoWeAre.titleText }}
             </h1>
   
             {# Text #}
-            <p class="font-light font-rubik text-left sm:text-center sm:text-xl lg:text-left sm:mt-5 lg:block lg:pb-0 lg:text-lg">
+            <p class="font-light font-rubik text-left sm:text-center lg:text-left sm:mt-5 lg:block lg:pb-0 xl:text-lg">
               {{ whoWeAre.subtitleText|nl2br }}
             </p>
 
             {# Text #}
-            <p class="font-light font-rubik text-left sm:text-center sm:text-xl lg:text-left sm:mt-5 lg:block lg:pb-0 lg:text-lg">
+            <p class="font-light font-rubik text-left sm:text-center lg:text-left sm:mt-5 lg:block lg:pb-0 xl:text-lg">
               {{ whoWeAre.secondaryHeading }}
             </p>
             
@@ -63,7 +63,7 @@
           {# End | Text Content #}
 
           {# Floor Styling - Desktop #}
-          <div class="invisible lg:h-24 lg:visible bg-alf-blue md:row-start-2 col-start-1 col-span-12 h-24 -translate-y-12 rounded-3xl "></div>
+          <div class="invisible lg:h-24 lg:visible bg-alf-blue md:row-start-2 col-start-1 col-span-12 h-24 -translate-y-16 rounded-3xl "></div>
 
         </div>
         {# End | Content Grid #}
