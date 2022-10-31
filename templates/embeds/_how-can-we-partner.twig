@@ -1,61 +1,61 @@
 {# How Can We Partner Band #}
-<div>
+<div class="overflow-hidden pt-10">
   {# Bring in the How can we partner band from the Craft admin section #}
   {% set partnerInfo = craft.entries.section('howCanWePartner').one() %}
 
   {# Heading #}
-  <p class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl uppercase pt-10">
+  <p class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl uppercase pt-10 pb-10">
     {{ partnerInfo.howCanWePartnerTitle }}
   </p>
   {# End | Heading #}
 
   {# Section 1 - Sponsorship #}
-  <section class="mx-10 py-6 lg:-translate-x-14">
+  <section class="py-6 lg:-translate-x-14 pr-10 xl:pr-0">
 
     {# Sponsorship Container #}
-    <div class="my-5 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 md:bg-alf-nav-blue pt-5 md:bg-opacity-10 rounded-3xl">
+    <div class="max-w-6xl rounded-r-3xl lg:rounded-l-3xl mx-auto py-6 px-10 lg:px-0 lg:pr-10 bg-opacity-10 bg-alf-nav-blue">
       
       {# Set the number image of the section #}
       {% set numberOne = partnerInfo.numberOne.one() %}
 
-      {# Heading #}
-      <div class="flex flex-col py-10 col-span-1 lg:col-span-3 xl:translate-x-20">
+        {# Heading #}
+        <div class="flex flex-col py-10 lg:row-span-3 lg:col-span-3 col-start-1 row-start-1 lg:translate-x-32">
 
-        {# Line divider #}
-        <div>
-          <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
-        </div>
+          {# Line breaker #}
+          <div>
+            <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+          </div>
 
-        {# Heading Container #}
-        <div class="flex flex-row my-5 mx-2 items-start">
+          {# Heading Container #}
+          <div class="flex flex-row my-5 mx-2 items-start">
 
-          {# Displaying the number #}
-          <div class="flex flex-col">
-            <div class="flex-grow">
-              <img src="{{ numberOne.url }}" alt="{{ numberOne.alt }}" />
+            {# Displaying the number #}
+            <div class="flex flex-col">
+              <div class="flex-grow">
+                <img src="{{ numberOne.url }}" alt="{{ numberOne.alt }}" />
+              </div> 
             </div>
-          </div>
 
-          {# Displaying the heading #}
-          <div class="flex-1 px-5 text-2xl font-rubik my-5">
-            <h1>
-              {{ partnerInfo.stepOneHeading }}
-            </h1>
+            {# Displaying the text heading #}
+            <div class="flex-1 px-5 text-lg lg:text-2xl font-rubik my-5">
+              <h1>
+                {{ partnerInfo.stepOneHeading }}
+              </h1>
+            </div>
+
+          </div>
+          {# End | Heading Container #}
+          
+          {# Line divider #}
+          <div>
+            <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
           </div>
 
         </div>
-        {# Heading Container #}
-        
-        {# Line divider #}
-        <div>
-          <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
-        </div>
-
-      </div>
-      {# End | Heading #}
+        {# End | Heading #}
       
       {# Programme Grid #}
-      <div class="grid grid-cols-1 md:gap-y-10 gap-y-4 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-4 xl:translate-x-20">
+      <div class="grid grid-cols-1 md:gap-y-10 gap-y-4 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-4 pl-5 lg:translate-x-32">
         
         {# Bring in the programme matrix from the Craft admin section #}
         {% set programmes = partnerInfo.programmeList.all() %}
@@ -117,10 +117,10 @@
   {# End | Section 1 - Sponsorship #}
 
   {# Section 2 - Skills Development Spend #}
-  <section class="mx-10 py-6 lg:translate-x-14">
+  <section class="py-6 lg:translate-x-14 pl-10 mr-0 xl:pl-0">
 
     {# Skills development container #}
-    <div class="my-5 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-white pt-5 rounded-3xl">
+    <div class="max-w-6xl rounded-l-3xl lg:rounded-r-3xl mx-auto px-10 py-10  bg-alf-white">
 
       {# Content container #}
       <div class="flex lg:-translate-x-20">
@@ -147,7 +147,7 @@
 
             {# Line breaker #}
             <div>
-              <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+              <hr class="bg-alf-dark-blue h-0.5 border-0" />
             </div>
 
             {# Heading Container #}
@@ -172,7 +172,7 @@
             
             {# Line breaker #}
             <div>
-              <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+              <hr class="bg-alf-dark-blue h-0.5 border-0 " />
             </div>
 
           </div>
@@ -199,12 +199,12 @@
             <a  href="#contact"  @click="contactModal = true" class="group flex flex-col py-5 bg-alf-white rounded-2xl shadow-xl lg:my-10 my-5 mx-2">
               
               {# Programme card #}
-              <div class="flex-1 relative pt-16 px-6 md:px-8">
+              <div class="flex-1 relative pt-14 px-6 md:px-8">
                 <div class="absolute top-0 p-5 inline-block bg-alf-dark-blue rounded-xl shadow-lg transform -translate-y-1/2">
                   {% set image = program.courseImage.one() %}
                   <img class="h-6 w-6 text-white" src="{{ image.url }}" alt="{{ image.alt }}" />
                 </div>
-                <h3 class="text-xl font-medium font-rubik">
+                <h3 class=" font-medium font-rubik">
                   {{ program.courseName }}
                 </h3>
                 <br>
@@ -229,10 +229,10 @@
   {# End | Section 2 - Skills Development Spend #}
 
   {# Section 3 - Provide to learners #}
-  <section class="mx-10 py-6 lg:-translate-x-14">
+  <section class="py-6 lg:-translate-x-14  pr-10 xl:pr-0">
 
     {# Content Container #}
-    <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-nav-blue bg-opacity-10 pt-5 rounded-3xl">
+    <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-10 sm:px-6 lg:px-8 bg-alf-nav-blue bg-opacity-10 pt-5 rounded-r-3xl lg:rounded-l-3xl">
 
       {# Setting the number image from the Craft admin section #}
       {% set numberThree = partnerInfo.numberThree.one() %}
@@ -296,10 +296,10 @@
   {# End | Section 3 - Provide to learners #}
 
   {# Section 4 - NGO Information #}
-  <section  class="mx-10 py-6 lg:translate-x-14" >
+  <section  class="py-6 lg:translate-x-14  pl-10 mr-0 xl:pl-0" >
 
     {# Content Container #}
-    <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-4 sm:px-6 lg:px-8 bg-alf-white pt-5 rounded-3xl">
+    <div class="my-5 py-10 lg:mx-auto max-w-6xl z-10 px-10 sm:px-6 lg:px-8 bg-alf-white pt-5  rounded-l-3xl lg:rounded-r-3xl">
 
       {# Inner Container #}
       <div class="flex lg:-translate-x-20">
@@ -325,7 +325,7 @@
 
             {# Line Breaker #}
             <div>
-              <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+              <hr class="bg-alf-dark-blue h-0.5 border-0" />
             </div>
 
             {# Inner Container #}
@@ -350,7 +350,7 @@
 
             {# Line Breaker #}
             <div>
-              <hr class="bg-alf-dark-blue h-0.5 border-0 md:w-1/2" />
+              <hr class="bg-alf-dark-blue h-0.5 border-0" />
             </div>
           </div>
           {# End | Heading container #}
