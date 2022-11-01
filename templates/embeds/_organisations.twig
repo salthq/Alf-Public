@@ -79,7 +79,7 @@
 
               {# Linking the user to the organisation #}
               <a href={{org.linkToSite}}
-                class="px-2 mx-auto w-2/3 max-w-md mt-8 py-3 mb-8 text-base rounded-md text-alf-nav-blue">
+                class="text-center mx-auto w-2/3 max-w-md mt-8 py-3 mb-8 text-base rounded-md text-alf-nav-blue underline">
                 {{ org.orgName }}
               </a>
 
@@ -123,26 +123,35 @@
 
 {# Styling the flickity carousel #}
 <style>
-    /* Carousel styling */
-	.flickity-button {
-		background: white;
-    border: 1px solid #191716;
-	}
-	.flickity-button:hover .flickity-button-icon {
-		fill: #0fade8;
-	}
+  .flickity-button {
+    background: white;
+    border: 1px solid #0fade8;
+  }
+
+  .flickity-button .flickity-button-icon {
+    fill: black;
+  }
+
+  .flickity-prev-next-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  /* icon color */
+  .flickity-button-icon {
+    fill: white;
+  }
+  /* position outside */
   .flickity-prev-next-button.previous {
-    left: -50px!important;
+    left: -48px;
   }
   .flickity-prev-next-button.next {
-    right: -50px!important;
+    right: -48px;
   }
+
   .org-carousel {
    width: 84.5%;
   }
-  .flickity-page-dots .dot.is-selected {
-    background: #0fade8;
-    border: none;
-  }
+
 
 </style>
