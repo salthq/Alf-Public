@@ -22,6 +22,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: f0827ba4-f970-4ab3-880e-7e742fc58848 # Programme Subtitle
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -78,6 +87,26 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  f0827ba4-f970-4ab3-880e-7e742fc58848: # Programme Subtitle
+    columnSuffix: amilxvkn
+    contentColumnType: text
+    fieldGroup: null
+    handle: programmeSubtitle
+    instructions: ''
+    name: 'Programme Subtitle'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
 handle: programmes
 name: Programmes
 sortOrder: 1

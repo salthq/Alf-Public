@@ -1,86 +1,187 @@
-{# Success Stories Band #}
-<link rel="stylesheet"
-  href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+{# Script and style sheet for flickity carousel #}
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+{# Bring in the success stories entry from the Craft admin section #}
 {% set successStories = craft.entries.section('successStories').one() %}
+{# Anchor Tag #}
 <a id="success-stories"></a>
-  <h1 class="text-center font-rubik text-2xl font-semibold uppercase pt-5">
-    {{ successStories.successTitle }}
-  </h1>
 
+{# Heading #}
+<h1 class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl uppercase">
+  {{ successStories.titleText }}
+</h1>
 
-<div class="max-w-7xl mx-auto pt-5 pb-10">
-  {# Inner container #}
+{# Success Stories Band #}
+<div class="max-w-7xl mx-auto pt-5 pb-24">
+
   {# Testimonials carousel #}
   <div class="main-carousel mx-12">
+
     {# Bringing in the matrix block of testimonials #}
     {% set testimonials = successStories.testimonials.all() %}
+
     {# Looping through and displaying testimonials #}
     {% for testimonial in testimonials %}
+
+      {# Carousel Items #}
       <div class="carousel-cell px-2">
+
+        {# Item Container #}
         <div class="w-full relative flex items-center justify-center">
+
+          {# Setting up the layout #}
           <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+
             <div class="bg-white pt-16 lg:py-24">
+
               <div class="pb-16 lg:pb-0 lg:z-10 lg:relative">
+
                 <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8 bg-alf-blue py-10 lg:py-0 rounded-xl">
+
+                  {# Outer Image Container #}
                   <div class="relative lg:-my-8">
+
                     <div aria-hidden="true"
                       class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+
+                    {# Image Container #}
                     <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                      
                       <div class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                        
+                        {# Bringing in the image from the Craft admin section #}
                         {% set image = testimonial.testimonialImage.one() %}
+                        
+                        {# Displaying the image #}
                         <img class="object-cover mx-auto lg:h-full lg:w-full"
                           src="{{ image.url }}"
                           alt="{{ image.alt }}" />
+
                       </div>
+
                     </div>
+                    {# End | Image Container #}
+
                   </div>
+                  {# End | Outer Image Container #}
+
+                  {# Outer Text Container #}
                   <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+                    
+                    {# Inner Text Container #}
                     <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+                      
+                      {# Testimonial Text #}
                       <blockquote>
+                        
+                        {# Qoute Container #}
                         <div>
-                          <svg class="h-12 w-12 text-white opacity-25"
-                            fill="currentColor"
+                          
+                          {# Displaying the qoute icon #}
+                          <svg class="h-10 w-10 text-white"
+                            fill="#0fade8"
                             viewbox="0 0 32 32"
                             aria-hidden="true">
                             <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                          
                           </svg>
+                          
+                          {# Displaying the qoute text #}
                           <div class="rich-text">
                             {{ testimonial.quote }}
                           </div>
+                        
                         </div>
+                        {# End | Qoute Container #}
+
+                        {# Testimonial Details #}
                         <footer class="mt-6">
+
+                          {# Displaying the person's name #}
                           <p class="text-base font-medium font-rubik">
                             {{ testimonial.personName }}
                           </p>
+
+                          {# Displaying the person's title #}
                           <p class="text-base font-medium font-rubik">
                             {{ testimonial.personTitle }}
                           </p>
+
                         </footer>
+                        {# End | Testimonial Details #}
+
                       </blockquote>
+                      {# Testimonial Text #}
+
                     </div>
+                    {# End | Inner Text Container #}
+
                   </div>
+                  {# End | Outer Text Container #}
+
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+        {# End | Item Container #}
+
       </div>
+
     {% endfor %}
+
   </div>
   {# End | Testimonials carousel #}
 
-  {# End | Inner container #}
 </div>
 {# End | Success Stories Band #}
 
+{# Initializing the flickity carousel #}
 <script>
   var elem = document.querySelector('.main-carousel'); var flkty = new Flickity(
-  elem, { cellAlign: 'center', contain: true, wrapAround:true
+  elem, { cellAlign: 'center', contain: true, wrapAround:true, imagesLoaded: true
   });
 
   flkty = new Flickity( '.main-carousel', {
 
   });
 </script>
+
+<style>
+   .flickity-button {
+    background: white;
+    border: 1px solid #0fade8;
+  }
+
+  .flickity-button .flickity-button-icon {
+    fill: black;
+  }
+
+  .flickity-prev-next-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  /* icon color */
+  .flickity-button-icon {
+    fill: white;
+  }
+  /* position outside */
+  .flickity-prev-next-button.previous {
+    left: -48px;
+  }
+  .flickity-prev-next-button.next {
+    right: -48px;
+  }
+
+  .org-carousel {
+   width: 84.5%;
+  }
+
+</style>

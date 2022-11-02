@@ -1,102 +1,139 @@
 {# What we do Band #}
-{# Outer container #}
-<div class="bg-alf-nav-blue translate-y-20">
-  <a id="what-we-do">
-    {# Inner container #}
-    {% set whatWeDo = craft.entries.section('whatWeDo').one() %}
+<div class="pt-10"></div>
+  {# Outer container #}
+  <div class="bg-alf-nav-blue translate-y-20">
 
-    {# Top of Band Styling #}
-    {% set whatWeDoStyling = whatWeDo.whatWeDoStyling.one() %}
-    <div class="flex flex-col justify-center items-center -translate-y-10 sm:-translate-y-20 w-auto">
-      <img src="{{ whatWeDoStyling.url }}" alt="{{ whatWeDoStyling.alt }}" />
-    </div>
-    {# End | Top of Band Styling #}
+    {# Anchor Tag #}
+    <a id="what-we-do"></a>
 
-    <div class="max-w-7xl mx-auto px-6 pb-12 pt-4 sm:pt-8 sm:px-8 md:px-12 lg:px-16 lg:pt-4">
-      {# Title #}
+      {# Bringing in the what we do entry from the Craft admin section #}
+      {% set whatWeDo = craft.entries.section('whatWeDo').one() %}
 
-      <h2 class="font-rubik text-4xl text-center sm:text-3xl lg:text-3xl">
-        {{ index.whatWeDoTitle }}
-      </h2>
-
-      {# Text #}
-      <div class="flex flex-col items-center">
-        <p class="mt-8 font-rubik text-alf-white text-2xl max-w-3xl text-center">
-          {{ index.whatWeDoSubtitle }}
-        </p>
+      {# Top of Band Styling #}
+      {% set whatWeDoStyling = whatWeDo.styling.one() %}
+      <div class="flex flex-col justify-center items-center -translate-y-10 sm:-translate-y-20 w-auto">
+        <img src="{{ whatWeDoStyling.url }}" alt="{{ whatWeDoStyling.alt }}" />
       </div>
+      {# End | Top of Band Styling #}
 
-      {# What We Do Styling (Mobile) #}
-      {% set smallStudent = whatWeDo.whatWeDoImageMobile.one() %}
-      <div class="lg:invisible lg:h-0 flex flex-col justify-center items-center pt-6 translate-y-8">
-        <img src="{{ smallStudent.url }}" alt="{{ smallStudent.alt }}" />
-      </div>
-      {# End | What We Do Styling (Mobile) #}
+      {# Inner Container #}
+      <div class="max-w-7xl mx-auto px-6 pb-12 pt-4 sm:pt-8 sm:px-8 md:px-12 lg:px-16 lg:pt-4">
+        
+        {# Title #}
+        <h2 class="font-rubik text-alf-white text-4xl text-center sm:text-3xl lg:text-3xl uppercase">
+          {{ whatWeDo.titleText }}
+        </h2>
 
-      {# What We Do Cards #}
-      <div class="max-w-7xl mx-auto">
-        {# Content grid #}
-        <div class="grid my-4 grid-cols-1 lg:grid-cols-12 items-stretch font-rubik overflow-visible">
-          {# Content container #}
-          {# Bringing in the matrix block of items for the what we do band #}
-          {% set items = whatWeDo.whatWeDoItems.all() %}
-          {# Looping through and displaying those items #}
-          {% for item in items %}
-            {# Displaying the shorter cards #}
-            {% if item.itemType == 1 %}
-              {% set image = item.itemImage.one() %}
-              <div class="pt-4 px-2 lg:rounded-lg lg:col-span-4 flex flex-col lg:flex-row">
-                <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-                  <img src="{{ image.url }}" class="mx-auto" alt="{{ image.alt }}" />
-                </div>
-                <div class="flex-initial pl-4 pr-4 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
-                  <h2 class="font-semibold pb-4 text-xl">
-                    {{ item.itemHeading }}
-                  </h2>
-                  <p class="pb-2">
-                    {{ item.itemContent }}
-                  </p>
-                </div>
-              </div>
-              {# Displaying the longer cards #}
-            {% else %}
-              {% set image = item.itemImage.one() %}
-              <div class="pt-4 px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
-                <div class="flex-shrink bg-alf-blue lg:py-20 py-5 px-5 w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
-                  <img src="{{ image.url }}" class="mx-auto" alt="{{ image.alt }}" />
-                </div>
-                <div class="flex-initial pl-4 pr-4 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
-                  <h2 class="font-semibold pb-4 text-xl">
-                    {{ item.itemHeading }}
-                  </h2>
-                  <p class="pb-2">
-                    {{ item.itemContent }}
-                  </p>
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
-          {# End | Content container #}
-
-          {# Styling - Student Holding Book (Desktop) #}
-          {% set student = whatWeDo.whatWeDoImage.one() %}
-          <div class="invisible h-0 lg:visible lg:h-auto py-2 self-center px-2 w-auto lg:row-span-2 lg:col-span-3 lg:row-start-1 lg:col-start-10 lg:-translate-x-16 -z-10">
-            <img src="{{ student.url }}" alt="{{ student.alt }}"/>
-          </div>
-          {# End | Styling - Student Holding Book (Desktop) #}
+        {# Text #}
+        <div class="flex flex-col items-center">
+          <p class="mt-8 font-rubik text-alf-white text-2xl max-w-3xl text-center">
+            {{ whatWeDo.subtitleText }}
+          </p>
         </div>
-        {# End | Content grid #}
-      </div>
-      {# End | What We Do Cards #}
-    </div>
-    {# End | Inner container #}
 
-    {# Bottom of Band Styling #}
-    <div class="flex flex-col justify-center items-center translate-y-10 sm:translate-y-20">
-      <img src="{{ whatWeDoStyling.url }}" alt="{{ whatWeDoStyling.alt }}" />
-    </div>
-    {# End | Bottom of Band Styling #}
-  </a>
+        {# What We Do Styling (Mobile) #}
+        {% set smallStudent = whatWeDo.mobileImage.one() %}
+        <div class="lg:invisible lg:h-0 flex flex-col justify-center items-center pt-6 translate-y-8">
+          <img src="{{ smallStudent.url }}" alt="{{ smallStudent.alt }}" />
+        </div>
+        {# End | What We Do Styling (Mobile) #}
+
+        {# What We Do Cards #}
+        <div class="max-w-7xl mx-auto pt-5">
+
+          {# Content grid #}
+          <div class="grid my-4 grid-cols-1 lg:grid-cols-12 items-stretch font-rubik overflow-visible">
+
+            {# Bringing in the matrix block of items for the what we do band #}
+            {% set items = whatWeDo.whatWeDoItems.all() %}
+            
+            {# Looping through and displaying those items #}
+            {% for item in items %}
+
+              {# Displaying the shorter cards #}
+              {% if item.itemType == 1 %}
+
+                {# Setting the image on the card #}
+                {% set image = item.itemImage.one() %}
+
+                {# Card Container #}
+                <div class="pt-4 px-2 lg:rounded-lg lg:col-span-4 flex flex-col lg:flex-row">
+
+                    {# Displaying the image on the card #}
+                    <div class="flex bg-alf-blue w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl h-56 lg:h-auto "> 
+                      <img src="{{ image.url }}" class=" py-10 lg:p-1 w-2/3 mx-auto" alt="{{ image.alt }}" />
+                    </div>
+
+                    {# Displaying the item content #}
+                    <div class="flex-initial pl-4 pr-4 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
+
+                      <h2 class="pb-4 text-2xl">
+                        {{ item.itemHeading }}
+                      </h2>
+                      <p class="pb-2 text-alf-grey">
+                        {{ item.itemContent }}
+                      </p>
+
+                    </div>
+
+                </div>
+                {# End | Card Container #}
+
+              {# Displaying the longer cards #}
+              {% else %}
+
+                {# Setting the image on the card #}
+                {% set image = item.itemImage.one() %}
+
+                {# Card Container #}
+                <div class="pt-4 px-2 rounded-lg lg:col-span-5 flex flex-col lg:flex-row">
+
+                  {# Displaying the image on the card #}
+                  <div class="flex bg-alf-blue w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl h-56 lg:h-auto">
+                      <img src="{{ image.url }}" class="py-10 lg:p-0 w-2/3 mx-auto" alt="{{ image.alt }}" />
+                  </div>
+
+                  {# Displaying the item content #}
+                  <div class="flex-initial pl-4 pr-4 py-8 rounded-b-xl lg:rounded-b-none lg:rounded-r-xl bg-alf-white">
+
+                    <h2 class="pb-4 text-2xl">
+                      {{ item.itemHeading }}
+                    </h2>
+                    <p class="pb-2 text-alf-grey">
+                      {{ item.itemContent }}
+                    </p>
+
+
+                  </div>
+
+                </div>
+                {# End | Card Container #}
+
+              {% endif %}
+            {% endfor %}
+           
+
+            {# Styling - Student Holding Book (Desktop) #}
+            {% set student = whatWeDo.image.one() %}
+            <div class="invisible h-0 lg:visible lg:h-auto self-center px-2 w-auto lg:row-span-2 lg:col-span-3 lg:row-start-1 lg:col-start-10 lg:-translate-x-16 -z-10">
+              <img src="{{ student.url }}" alt="{{ student.alt }}"/>
+            </div>
+            {# End | Styling - Student Holding Book (Desktop) #}
+          </div>
+          {# End | Content grid #}
+        </div>
+        {# End | What We Do Cards #}
+      </div>
+      {# End | Inner Container #}
+
+      {# Bottom of Band Styling #}
+      <div class="flex flex-col justify-center items-center translate-y-10 sm:translate-y-20">
+        <img src="{{ whatWeDoStyling.url }}" alt="{{ whatWeDoStyling.alt }}" />
+      </div>
+      {# End | Bottom of Band Styling #}
+    
+  </div>
+  {# End | Outer container #}
+
 </div>
-{# End | Outer container #}
 {# End | What we do Band #}

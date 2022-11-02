@@ -1,9 +1,9 @@
-columnSuffix: cayylpeg
+columnSuffix: nsrkkdtm
 contentColumnType: text
-fieldGroup: d2d28287-fcee-4423-b368-21bf61e75978 # Reach And Impact
-handle: reachAndImpactStatsHeading
+fieldGroup: 7829ab32-990e-4eb3-a6c9-5519032a584a # Common
+handle: secondaryHeading
 instructions: ''
-name: 'Reach And Impact Stats Heading'
+name: 'Secondary Heading'
 searchable: false
 settings:
   byteLimit: null

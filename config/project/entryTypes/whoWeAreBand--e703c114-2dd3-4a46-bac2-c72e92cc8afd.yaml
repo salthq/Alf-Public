@@ -1,5 +1,5 @@
 fieldLayouts:
-  f004b7cc-063c-4583-b8ce-aaf87f3584e7:
+  68763fe6-aeeb-4ae6-b662-6352797d374b:
     tabs:
       -
         elements:
@@ -45,24 +45,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c1290708-9c46-4cb3-85ba-c6541921e469 # Partnership Background
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 36eb7dad-c8a7-495f-b53a-55436cf4ad7e # Partnership Background Mobile
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 63298583-683f-4180-b33a-e00d84c8b2d0 # Image
             instructions: null
             label: null
@@ -72,7 +54,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f7a4da3f-b25f-4786-9651-3a055d3390b3 # Mobile Image
+            fieldUid: 0a6e7a59-a78b-45ff-895e-472427126846 # Styling
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9253e245-ca04-4fda-b4e9-9f4a8194a056 # Mobile Styling
             instructions: null
             label: null
             required: false
@@ -82,10 +73,10 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: partnership
+handle: whoWeAreBand
 hasTitleField: false
-name: '7. Partner With Us Band'
-section: 40b24328-3a03-44e5-a870-8aa27d793326 # 7. Partner With Us Band
+name: '2. Who We Are Band'
+section: 59f6d049-aaa6-43aa-8bae-aac827ab1997 # 2. Who We Are Band
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

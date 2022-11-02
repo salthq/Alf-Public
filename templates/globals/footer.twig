@@ -13,10 +13,10 @@
 <div class="h-5 bg-alf-nav-blue opacity-75 mt-6 w-auto rounded-t-lg"></div>
 
 {# Footer #}
-<footer class="bg-alf-blue">
-  <div class="max-w-7xl mx-auto px-10">
+<footer class="bg-alf-blue px-2 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
     {# Content Grid #}
-    <div class="grid grid-cols-1 md:grid-cols-11 py-10 items-center mx-auto max-w-5xl">
+    <div class="grid grid-cols-1 md:grid-cols-10 py-10 items-center mx-auto max-w-7xl">
       {# Footer Images #}
       <div class="flex flex-col md:col-span-4">
         <div class="py-4">
@@ -30,12 +30,12 @@
         {% set footerStyling = base.footerImage.one() %}
           <img src="{{ footerStyling.url }}"
             alt="{{ footerStyling.alt }}"
-            class="justify-center mx-auto" />
+            class="justify-center mx-auto pb-10 md:pb-0" />
         </div>
       </div>
 
       {# Footer Links #}
-      <div class="md:col-span-3 items-center self-center font-rubik mx-auto">
+      <div class="md:col-span-3 md:col-start-5 font-rubik mx-auto py-10 md:py-0">
         <div class="flex flex-row md:flex-col">
           <div class="flex flex-col px-2 text-left">
             <h3 class="text-xl font-semibold tracking-wider uppercase py-2 text-alf-dark-blue">
@@ -84,22 +84,24 @@
 
     {# Connect With Us #}
     <hr />
-    <div class="flex font-rubik p-4 flex-col md:flex-row mx-auto">
+    <div class="flex font-rubik py-4 flex-col md:flex-row mx-auto">
       <div class="flex-1">
-        <h1 class="text-3xl text-alf-nav-blue text-center md:text-left">
+        <h1 class="text-3xl text-alf-nav-blue text-center md:text-left py-4 md:py-0">
           Connect With Us
         </h1>
-        <p class="text-md text-center md:text-left pb-4 pr-5 pt-3">
+        <p class="text-md text-center md:text-left pb-4 pr-5 pt-3 py-6 md:py-0">
           If you want to get involved reach out to us and let’s join hands in
           building a better South Africa for all through the power of education.
         </p>
       </div>
-      <a href="#partnership" @click="contactModal = true"
-        class="px-4 mx-auto max-w-md text-base my-auto py-4 rounded-md bg-alf-nav-blue text-alf-white text-center shadow hover:bg-alf-blue hover:text-alf-black border-solid border-2 border-alf-nav-blue">
-        Request a Partnership
-      </a>
+      <div class="py-10 mx-auto my-auto md:py-0">
+        <a href="#partnership" @click="contactModal = true"
+          class="py-4 px-4 mx-auto max-w-md text-base my-auto rounded-md bg-alf-nav-blue text-alf-white text-center shadow hover:bg-alf-blue hover:text-alf-black border-solid border-2 border-alf-nav-blue">
+          Request a Partnership
+        </a>
+      </div>
     </div>
-    <hr />
+    <hr></hr>
     {# End | Connect With Us #}
     <p class="text-sm py-5">Copyright © 2022 Advantage Learn Foundation. All rights reserved.</p>
   </div>

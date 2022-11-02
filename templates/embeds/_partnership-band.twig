@@ -1,64 +1,85 @@
+{# Partner with us band #}
 <div class="relative">
+
+  {# Bring in the partnership entry from the Craft admin section #}
   {% set partnership = craft.entries.section('partnership').one() %}
+
+  {# Anchor Tag #}
+  <a id="connect-with-us" class="pb-20">
+
   {# Partnership Card #}
   <div class="z-20">
-    <a id="connect-with-us">
+
+      {# Outer Container #}
       <div class="mx-auto max-w-7xl">
+
+        {# Setting the desktop background image #}
         {% set partnershipBg = partnership.partnershipBackground.one() %}
-        <div class="z-10 pt-10">
+
+        {# Displaying the desktop background image #}
+        <div class="z-10 pt-10 opacity-20">
+
           <img src="{{ partnershipBg.url }}"
             alt="{{ partnershipBg.alt }}"
             class="invisible h-0 sm:visible sm:h-auto w-full" />
+
         </div>
 
+        {# Setting the mobile background image #}
         {% set partnershipBgMobile = partnership.partnershipBackgroundMobile.one() %}
-        <div class="z-10 pt-5">
+
+        {# Displaying the mobile background image #}
+        <div class="z-10 pt-5 opacity-20">
+
           <img src="{{ partnershipBgMobile.url }}"
             alt="{{ partnershipBgMobile.alt }}"
-            class="h-auto visible sm:invisible sm:h-0 w-full" />
-        </div>
+            class="visible sm:invisible sm:h-0 w-full " />
 
-        <div class="max-w-3xl text-left absolute left-0 right-0 mx-auto top-1/2 -translate-y-1/2 px-4">
+        </div>
+        
+        {# Inner Container #}
+        <div class="max-w-5xl text-left absolute left-0 right-0 mx-auto pt-8 sm:pt-0 top-1/2 -translate-y-1/2 px-4">
+
           {# Card container #}
           <div class="flex flex-col sm:flex-row bg-alf-white rounded-t-lg shadow-md">
+
             {# Text content #}
             <div class="w-full px-5 py-5">
-              {# Image (Mobile) #}
-              {% set brandIconMobile = partnership.partnershipImageMobile.one() %}
-              <div class="visible h-auto sm:invisible sm:h-0 flex items-center justify-center">
-                <img src="{{ brandIconMobile.url }}" class="" alt="{{ brandIconMobile.alt }}" />
-              </div>
-
+              
               {# Heading #}
               <p class="font-semibold font-rubik text-xl py-4">
-                {{ partnership.partnershipTitle }}
+                {{ partnership.titleText }}
               </p>
 
               {# Body #}
               <p class="mt-4 pb-4 font-rubik">
-                {{ partnership.partnershipDescription }}
+                {{ partnership.subtitleText }}
               </p>
-              {# End | Body #}
+
             </div>
             {# End | Text content #}
-
-            {# Image (Desktop) #}
-            {% set brandIcon = partnership.partnershipImage.one() %}
-            <div class="invisible h-0 sm:visible sm:h-auto flex items-center justify-center p-4">
-              <img src="{{ brandIcon.url }}" class="" alt="{{ brandIcon.alt }}" />
-            </div>
+  
           </div>
           {# End | Card container #}
-          <div class="max-w-5xl rounded-b-lg bg-alf-dark-green hover:bg-alf-nav-blue h-16 font-rubik text-alf-white font-semibold">
+
+          {# Connect with us button #}
+          <div class="max-w-5xl rounded-b-lg bg-alf-nav-blue hover:bg-alf-blue h-16 font-rubik text-alf-white font-semibold hover:text-alf-black">
             <a href="#partnership"  @click="contactModal = true">
               <p class="text-center py-5">
                 Connect with us
               </p>
             </a>
           </div>
+          {# End | Connect with us button #}
+
         </div>
+        {# Inner Container #}
+
       </div>
-    </a>
-    {# End | Partnership Card #}
+      {# End | Outer Container #}
+    
   </div>
+  {# End | Partnership Card #}
+
 </div>
+{# Partner with us band #}

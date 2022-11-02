@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 19dddbad-59d7-4efd-ac2e-b7d71deb7c5f # What We Do
-handle: whatWeDoImageMobile
-instructions: 'Image to go along with the content on mobile screens'
-name: 'What We Do Image Mobile'
+fieldGroup: 7829ab32-990e-4eb3-a6c9-5519032a584a # Common
+handle: styling
+instructions: ''
+name: Styling
 searchable: false
 settings:
   allowSelfRelations: false
@@ -16,7 +16,7 @@ settings:
   previewMode: full
   restrictFiles: ''
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:a1d35375-fad3-43fb-a1ed-44da484a56e9' # Images
@@ -26,7 +26,7 @@ settings:
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false
-  viewMode: large
+  viewMode: list
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Assets

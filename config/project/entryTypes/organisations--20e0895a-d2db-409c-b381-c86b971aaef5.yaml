@@ -27,28 +27,28 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 7b0e6735-187f-4108-8fd4-ebea0c6ee1fa # Organisations Title
-            instructions: ''
-            label: ''
-            required: '1'
+            fieldUid: 6b01ab0f-5e1e-459b-aa6a-951def457885 # Title Text
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
-            fieldUid: 6a30f0b6-9dfb-472c-88cf-4cdc34869cf5 # Organisation Band Image
-            instructions: ''
-            label: ''
-            required: '1'
+            fieldUid: 63298583-683f-4180-b33a-e00d84c8b2d0 # Image
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
-            fieldUid: 3a765611-7b01-40df-99f5-55da10d744c5 # Organisations Paragraph
-            instructions: ''
-            label: ''
-            required: '1'
+            fieldUid: 9d1fb737-435c-4b0e-978b-ef8951ee24e7 # Subtitle Text
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -66,8 +66,8 @@ fieldLayouts:
         sortOrder: 1
 handle: organisations
 hasTitleField: false
-name: Organisations
-section: e9dba679-88fc-43a6-a9c2-b85286ee8d06 # Organisations
+name: '5. Organisations We Work With Band'
+section: e9dba679-88fc-43a6-a9c2-b85286ee8d06 # 5. Organisations We Work With Band
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

@@ -1,9 +1,9 @@
-columnSuffix: hztbvutk
+columnSuffix: yqfqyheh
 contentColumnType: text
-fieldGroup: 9c6073a8-c901-4325-b199-2af389c8e856 # Organisations
-handle: organisationsParagraph
+fieldGroup: 7b9504f3-0f44-4d8d-9157-366073044e9d # How Can We Partner
+handle: numberTwoSubtitle
 instructions: ''
-name: 'Organisations Paragraph'
+name: 'number Two Subtitle'
 searchable: false
 settings:
   byteLimit: null
@@ -11,7 +11,7 @@ settings:
   code: ''
   columnType: null
   initialRows: '4'
-  multiline: '1'
+  multiline: ''
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
