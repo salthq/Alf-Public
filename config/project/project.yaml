@@ -1,4 +1,4 @@
-dateModified: 1667377613
+dateModified: 1667550956
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Advantage Learn Foundation'
@@ -36,6 +36,7 @@ meta:
     20dcde3b-f1f4-4244-80ed-5e6b92e80af5: 'Number Two' # Number Two
     20e0895a-d2db-409c-b381-c86b971aaef5: '5. Organisations We Work With Band' # 5. Organisations We Work With Band
     21f106b8-83b2-4648-9e70-94adc36fab96: 'FS List' # FS List
+    33a9d2db-de4a-4554-a52e-59fcb6451fc7: SEO # SEO
     36eb7dad-c8a7-495f-b53a-55436cf4ad7e: 'Partnership Background Mobile' # Partnership Background Mobile
     39fc3bc3-0e20-493f-b211-015793be3407: '6. Success Stories Band' # 6. Success Stories Band
     40b24328-3a03-44e5-a870-8aa27d793326: '7. Partner With Us Band' # 7. Partner With Us Band
@@ -204,6 +205,52 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+    settings:
+      description: ''
+      facebookAppId: ''
+      metaTemplate: seo-meta.twig
+      removeAlternateUrls: ''
+      robots:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
+      sitemapLimit: '1000'
+      sitemapName: sitemap
+      socialImage:
+        - '304'
+      title:
+        -
+          __assoc__:
+            -
+              - key
+              - '1'
+            -
+              - locked
+              - '0'
+            -
+              - template
+              - '{title}'
+        -
+          __assoc__:
+            -
+              - key
+              - '2'
+            -
+              - locked
+              - '1'
+            -
+              - template
+              - ' - {{ siteName }}'
+      titleSuffix: null
+      twitterHandle: ''
 system:
   edition: solo
   live: true

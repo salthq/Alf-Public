@@ -7,6 +7,6 @@ siteSettings:
   67f41e09-e046-48b2-8922-8f5c03bbb14c: # Alf Public
     enabledByDefault: true
     hasUrls: true
-    template: hero-band/_entry
-    uriFormat: hero-band
+    template: null
+    uriFormat: __home__
 type: single
