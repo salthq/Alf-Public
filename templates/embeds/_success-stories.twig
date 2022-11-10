@@ -38,24 +38,24 @@
 
               <div class="pb-16 lg:pb-0 lg:z-10 lg:relative">
 
-                <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8 bg-alf-blue py-10 lg:py-0 rounded-xl">
+                <div class="lg:mx-auto lg:max-w-7xl lg:px-5 lg:grid lg:grid-cols-5 rounded-xl bg-alf-blue py-10 lg:py-0">
 
                   {# Outer Image Container #}
-                  <div class="relative lg:-my-8">
+                  <div class="relative lg:-my-8 col-span-2">
 
                     <div aria-hidden="true"
                       class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
 
                     {# Image Container #}
-                    <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                    <div class="mx-auto max-w-2xl sm:max-w-3xl lg:p-0 lg:h-full bg-[url('/assets/testimonial-styling-mobile.png')] lg:bg-[url('/assets/testimonial-styling.png')] bg-contain bg-no-repeat lg:bg-cover lg:bg-repeat ">
                       
-                      <div class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                      <div class="px-12 aspect-w-10 aspect-h-6  overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                         
                         {# Bringing in the image from the Craft admin section #}
                         {% set image = testimonial.testimonialImage.one() %}
                         
                         {# Displaying the image #}
-                        <img class="object-cover mx-auto lg:h-full lg:w-full"
+                        <img class="object-cover mx-auto lg:h-full lg:w-full rounded-xl lg:-translate-x-1"
                           src="{{ image.url }}"
                           alt="{{ image.alt }}" />
 
@@ -68,7 +68,7 @@
                   {# End | Outer Image Container #}
 
                   {# Outer Text Container #}
-                  <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+                  <div class="mt-12 lg:m-0 lg:col-span-3 lg:pl-8">
                     
                     {# Inner Text Container #}
                     <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
