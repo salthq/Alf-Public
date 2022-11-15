@@ -1,4 +1,4 @@
-dateModified: 1667550956
+dateModified: 1668492737
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Advantage Learn Foundation'
@@ -117,7 +117,7 @@ plugins:
     enabled: true
     schemaVersion: '1.2'
   freeform:
-    edition: lite
+    edition: pro
     enabled: true
     licenseKey: DFZ7PF4HQ68ICGUDOEW23CFJ
     schemaVersion: 3.6.3
