@@ -43,12 +43,13 @@
 
      {# Copyright and social media footer footer #}
     <div class="md:flex md:items-center md:justify-between py-6">
-      <div class="flex space-x-6 md:order-2 text-ptc-red">
+      <div class="flex flex-wrap md:order-2 text-ptc-red font-rubik">
 
+        
         {# Facebook icon #}
         <a 
           href="https://www.facebook.com/AdvantageLearnFoundation/" target="_blank" noopener noreferrer 
-          class="hover:text-red-600"
+          class="px-4 py-4"
         >
           <span class="sr-only">Facebook</span>
           <svg class="h-5 w-5" fill="#0fade8" viewBox="0 0 24 24" aria-hidden="true">
@@ -59,7 +60,7 @@
         {# LinkedIn icon #}
         <a 
           href="https://za.linkedin.com/company/alt-edz"  target="_blank" noopener noreferrer 
-          class="hover:text-red-600"
+          class="px-4 py-4"
         >
           <span class="sr-only">LinkedIn</span>
           <svg class="h-5 w-5" fill="#0fade8" viewBox="0 0 24 24" aria-hidden="true">
@@ -67,14 +68,23 @@
           </svg>
         </a>
 
+        {# Copyright message #}
+        <p class="px-4 py-4">
+          Copyright &copy; 2022 Advantage Learn Foundation. All rights reserved.
+        </p>
 
+
+        <div class="flex gap-x-5 px-4 py-4">
+        <a class="text-alf-nav-blue hover:underline" href="https://althq.co/privacypolicy">Privacy Policy</a>
+        <a class="text-alf-nav-blue hover:underline" href="https://althq.co/termsofuse">Terms of Use</a>
+      </div>
+      
       </div>
 
-      {# Copyright message #}
-      <p class="mt-8 text-xs text-white md:mt-0 md:order-1">
-        Copyright &copy; 2022 Advantage Learn Foundation. All rights reserved.
-      </p>
+      
 
+      
+      
     </div>
     {# End | Copyright and social media footer footer #}
   </div>
