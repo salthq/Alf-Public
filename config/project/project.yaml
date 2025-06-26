@@ -1,4 +1,4 @@
-dateModified: 1668492737
+dateModified: 1750934931
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Advantage Learn Foundation'
@@ -120,7 +120,7 @@ plugins:
     edition: pro
     enabled: true
     licenseKey: DFZ7PF4HQ68ICGUDOEW23CFJ
-    schemaVersion: 3.6.3
+    schemaVersion: 3.6.5
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: ''
@@ -256,7 +256,7 @@ system:
   live: true
   name: 'Advantage Learn Foundation'
   retryDuration: null
-  schemaVersion: 3.7.33
+  schemaVersion: 3.8.0.1
   timeZone: Africa/Johannesburg
 users:
   allowPublicRegistration: false
