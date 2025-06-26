@@ -1,4 +1,4 @@
-dateModified: 1750934931
+dateModified: 1750949003
 email:
   fromEmail: paul@advantagelearn.com
   fromName: 'Advantage Learn Foundation'
@@ -7,6 +7,25 @@ email:
   transportSettings:
     command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      addSubfolderToRootUrl: '1'
+      autoFocalPoint: ''
+      bucket: alf-public
+      bucketSelectionMode: choose
+      cfDistributionId: ''
+      cfPrefix: ''
+      expires: ''
+      keyId: $AWS_ACCESS_KEY_ID
+      makeUploadsPublic: '1'
+      region: eu-west-1
+      secret: $AWS_SECRET_ACCESS_KEY
+      subfolder: ''
+    type: craft\awss3\Fs
+    url: 'https://s3.eu-west-1.amazonaws.com/alf-public/'
 meta:
   __names__:
     0a3f48ec-0255-4546-962c-d19d581c192e: '4. Reach and Impact Band' # 4. Reach and Impact Band
@@ -115,15 +134,16 @@ plugins:
   aws-s3:
     edition: standard
     enabled: true
-    schemaVersion: '1.2'
+    schemaVersion: '2.0'
   freeform:
     edition: pro
     enabled: true
     licenseKey: DFZ7PF4HQ68ICGUDOEW23CFJ
-    schemaVersion: 3.6.5
+    schemaVersion: 5.6.1
     settings:
-      ajaxByDefault: true
       alertNotificationRecipients: ''
+      allowDashesInFieldHandles: false
+      allowFileTemplateEdit: true
       autoScroll: true
       autoScrollToErrors: true
       badgeType: all
@@ -135,51 +155,293 @@ plugins:
       bypassSpamCheckOnLoggedInUsers: false
       clientDigestFrequency: 1
       clientDigestRecipients: ''
-      customErrorMessage: null
-      customHoneypotName: null
-      defaultTemplates: true
+      defaultFromEmail: '{{ craft.app.projectConfig.get(''email.fromEmail'') }}'
+      defaultFromName: '{{ craft.app.projectConfig.get(''email.fromName'') }}'
       defaultView: dashboard
+      defaults:
+        __assoc__:
+          -
+            - previewHtml
+            - true
+          -
+            - twigInHtml
+            - true
+          -
+            - twigIsolation
+            - true
+          -
+            - includeSampleTemplates
+            - true
+          -
+            - notifications
+            -
+              __assoc__:
+                -
+                  - admin
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - conditional
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - userSelect
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - emailField
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+          -
+            - settings
+            -
+              __assoc__:
+                -
+                  - general
+                  -
+                    __assoc__:
+                      -
+                        - formType
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - submissionTitle
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - '{{ dateCreated|date("Y-m-d H:i:s") }}'
+                      -
+                        - formattingTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - basic-light/index.twig
+                -
+                  - dataStorage
+                  -
+                    __assoc__:
+                      -
+                        - storeData
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - defaultStatus
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 2
+                      -
+                        - collectIp
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                -
+                  - processing
+                  -
+                    __assoc__:
+                      -
+                        - ajax
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showIndicator
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - processingText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - Processing...
+                -
+                  - successAndErrors
+                  -
+                    __assoc__:
+                      -
+                        - successBehavior
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - reload
+                      -
+                        - returnUrl
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Form has been submitted successfully!'
+                      -
+                        - errorMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Sorry, there was an error submitting the form. Please try again.'
+                -
+                  - limits
+                  -
+                    __assoc__:
+                      -
+                        - duplicateCheck
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - no_limit
       digestFrequency: 1
       digestOnlyOnProduction: false
       digestRecipients: ''
       displayFeed: true
+      emailTemplateDefault: database
       emailTemplateDirectory: null
-      emailTemplateStorage: db
+      emailTemplateMethod: global
+      emailTemplateStorageType: files_database
+      exportHandlesAsNames: false
       exportLabels: false
-      fieldDisplayOrder: name
       fillWithGet: false
       footerScripts: false
       formFieldShowOnlyAllowedForms: false
       formSubmitDisable: true
       formSubmitExpiration: null
       formTemplateDirectory: embeds/forms
-      formattingTemplate: flexbox.html
-      freeformHoneypot: true
-      freeformHoneypotEnhancement: false
-      hideBannerDemo: false
-      hideBannerOldFreeform: false
+      formattingTemplate: flexbox/index.twig
       minimumSubmitTime: null
       pluginName: ''
       purgableSpamAgeInDays: null
       purgableSubmissionAgeInDays: null
       purgableUnfinalizedAssetAgeInMinutes: 180
-      recaptchaBehaviour: display_error
-      recaptchaEnabled: false
-      recaptchaErrorMessage: 'Please verify that you are not a robot.'
-      recaptchaKey: null
-      recaptchaLazyLoad: false
-      recaptchaMinScore: 0.5
-      recaptchaSecret: null
-      recaptchaSize: normal
-      recaptchaTheme: light
-      recaptchaType: v2_checkbox
+      queuePriority: null
       rememberPageSubmitOrder: true
       removeNewlines: false
       renderFormHtmlInCpViews: true
-      salesforce_client_id: null
-      salesforce_client_secret: null
-      salesforce_password: null
-      salesforce_username: null
       saveFormSessionLimit: 10
       saveFormTtl: 30
       scriptInsertLocation: footer
@@ -192,19 +454,15 @@ plugins:
       sessionEntryTTL: 10800
       showErrorsForBlockedEmails: false
       showErrorsForBlockedKeywords: false
-      showTutorial: true
+      sitesEnabled: false
       spamFolderEnabled: true
-      spamProtectionBehaviour: simulate_success
+      spamProtectionBehavior: simulate_success
       submissionThrottlingCount: null
       submissionThrottlingTimeFrame: null
       successTemplateDirectory: null
-      twigInHtml: true
-      twigInHtmlIsolatedMode: true
       updateSearchIndexes: true
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
+      useQueueForEmailNotifications: false
+      useQueueForIntegrations: false
   seo:
     edition: standard
     enabled: true
@@ -256,10 +514,11 @@ system:
   live: true
   name: 'Advantage Learn Foundation'
   retryDuration: null
-  schemaVersion: 3.8.0.1
+  schemaVersion: 4.15.0.0
   timeZone: Africa/Johannesburg
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null
