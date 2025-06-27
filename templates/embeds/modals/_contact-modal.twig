@@ -60,44 +60,6 @@
                 margin-left: 5px;
               }
             </style>
-            
-            {# Debug script for production AJAX issues #}
-            <script>
-              document.addEventListener('DOMContentLoaded', function() {
-                // Add debugging for Freeform AJAX requests
-                const originalFetch = window.fetch;
-                window.fetch = function(...args) {
-                  console.log('Freeform AJAX Request:', args);
-                  return originalFetch.apply(this, args)
-                    .then(response => {
-                      console.log('Freeform AJAX Response:', response.status, response.statusText);
-                      if (!response.ok) {
-                        console.error('Freeform AJAX Error:', response.status, response.statusText);
-                      }
-                      return response;
-                    })
-                    .catch(error => {
-                      console.error('Freeform AJAX Network Error:', error);
-                      throw error;
-                    });
-                };
-                
-                // Add event listeners for Freeform events
-                document.addEventListener('freeform-ajax-success', function(event) {
-                  console.log('Freeform AJAX Success:', event.detail);
-                });
-                
-                document.addEventListener('freeform-ajax-error', function(event) {
-                  console.error('Freeform AJAX Error:', event.detail);
-                  // Show user-friendly error message
-                  alert('There was an error submitting the form. Please try refreshing the page and submitting again.');
-                });
-                
-                document.addEventListener('freeform-ajax-after-submit', function(event) {
-                  console.log('Freeform AJAX After Submit:', event.detail);
-                });
-              });
-            </script>
               
             {{ craft.freeform.form("contactForm", {
               attributes: {
