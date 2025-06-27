@@ -121,13 +121,12 @@ if (form) {
 
 {# Render form rows #}
 {% for row in form %}
-    <div class="flex flex-wrap -mx-3 {{ form.customAttributes.rowClass }}">
+    <div class="flex flex-wrap -mx-3">
         {% for field in row %}
 
             {# Calculate column class based on columns count #}
             {% set columnCount = row|length %}
             {% set columnClass = "w-full px-3 pb-6 md:mb-0" %}
-            {% set columnClass = columnClass ~ form.customAttributes.columnClass %}
 
             {% if columnCount == 2 %}
                 {% set columnClass = columnClass ~ " md:w-1/2 lg:w-1/2 xl:w-1/2" %}
@@ -172,12 +171,11 @@ if (form) {
             {# Set instructions class #}
             {% set instructionClass = "text-xs italic" %}
 
-
             {# Create a column except when creating Freeform Payments columns #}
             {% if field.type != 'cc_details' %}
             <div class="main-column-class {{ columnClass }}"{{ field.rulesHtmlData }} style="overflow: hidden;">
             {% endif %}
-                {% if field.type == "checkbox_group" %}
+                {% if field.type == "checkboxes" %}
 
                     {{ field.renderLabel({
                         labelClass: labelClass,
@@ -204,7 +202,7 @@ if (form) {
                     {{ field.renderInstructions() }}
                     {{ field.renderErrors({ errorClass: errorClass }) }}
 
-                {% elseif field.type == "radio_group" %}
+                {% elseif field.type == "radios" %}
 
                     {{ field.renderLabel({
                         labelClass: labelClass,
@@ -316,7 +314,7 @@ if (form) {
                 {% elseif field.type == "submit" %}
 
                     {# Submit button #}
-                    {{ field.render({ class: "bg-alf-nav-blue hover:underline text-alf-white py-3 px-10 rounded" }) }}
+                    {{ field.renderInput({ class: "bg-alf-nav-blue hover:underline text-alf-white py-3 px-10 rounded" }) }}
 
                 {% elseif field.type == "table" %}
 
@@ -351,7 +349,6 @@ if (form) {
                         {% set columnCount = layoutRow|length %}
 
                         {% set columnClass = "w-full px-3 mb-6 md:mb-0" %}
-                        {% set columnClass = columnClass ~ form.customAttributes.columnClass %}
 
                         {% if columnCount > 1 %}
                             {% set columnClass = columnClass ~ " md:w-1/" ~ columnCount ~ " lg:w-1/" ~ columnCount ~ " xl:w-1/" ~ columnCount %}
@@ -385,6 +382,19 @@ if (form) {
 
                     {{ field.renderInstructions }}
                     {{ field.renderErrors }}
+
+                {% elseif field.type in ["text", "email", "textarea", "hidden", "number", "phone", "website", "password"] %}
+
+                    {{ field.renderLabel({
+                        labelClass: labelClass,
+                        instructionsClass: instructionClass,
+                        errorClass: errorClass,
+                    }) }}
+
+                    {{ field.renderInput({ class: fieldClass }) }}
+
+                    {{ field.renderInstructions() }}
+                    {{ field.renderErrors({ errorClass: errorClass }) }}
 
                 {% else %}
 
